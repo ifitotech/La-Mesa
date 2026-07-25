@@ -1,4 +1,4 @@
-export type GameNightMode = "individual" | "teams";
+export type GameNightMode = "solo" | "individual" | "teams";
 
 export type GameNightParticipant = {
   id: string;
