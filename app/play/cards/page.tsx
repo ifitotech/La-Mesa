@@ -127,6 +127,11 @@ export default function BlackjackPage() {
   return (
     <AppLayout immersive lockViewport>
       <div className="casino-game-shell">
+        <div className="casino-rotate-device">
+          <span aria-hidden="true">↻</span>
+          <strong>Gira tu teléfono</strong>
+          <p>Blackjack se juega en pantalla horizontal para mostrar la mesa completa.</p>
+        </div>
         <header className="casino-hud">
           <Link href="/games" aria-label="Regresar a juegos"><ArrowLeft /></Link>
           <div><span>BLACKJACK</span><strong>21</strong></div>
