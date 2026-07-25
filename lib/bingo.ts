@@ -5,13 +5,19 @@ function randomFrom(values: number[], amount: number) {
 }
 
 export function createBingoCard(): BingoCard {
-  return Array.from({ length: 5 }, (_, row) => [
-    ...randomFrom(Array.from({ length: 15 }, (_, index) => index + 1), 1),
-    ...randomFrom(Array.from({ length: 15 }, (_, index) => index + 16), 1),
-    row === 2 ? 0 : randomFrom(Array.from({ length: 15 }, (_, index) => index + 31), 1)[0],
-    ...randomFrom(Array.from({ length: 15 }, (_, index) => index + 46), 1),
-    ...randomFrom(Array.from({ length: 15 }, (_, index) => index + 61), 1),
-  ].flat());
+  const starts = [1, 16, 31, 46, 61];
+  const columns = starts.map((start, column) =>
+    randomFrom(
+      Array.from({ length: 15 }, (_, index) => start + index),
+      column === 2 ? 4 : 5,
+    ),
+  );
+  return Array.from({ length: 5 }, (_, row) =>
+    columns.map((column, columnIndex) => {
+      if (columnIndex === 2 && row === 2) return 0;
+      return column[row > 2 && columnIndex === 2 ? row - 1 : row];
+    }),
+  );
 }
 
 export function hasBingo(marked: Set<number>) {
