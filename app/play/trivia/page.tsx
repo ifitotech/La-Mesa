@@ -7,6 +7,7 @@ import { useState } from "react";
 import AppLayout from "@/app/components/AppLayout";
 import EndOfMatchAd from "@/app/components/EndOfMatchAd";
 import TriviaGame from "@/app/components/TriviaGame";
+import { useCountry } from "@/contexts/CountryContext";
 import { getLocalizedTrivia, getTriviaCategories, RANDOM_CATEGORY } from "@/lib/country-content";
 import { GameNightSession, getGameNightSession, saveGameNightSession } from "@/lib/game-night-session";
 
@@ -17,13 +18,15 @@ const countries = [
 ] as const;
 
 export default function SoloTriviaPage() {
-  const [country, setCountry] = useState("CU");
+  const { country: selectedCountry } = useCountry();
+  const [country, setCountry] = useState(selectedCountry.code);
   const [category, setCategory] = useState(RANDOM_CATEGORY);
   const [round, setRound] = useState(0);
   const [score, setScore] = useState<number | null>(null);
   const [gameNightSession, setGameNightSession] = useState<GameNightSession | null>(getGameNightSession);
   const [triviaReady, setTriviaReady] = useState(() => !getGameNightSession());
   const [hostSeconds, setHostSeconds] = useState(() => getGameNightSession()?.triviaSeconds ?? 15);
+  const english = country === "US";
 
   function startRound(nextCountry = country, nextCategory = category) {
     setCountry(nextCountry);
@@ -53,16 +56,16 @@ export default function SoloTriviaPage() {
 
   return <AppLayout>
     <div className="mx-auto max-w-3xl space-y-5">
-      <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>
+      <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> {english ? "Games" : "Juegos"}</Link>
       <section className="mesa-panel-gold rounded-3xl p-6 md:p-8">
         <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
-          <div><p className="text-xs font-bold uppercase tracking-[.24em] text-violet-300">Modo individual</p><h1 className="mt-1 flex items-center gap-3 text-3xl font-black"><Brain className="text-violet-300" /> Trivia local</h1></div>
+          <div><p className="text-xs font-bold uppercase tracking-[.24em] text-violet-300">{english ? "Solo mode" : "Modo individual"}</p><h1 className="mt-1 flex items-center gap-3 text-3xl font-black"><Brain className="text-violet-300" /> {english ? "American Trivia" : "Trivia local"}</h1></div>
           <select value={country} onChange={(event) => startRound(event.target.value, RANDOM_CATEGORY)} className="rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 font-bold outline-none focus:border-violet-400">
             {countries.map(([code, label]) => <option key={code} value={code}>{label}</option>)}
           </select>
         </div>
         <div className="mt-6 border-t border-slate-700/70 pt-5">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[.2em] text-slate-400">Categoria</p>
+          <p className="mb-3 text-xs font-bold uppercase tracking-[.2em] text-slate-400">{english ? "Category" : "Categoria"}</p>
           <div className="flex flex-wrap gap-2">
             {getTriviaCategories(country).map((item) => {
               const selected = category === item;
@@ -71,7 +74,7 @@ export default function SoloTriviaPage() {
               </button>;
             })}
           </div>
-          <p className="mt-3 text-sm text-slate-400">{category === RANDOM_CATEGORY ? "Random mezcla todas las categorias disponibles." : `Jugaras preguntas de ${category}.`}</p>
+          <p className="mt-3 text-sm text-slate-400">{category === RANDOM_CATEGORY ? (english ? "Random mixes all available categories." : "Random mezcla todas las categorias disponibles.") : (english ? `Play questions from ${category}.` : `Jugaras preguntas de ${category}.`)}</p>
         </div>
       </section>
       <section className="mesa-panel rounded-3xl p-6 md:p-8">

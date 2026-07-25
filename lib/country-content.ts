@@ -33,6 +33,25 @@ function getCubanTrivia(category = RANDOM_CATEGORY) {
   }));
 }
 
+const usTriviaQuestions: LocalizedTriviaQuestion[] = [
+  { id: "us-history-1", country: "US", category: "US History", question: "Which city was the first capital of the United States?", options: ["Philadelphia", "New York City", "Boston", "Washington, D.C."], answer: 1 },
+  { id: "us-history-2", country: "US", category: "US History", question: "In which year was the Declaration of Independence adopted?", options: ["1492", "1776", "1812", "1865"], answer: 1 },
+  { id: "us-geography-1", country: "US", category: "Geography", question: "What is the capital of the United States?", options: ["New York City", "Los Angeles", "Washington, D.C.", "Chicago"], answer: 2 },
+  { id: "us-geography-2", country: "US", category: "Geography", question: "Which state is known as the Sunshine State?", options: ["California", "Florida", "Texas", "Hawaii"], answer: 1 },
+  { id: "us-sports-1", country: "US", category: "Sports", question: "How many points is a touchdown worth in American football?", options: ["3", "5", "6", "7"], answer: 2 },
+  { id: "us-sports-2", country: "US", category: "Sports", question: "Which sport is played in the World Series?", options: ["Basketball", "Baseball", "Soccer", "Hockey"], answer: 1 },
+  { id: "us-culture-1", country: "US", category: "Pop Culture", question: "Which city is famous for Broadway theaters?", options: ["Miami", "New York City", "Seattle", "Denver"], answer: 1 },
+  { id: "us-culture-2", country: "US", category: "Pop Culture", question: "Hollywood is located in which state?", options: ["Nevada", "California", "Illinois", "Georgia"], answer: 1 },
+  { id: "us-food-1", country: "US", category: "Food & Traditions", question: "Which holiday is traditionally associated with turkey dinner?", options: ["Halloween", "Thanksgiving", "Memorial Day", "Labor Day"], answer: 1 },
+  { id: "us-food-2", country: "US", category: "Food & Traditions", question: "What is a common food at a Fourth of July cookout?", options: ["Sushi", "Hot dogs", "Paella", "Tacos only"], answer: 1 },
+  { id: "us-landmarks-1", country: "US", category: "Landmarks", question: "The Statue of Liberty stands in which harbor?", options: ["Boston Harbor", "New York Harbor", "San Francisco Bay", "Seattle Harbor"], answer: 1 },
+  { id: "us-landmarks-2", country: "US", category: "Landmarks", question: "Which national park is known for its geyser Old Faithful?", options: ["Yosemite", "Yellowstone", "Everglades", "Grand Canyon"], answer: 1 },
+  { id: "us-civics-1", country: "US", category: "Civics", question: "How many stars are on the U.S. flag?", options: ["13", "25", "50", "52"], answer: 2 },
+  { id: "us-civics-2", country: "US", category: "Civics", question: "What are the first ten amendments called?", options: ["The Bill of Rights", "The Constitution", "The Preamble", "The Articles"], answer: 0 },
+  { id: "us-music-1", country: "US", category: "Music & Movies", question: "Which city is closely associated with jazz music?", options: ["New Orleans", "Phoenix", "Portland", "Cleveland"], answer: 0 },
+  { id: "us-music-2", country: "US", category: "Music & Movies", question: "Which award honors excellence in American film?", options: ["Grammy", "Emmy", "Oscar", "Tony"], answer: 2 },
+];
+
 const countryQuestions: Record<string, LocalizedTriviaQuestion[]> = {
   CU: [
     {
@@ -253,6 +272,7 @@ export function getTriviaCategories(country: string) {
   if (country === "CU") {
     return [RANDOM_CATEGORY, ...Object.values(cubaCategoryLabels)];
   }
+  if (country === "US") return [RANDOM_CATEGORY, ...Array.from(new Set(usTriviaQuestions.map((question) => question.category))).sort()];
 
   const categories = new Set(
     [...(countryQuestions[country] ?? []), ...generalQuestions]
@@ -270,6 +290,7 @@ export function getLocalizedTrivia(
   if (country === "CU") {
     return getCubanTrivia(category).slice(0, amount);
   }
+  if (country === "US") return usTriviaQuestions.filter((question) => category === RANDOM_CATEGORY || question.category === category).sort(() => Math.random() - 0.5).slice(0, amount);
 
   const localized = countryQuestions[country] ?? [];
   const questions = [...localized, ...generalQuestions]

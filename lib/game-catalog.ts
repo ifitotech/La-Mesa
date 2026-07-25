@@ -1,5 +1,6 @@
 import {
   Brain,
+  BookOpen,
   Crown,
   Dices,
   Grid3X3,
@@ -22,7 +23,8 @@ export type GameId =
   | "couples"
   | "memory"
   | "charades"
-  | "challenges";
+  | "challenges"
+  | "bible";
 
 export type GameDefinition = {
   id: GameId;
@@ -47,6 +49,17 @@ export const gameCatalog: GameDefinition[] = [
     gameNight: true,
     icon: Brain,
     accent: "from-violet-600 to-fuchsia-600",
+  },
+  {
+    id: "bible",
+    name: "Trivia Bíblica",
+    description: "Preguntas para compartir, aprender y disfrutar en familia.",
+    minPlayers: 1,
+    maxPlayers: 12,
+    status: "available",
+    gameNight: false,
+    icon: BookOpen,
+    accent: "from-amber-500 to-orange-700",
   },
   {
     id: "domino",

@@ -38,6 +38,22 @@ const localWords: Record<string, HeadsUpWord[]> = {
   US: [{ word: "Broadway", hint: "Zona neoyorquina famosa por sus teatros" }, { word: "Béisbol", hint: "Deporte muy popular en Estados Unidos" }],
 };
 
+const usWords: HeadsUpWord[] = [
+  { word: "Baseball", hint: "A sport played with a bat, ball, and bases" },
+  { word: "Thanksgiving", hint: "A November holiday with a traditional family meal" },
+  { word: "Times Square", hint: "A bright and busy place in New York City" },
+  { word: "Road trip", hint: "A long drive taken for fun" },
+  { word: "Super Bowl", hint: "The championship game of American football" },
+  { word: "Popcorn", hint: "A snack often eaten at the movies" },
+  { word: "Yellow school bus", hint: "A common way children travel to school" },
+  { word: "National park", hint: "A protected natural area like Yellowstone" },
+  { word: "Hollywood", hint: "A famous California district for movies" },
+  { word: "Fourth of July", hint: "A U.S. holiday known for fireworks" },
+  { word: "Apple pie", hint: "A classic American dessert" },
+  { word: "Basketball", hint: "A sport with hoops, a ball, and five players per team" },
+];
+
 export function getHeadsUpWords(country: string) {
+  if (country === "US") return [...usWords].sort(() => Math.random() - 0.5);
   return [...sharedWords, ...(localWords[country] ?? [])].sort(() => Math.random() - 0.5);
 }
