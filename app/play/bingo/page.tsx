@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, CircleDot, Pause, Play, RotateCcw, Volume2 } from "lucide-react";
+import { ArrowLeft, CircleDot, RotateCcw, Volume2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
@@ -14,7 +14,6 @@ export default function BingoPage() {
   const [called, setCalled] = useState<number[]>([]);
   const [marked, setMarked] = useState<Set<number>>(() => new Set([12]));
   const [winner, setWinner] = useState(false);
-  const [autoCalling, setAutoCalling] = useState(false);
   const lastNumber = called.at(-1);
 
   useEffect(() => {
@@ -22,40 +21,27 @@ export default function BingoPage() {
     return () => window.clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    if (!autoCalling || called.length >= 75) return;
-    const timer = window.setTimeout(() => {
-      const available = Array.from({ length: 75 }, (_, index) => index + 1).filter((number) => !called.includes(number));
-      announceNumber(available[Math.floor(Math.random() * available.length)]);
-    }, 3500);
-    return () => window.clearTimeout(timer);
-  }, [autoCalling, called]);
-
-  function announceNumber(number: number) {
+  function callNumber() {
+    if (!card) return;
+    const available = Array.from({ length: 75 }, (_, index) => index + 1).filter((number) => !called.includes(number));
+    if (!available.length) return;
+    const number = available[Math.floor(Math.random() * available.length)];
     setCalled((values) => [...values, number]);
+
+    const position = card.flat().findIndex((value) => value === number);
+    if (position >= 0) {
+      setMarked((previous) => {
+        const next = new Set(previous);
+        next.add(position);
+        if (hasBingo(next)) setWinner(true);
+        return next;
+      });
+    }
+
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
       window.speechSynthesis.speak(new SpeechSynthesisUtterance(`Número ${number}`));
     }
-  }
-
-  function callNumber() {
-    const available = Array.from({ length: 75 }, (_, index) => index + 1).filter((number) => !called.includes(number));
-    if (!available.length) return;
-    announceNumber(available[Math.floor(Math.random() * available.length)]);
-  }
-
-  function mark(position: number) {
-    if (!card) return;
-    const value = card.flat()[position];
-    if (value !== 0 && !called.includes(value)) return;
-    setMarked((previous) => {
-      const next = new Set(previous);
-      if (next.has(position) && position !== 12) next.delete(position);
-      else next.add(position);
-      if (hasBingo(next)) setWinner(true);
-      return next;
-    });
   }
 
   function reset() {
@@ -63,7 +49,6 @@ export default function BingoPage() {
     setCalled([]);
     setMarked(new Set([12]));
     setWinner(false);
-    setAutoCalling(false);
   }
 
   function newPlayerCard() {
@@ -84,36 +69,27 @@ export default function BingoPage() {
         </header>
 
         <div className="bingo-game-grid">
+          <aside className="bingo-caller-panel">
+            <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
+            <div key={called.length} className="bingo-history">
+              <span>HAN SALIDO · {called.length}/75</span>
+              <p>{called.length ? called.slice(-12).reverse().join(" · ") : "Todavía ninguno"}</p>
+            </div>
+            <button onClick={reset} className="bingo-reset-button"><RotateCcw size={17} /> Nueva ronda</button>
+          </aside>
+
           <section className="bingo-card-panel">
             <div className="bingo-card-grid">
               {columns.map((column) => <div key={column} className="bingo-letter">{column}</div>)}
               {card.flat().map((number, index) => (
-                <button
-                  key={`${number}-${index}`}
-                  onClick={() => mark(index)}
-                  aria-label={`Carta ${number || "libre"}`}
-                  className={marked.has(index) ? "is-marked" : ""}
-                >
+                <div key={`${number}-${index}`} className={marked.has(index) ? "bingo-space is-marked" : "bingo-space"}>
                   {number === 0 ? "★" : number}
-                </button>
+                </div>
               ))}
             </div>
+            <button onClick={callNumber} disabled={called.length >= 75} className="bingo-call-button"><Volume2 size={19} /> SACAR NÚMERO</button>
             {winner && <div className="bingo-winner">¡BINGO! 🎉</div>}
           </section>
-
-          <aside className="bingo-caller-panel">
-            <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
-            <p className="bingo-progress">{called.length}/75 números</p>
-            <button onClick={callNumber} disabled={called.length >= 75} className="bingo-call-button"><Volume2 size={19} /> SACAR NÚMERO</button>
-            <button onClick={() => setAutoCalling((value) => !value)} disabled={called.length >= 75} className={`bingo-auto-button ${autoCalling ? "is-running" : ""}`}>
-              {autoCalling ? <Pause size={17} /> : <Play size={17} />} {autoCalling ? "PAUSAR" : "AUTOMÁTICO"}
-            </button>
-            <button onClick={reset} className="bingo-reset-button"><RotateCcw size={17} /> Nueva ronda</button>
-            <div key={called.length} className="bingo-history">
-              <span>HAN SALIDO</span>
-              <p>{called.length ? called.slice(-12).reverse().join(" · ") : "Todavía ninguno"}</p>
-            </div>
-          </aside>
         </div>
       </div>
     </AppLayout>
