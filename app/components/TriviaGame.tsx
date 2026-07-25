@@ -32,22 +32,22 @@ export default function TriviaGame({
 
   const question = questions[current];
 
-  const next = useCallback(() => {
+  const next = useCallback((finalScore: number) => {
     if (current + 1 >= questions.length) {
-      onFinish(score);
+      onFinish(finalScore);
       return;
     }
 
     setCurrent((value) => value + 1);
     setAnswered(false);
     setTime(secondsPerQuestion);
-  }, [current, onFinish, questions.length, score, secondsPerQuestion]);
+  }, [current, onFinish, questions.length, secondsPerQuestion]);
 
   useEffect(() => {
     if (answered) return;
 
     if (time === 0) {
-      const timeout = window.setTimeout(next, 0);
+      const timeout = window.setTimeout(() => next(score), 0);
       return () => window.clearTimeout(timeout);
     }
 
@@ -56,22 +56,21 @@ export default function TriviaGame({
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [time, answered, next]);
+  }, [time, answered, next, score]);
 
   function answer(index: number) {
     if (answered) return;
 
     setAnswered(true);
 
-    if (index === question.answer) {
-      setScore((s) => s + 100 + time * 5);
-    }
+    const nextScore = index === question.answer ? score + 100 + time * 5 : score;
+    if (nextScore !== score) setScore(nextScore);
 
     if (scoreRecipients.length && recipientId && onScoreChange) {
       onScoreChange(recipientId, index === question.answer ? 1 : -1);
     }
 
-    setTimeout(next, 1500);
+    setTimeout(() => next(nextScore), 1500);
   }
 
   return (
