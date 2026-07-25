@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, CircleDot, RotateCcw, Volume2, VolumeX } from "lucide-react";
+import { ArrowLeft, CircleDot, RotateCcw, Settings, Users, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
@@ -101,13 +101,24 @@ export default function BingoPage() {
       <div className="bingo-screen">
         <header className="bingo-topbar">
           <Link href="/games" aria-label="Regresar a juegos"><ArrowLeft size={20} /></Link>
-          <h1><CircleDot size={21} /> BINGO</h1>
+          <div className="bingo-nav-item"><Users size={19} /><span>Jugadores</span></div>
+          <h1><CircleDot size={21} /> LA MESA <b>BINGO</b></h1>
+          <div className="bingo-nav-item"><Settings size={19} /><span>Ajustes</span></div>
           <button onClick={newPlayerCard} aria-label="Nueva tarjeta"><RotateCcw size={19} /></button>
         </header>
 
-        <div className="bingo-game-grid">
+        <div className="bingo-casino-stage">
+          <div className="bingo-host">
+            <div className="bingo-host-head"><span /><i /></div>
+            <div className="bingo-host-body"><strong>LA MESA</strong></div>
+            <div className="bingo-host-hands"><i /><i /></div>
+          </div>
+          <div className="bingo-player-seat bingo-seat-left"><span>🎩</span><strong>Rosy</strong><small>2 cartones</small></div>
+          <div className="bingo-player-seat bingo-seat-right"><span>👩🏽</span><strong>Jas</strong><small>1 cartón</small></div>
+
+          <div className="bingo-game-grid">
           <aside className="bingo-caller-panel">
-            <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
+            <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>NÚMERO</span><strong>{lastNumber ?? "–"}</strong></div>
             <div key={called.length} className="bingo-history">
               <span>HAN SALIDO · {called.length}/75</span>
               {called.length ? (
@@ -136,6 +147,13 @@ export default function BingoPage() {
             <button onClick={callNumber} disabled={called.length >= 75} className="bingo-call-button"><Volume2 size={19} /> SACAR NÚMERO</button>
             {winner && <div className="bingo-winner">¡BINGO! 🎉</div>}
           </section>
+          </div>
+
+          <div className="bingo-local-seat">
+            <span className="bingo-local-avatar">TÚ</span>
+            <strong>Tu mesa</strong>
+            <small>{called.length} números cantados</small>
+          </div>
         </div>
       </div>
     </AppLayout>
