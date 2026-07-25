@@ -110,7 +110,11 @@ export default function BingoPage() {
             <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
             <div key={called.length} className="bingo-history">
               <span>HAN SALIDO · {called.length}/75</span>
-              <p>{called.length ? called.slice(-12).reverse().join(" · ") : "Todavía ninguno"}</p>
+              {called.length ? (
+                <div className="bingo-history-balls">
+                  {called.slice(-10).reverse().map((number, index) => <i key={number} style={{ "--history-index": index } as React.CSSProperties}>{number}</i>)}
+                </div>
+              ) : <p>Todavía ninguno</p>}
             </div>
             <div className="bingo-top-actions">
               <button onClick={toggleSound} className={`bingo-audio-button ${soundEnabled ? "is-on" : ""}`} aria-label={soundEnabled ? "Silenciar números" : "Activar audio"}>

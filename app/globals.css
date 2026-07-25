@@ -1495,6 +1495,110 @@ button:disabled:hover {
   }
 }
 
+.bingo-card-panel {
+  padding: clamp(.25rem, .7vh, .5rem) clamp(.35rem, 1vw, .7rem) clamp(.55rem, 1vh, .8rem);
+  gap: clamp(1.35rem, 3vh, 2.25rem);
+  background: radial-gradient(circle at 50% 38%, rgb(40 227 172 / 10%), transparent 52%), linear-gradient(145deg, rgb(10 39 41 / 88%), rgb(3 10 20 / 96%));
+}
+
+.bingo-card-panel .bingo-card-grid {
+  animation: bingo-board-float 5s ease-in-out infinite;
+}
+
+.bingo-card-panel .bingo-space {
+  overflow: hidden;
+  transition: filter .25s ease, transform .25s ease;
+}
+
+.bingo-card-panel .bingo-space:nth-child(5n + 1) { background: linear-gradient(145deg, #fff8eb, #e9d4b6); }
+.bingo-card-panel .bingo-space:nth-child(5n + 2) { background: linear-gradient(145deg, #effcff, #c9e5eb); }
+.bingo-card-panel .bingo-space:nth-child(5n + 3) { background: linear-gradient(145deg, #f6f0ff, #dad0ed); }
+.bingo-card-panel .bingo-space:nth-child(5n + 4) { background: linear-gradient(145deg, #effff7, #cce9da); }
+.bingo-card-panel .bingo-space:nth-child(5n) { background: linear-gradient(145deg, #fff4f4, #e9cdcd); }
+
+.bingo-card-panel .bingo-space::before {
+  content: "";
+  position: absolute;
+  inset: -80% -35%;
+  transform: translateX(-85%) rotate(24deg);
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 32%), transparent);
+  animation: bingo-space-shine 7s linear infinite;
+  pointer-events: none;
+}
+
+.bingo-card-panel .bingo-space.is-marked {
+  background: radial-gradient(circle at 35% 25%, #91ffd2, #18af75 62%, #08603f);
+  box-shadow: inset 0 5px 8px rgb(255 255 255 / 38%), inset 0 -7px 10px rgb(0 0 0 / 25%), 0 0 16px rgb(47 232 164 / 40%);
+}
+
+.bingo-card-panel .bingo-call-button {
+  position: relative;
+  min-height: clamp(3rem, 6vh, 3.75rem);
+  overflow: hidden;
+  border: 1px solid rgb(122 255 211 / 48%);
+  border-radius: 1.15rem;
+  background: linear-gradient(135deg, #31dc91, #087f62 58%, #065146);
+  font-size: clamp(.85rem, 2vh, 1rem);
+  letter-spacing: .08em;
+  box-shadow: inset 0 2px rgb(255 255 255 / 28%), inset 0 -4px rgb(0 35 27 / 25%), 0 7px 0 #043c32, 0 16px 25px rgb(0 0 0 / 35%), 0 0 26px rgb(37 213 157 / 14%);
+}
+
+.bingo-card-panel .bingo-call-button::after {
+  content: "";
+  position: absolute;
+  top: -80%;
+  bottom: -80%;
+  width: 24%;
+  transform: translateX(-500%) rotate(18deg);
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 38%), transparent);
+  animation: bingo-button-sweep 3.2s ease-in-out infinite;
+}
+
+.bingo-history-balls {
+  display: flex;
+  max-width: 100%;
+  margin-top: .32rem;
+  gap: .3rem;
+  overflow: hidden;
+}
+
+.bingo-history-balls i {
+  display: grid;
+  width: clamp(1.45rem, 3.8vh, 2rem);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgb(139 234 255 / 38%);
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 24%, #d9fbff, #318caf 48%, #0b405f);
+  color: white;
+  font-size: clamp(.52rem, 1.35vh, .68rem);
+  font-style: normal;
+  font-weight: 900;
+  box-shadow: inset 0 2px 4px rgb(255 255 255 / 30%), 0 3px 7px rgb(0 0 0 / 32%);
+  animation: bingo-mini-ball-in .42s cubic-bezier(.18,.82,.25,1.2) both;
+  animation-delay: calc(var(--history-index) * 35ms);
+}
+
+@keyframes bingo-board-float {
+  0%, 100% { transform: rotateX(2.5deg) translateY(0) translateZ(8px); }
+  50% { transform: rotateX(1deg) translateY(-4px) translateZ(13px); }
+}
+
+@keyframes bingo-space-shine {
+  0%, 82% { transform: translateX(-85%) rotate(24deg); }
+  100% { transform: translateX(85%) rotate(24deg); }
+}
+
+@keyframes bingo-button-sweep {
+  0%, 58% { transform: translateX(-500%) rotate(18deg); }
+  100% { transform: translateX(550%) rotate(18deg); }
+}
+
+@keyframes bingo-mini-ball-in {
+  from { opacity: 0; transform: translateY(-12px) scale(.55) rotate(-35deg); }
+}
+
 input,
 select,
 textarea {
