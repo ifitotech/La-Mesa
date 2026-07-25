@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, Flame, RotateCcw, Sparkles } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import { getChallenges } from "@/lib/challenges";
@@ -11,12 +11,16 @@ const categories = ["random", "Risas", "Equipo", "Creatividad"];
 
 export default function ChallengesPage() {
   const [category, setCategory] = useState("random");
-  const [deck, setDeck] = useState(() => getChallenges());
+  const [deck, setDeck] = useState<ReturnType<typeof getChallenges>>([]);
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setDeck(getChallenges(category)), 0);
+    return () => window.clearTimeout(timer);
+  }, [category]);
 
   function changeCategory(nextCategory: string) {
     setCategory(nextCategory);
-    setDeck(getChallenges(nextCategory));
     setIndex(0);
   }
 
@@ -28,6 +32,8 @@ export default function ChallengesPage() {
     }
     setIndex((value) => value + 1);
   }
+
+  if (!deck.length) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando los retos...</div></AppLayout>;
 
   return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>

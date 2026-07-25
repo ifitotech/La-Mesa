@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, Heart, RotateCcw, Shuffle } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import { getCouplesQuestions } from "@/lib/couples-questions";
@@ -11,13 +11,17 @@ const categories = ["random", "Conexión", "Recuerdos", "Risas", "Sueños"];
 
 export default function CouplesPage() {
   const [category, setCategory] = useState("random");
-  const [questions, setQuestions] = useState(() => getCouplesQuestions(category));
+  const [questions, setQuestions] = useState<ReturnType<typeof getCouplesQuestions>>([]);
   const [current, setCurrent] = useState(0);
   const question = questions[current];
 
+  useEffect(() => {
+    const timer = window.setTimeout(() => setQuestions(getCouplesQuestions(category)), 0);
+    return () => window.clearTimeout(timer);
+  }, [category]);
+
   function chooseCategory(value: string) {
     setCategory(value);
-    setQuestions(getCouplesQuestions(value));
     setCurrent(0);
   }
 
@@ -29,6 +33,8 @@ export default function CouplesPage() {
     }
     setCurrent((value) => value + 1);
   }
+
+  if (!question) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando las cartas...</div></AppLayout>;
 
   return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, CircleDot, RotateCcw, UserRound, Volume2 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import { BingoCard, createBingoCard, hasBingo } from "@/lib/bingo";
@@ -10,13 +10,18 @@ import { BingoCard, createBingoCard, hasBingo } from "@/lib/bingo";
 const columns = ["B", "I", "N", "G", "O"];
 
 export default function BingoPage() {
-  const [card, setCard] = useState<BingoCard>(() => createBingoCard());
+  const [card, setCard] = useState<BingoCard | null>(null);
   const [called, setCalled] = useState<number[]>([]);
   const [marked, setMarked] = useState<Set<number>>(() => new Set([12]));
   const [winner, setWinner] = useState(false);
   const [mode, setMode] = useState<"host" | "player" | "both">("host");
 
   const lastNumber = called.at(-1);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setCard(createBingoCard()), 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   function callNumber() {
     const available = Array.from({ length: 75 }, (_, index) => index + 1).filter((number) => !called.includes(number));
@@ -26,6 +31,7 @@ export default function BingoPage() {
   }
 
   function mark(position: number) {
+    if (!card) return;
     const value = card.flat()[position];
     if (value !== 0 && !called.includes(value)) return;
     setMarked((previous) => {
@@ -49,6 +55,8 @@ export default function BingoPage() {
     setMarked(new Set([12]));
     setWinner(false);
   }
+
+  if (!card) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-4xl rounded-3xl p-10 text-center text-slate-400">Preparando tu tarjeta de Bingo...</div></AppLayout>;
 
   return <AppLayout lockViewport><div className="mx-auto max-w-4xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>

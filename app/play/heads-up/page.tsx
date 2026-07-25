@@ -13,14 +13,24 @@ const ROUND_SECONDS = 60;
 
 export default function HeadsUpPage() {
   const { country } = useCountry();
-  const [words, setWords] = useState(() => getHeadsUpWords(country.code));
+  const [words, setWords] = useState<ReturnType<typeof getHeadsUpWords>>([]);
   const [index, setIndex] = useState(0);
   const [seconds, setSeconds] = useState(ROUND_SECONDS);
   const [playing, setPlaying] = useState(false);
   const [points, setPoints] = useState(0);
-  const [gameNight, setGameNight] = useState<GameNightSession | null>(getGameNightSession);
-  const [recipientId, setRecipientId] = useState(() => getGameNightSession()?.participants[0]?.id ?? "");
+  const [gameNight, setGameNight] = useState<GameNightSession | null>(null);
+  const [recipientId, setRecipientId] = useState("");
   const current = words[index];
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setWords(getHeadsUpWords(country.code));
+      const session = getGameNightSession();
+      setGameNight(session);
+      setRecipientId(session?.participants[0]?.id ?? "");
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [country.code]);
 
   useEffect(() => {
     if (!playing || seconds === 0) return;
@@ -48,6 +58,8 @@ export default function HeadsUpPage() {
     setSeconds(ROUND_SECONDS);
     setPlaying(true);
   }
+
+  if (!current) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando las pistas...</div></AppLayout>;
 
   return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
     <Link href="/game-night" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Game Night</Link>

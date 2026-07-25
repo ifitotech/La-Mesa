@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, RotateCcw, Trophy } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import { useCountry } from "@/contexts/CountryContext";
@@ -24,12 +24,17 @@ function createDeck(country: string): Card[] {
 
 export default function MemoryPage() {
   const { country } = useCountry();
-  const [deck, setDeck] = useState<Card[]>(() => createDeck(country.code));
+  const [deck, setDeck] = useState<Card[]>([]);
   const [selected, setSelected] = useState<number[]>([]);
   const [moves, setMoves] = useState(0);
   const [locked, setLocked] = useState(false);
 
-  const finished = deck.every((card) => card.matched);
+  const finished = deck.length > 0 && deck.every((card) => card.matched);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setDeck(createDeck(country.code)), 0);
+    return () => window.clearTimeout(timer);
+  }, [country.code]);
 
   function reset() {
     setDeck(createDeck(country.code));
@@ -58,6 +63,8 @@ export default function MemoryPage() {
       setLocked(false);
     }, 850);
   }
+
+  if (!deck.length) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando las cartas...</div></AppLayout>;
 
   return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>

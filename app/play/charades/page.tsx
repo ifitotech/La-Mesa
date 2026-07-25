@@ -12,14 +12,24 @@ const categories = ["random", "Películas", "Acciones", "Animales", "Vida diaria
 
 export default function CharadesPage() {
   const [category, setCategory] = useState("random");
-  const [deck, setDeck] = useState(() => getCharades());
+  const [deck, setDeck] = useState<ReturnType<typeof getCharades>>([]);
   const [index, setIndex] = useState(0);
   const [seconds, setSeconds] = useState(60);
   const [running, setRunning] = useState(false);
   const [score, setScore] = useState(0);
-  const [gameNight, setGameNight] = useState<GameNightSession | null>(getGameNightSession);
-  const [recipientId, setRecipientId] = useState(() => getGameNightSession()?.participants[0]?.id ?? "");
+  const [gameNight, setGameNight] = useState<GameNightSession | null>(null);
+  const [recipientId, setRecipientId] = useState("");
   const card = deck[index];
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setDeck(getCharades(category));
+      const session = getGameNightSession();
+      setGameNight(session);
+      setRecipientId(session?.participants[0]?.id ?? "");
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [category]);
 
   useEffect(() => {
     if (!running || seconds === 0) return;
@@ -35,7 +45,7 @@ export default function CharadesPage() {
   }
 
   function chooseCategory(nextCategory: string) {
-    setCategory(nextCategory); setDeck(getCharades(nextCategory)); setIndex(0); setScore(0); setSeconds(60); setRunning(false);
+    setCategory(nextCategory); setIndex(0); setScore(0); setSeconds(60); setRunning(false);
   }
 
   function advance(correct: boolean) {
@@ -45,6 +55,8 @@ export default function CharadesPage() {
   }
 
   function start() { setDeck(getCharades(category)); setIndex(0); setScore(0); setSeconds(60); setRunning(true); }
+
+  if (!card) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando la mímica...</div></AppLayout>;
 
   return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
     <Link href="/game-night" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Game Night</Link>
