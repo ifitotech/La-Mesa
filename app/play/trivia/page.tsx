@@ -27,7 +27,7 @@ export default function TriviaPage() {
   const [hydrated, setHydrated] = useState(false);
   const english = country === "US";
 
-  useEffect(() => { const timer = window.setTimeout(() => { const saved = getGameNightSession(); setSession(saved); setReady(!saved); setSeconds(saved?.triviaSeconds ?? 15); setHydrated(true); }, 0); return () => window.clearTimeout(timer); }, []);
+  useEffect(() => { const timer = window.setTimeout(() => { const isSolo = new URLSearchParams(window.location.search).get("mode") === "solo"; const saved = isSolo ? null : getGameNightSession(); setSession(saved); setReady(!saved); setSeconds(saved?.triviaSeconds ?? 15); setHydrated(true); }, 0); return () => window.clearTimeout(timer); }, []);
 
   function startRound(nextCountry = country, nextCategory = category) { setCountry(nextCountry); setCategory(nextCategory); setScore(null); setAiScore(null); setRound((value) => value + 1); }
   function changeGameNightScore(id: string, change: number) { if (!session) return; const next = { ...session, participants: session.participants.map((player) => player.id === id ? { ...player, score: player.score + change } : player) }; saveGameNightSession(next); setSession(next); }
