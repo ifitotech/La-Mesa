@@ -107,11 +107,11 @@ export const gameCatalog: GameDefinition[] = [
   },
   {
     id: "cards",
-    name: "Cartas",
-    description: "Una colección de juegos de cartas para cada tipo de reunión.",
-    minPlayers: 2,
-    maxPlayers: 6,
-    status: "beta",
+    name: "Blackjack 21",
+    description: "Blackjack clásico contra el crupier, sin apuestas y con reglas reales.",
+    minPlayers: 1,
+    maxPlayers: 1,
+    status: "available",
     gameNight: false,
     icon: Crown,
     accent: "from-pink-500 to-rose-600",
@@ -175,7 +175,7 @@ export function getGameDefinition(gameId: GameId): GameDefinition {
 // The United States catalog is curated separately. Do not add games here
 // unless its dedicated catalog has been approved.
 export function isGameEnabledForCountry(gameId: GameId, countryCode: string) {
-  return countryCode !== "US" || (gameId !== "cards" && gameId !== "parchis");
+  return countryCode !== "US" || gameId !== "parchis";
 }
 
 export function isGameAvailableOnline(gameId: GameId) {
@@ -189,7 +189,7 @@ const englishGameCopy: Record<GameId, { name: string; description: string }> = {
   "heads-up": { name: "Heads Up", description: "Clues, laughs, and local words for everyone." },
   bingo: { name: "Bingo", description: "A family favorite to play together." },
   parchis: { name: "Parcheesi", description: "Racing, strategy, and rematches for your next game night." },
-  cards: { name: "Cards", description: "A collection of card games for every gathering." },
+  cards: { name: "Blackjack 21", description: "Classic blackjack against the dealer, with no betting and real rules." },
   couples: { name: "Between Us", description: "Questions for couples: memories, laughter, connection, and shared plans." },
   memory: { name: "Memory", description: "Find the matching cards before the round is over." },
   charades: { name: "Charades", description: "Act, guess, and laugh together with the whole family." },

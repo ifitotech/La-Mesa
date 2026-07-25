@@ -8,7 +8,7 @@ const artwork: Record<GameId, { emoji: string; label: string; colors: string; im
   "heads-up": { emoji: "💡", label: "Pistas", colors: "from-orange-500 via-rose-600 to-slate-950" },
   bingo: { emoji: "🔢", label: "Bingo", colors: "from-emerald-500 via-teal-700 to-slate-950" },
   parchis: { emoji: "🎲", label: "Parchís", colors: "from-amber-400 via-orange-700 to-slate-950" },
-  cards: { emoji: "🂡", label: "Cartas", colors: "from-rose-500 via-red-700 to-slate-950" },
+  cards: { emoji: "🂡", label: "Blackjack 21", colors: "from-emerald-600 via-green-900 to-slate-950" },
   couples: { emoji: "💞", label: "Parejas", colors: "from-pink-500 via-rose-700 to-slate-950" },
   memory: { emoji: "🃏", label: "Memoria", colors: "from-sky-500 via-indigo-700 to-slate-950" },
   charades: { emoji: "🎭", label: "Mímica", colors: "from-yellow-400 via-orange-700 to-slate-950" },

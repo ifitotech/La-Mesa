@@ -1,79 +1,112 @@
 "use client";
 
+import { ArrowLeft, Crown, Hand, Plus, RotateCcw, ShieldCheck, Trophy } from "lucide-react";
 import Link from "next/link";
-import { ArrowLeft, Crown, RotateCcw, Sparkles, Trophy } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
-import { useCountry } from "@/contexts/CountryContext";
-import { GameNightSession, getGameNightSession, saveGameNightSession } from "@/lib/game-night-session";
+import {
+  BlackjackCard,
+  BlackjackOutcome,
+  blackjackHandValue,
+  createBlackjackDeck,
+  dealerShouldHit,
+  isBlackjack,
+  resolveBlackjack,
+} from "@/lib/blackjack";
 
-type SpanishSuit = "oros" | "copas" | "espadas" | "bastos";
-type PlayingCard = { rank: number; suit: SpanishSuit; value: number };
-
-const ranks = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12];
-const suits: SpanishSuit[] = ["oros", "copas", "espadas", "bastos"];
-const suitSymbols: Record<SpanishSuit, string> = { oros: "●", copas: "♥", espadas: "♠", bastos: "♣" };
-const suitLabels: Record<SpanishSuit, string> = { oros: "Oros", copas: "Copas", espadas: "Espadas", bastos: "Bastos" };
-const rankLabels: Record<number, string> = { 10: "S", 11: "C", 12: "R" };
-
-function drawRound(): [PlayingCard, PlayingCard] {
-  const deck = suits.flatMap((suit) => ranks.map((rank) => ({ rank, suit, value: rank })));
-  const firstIndex = Math.floor(Math.random() * deck.length);
-  const player = deck.splice(firstIndex, 1)[0];
-  const table = deck[Math.floor(Math.random() * deck.length)];
-  return [player, table];
+function Card({ card, hidden = false }: { card: BlackjackCard; hidden?: boolean }) {
+  const red = card.suit === "♥" || card.suit === "♦";
+  return (
+    <div className={`relative flex h-36 w-24 shrink-0 flex-col items-center justify-center rounded-xl border-4 border-[#f2e5c1] shadow-[0_16px_32px_rgba(0,0,0,.38)] sm:h-44 sm:w-28 ${hidden ? "bg-[radial-gradient(circle,#1c6748,#08291c)]" : "bg-gradient-to-br from-[#fffdf5] to-[#ded1af]"} ${red ? "text-rose-600" : "text-slate-900"}`}>
+      {hidden ? <span className="font-serif text-xl font-black text-amber-200">LM</span> : <><span className="absolute left-2 top-1 text-lg font-black">{card.rank}</span><span className="text-4xl">{card.suit}</span><span className="absolute bottom-1 right-2 rotate-180 text-lg font-black">{card.rank}</span></>}
+    </div>
+  );
 }
 
-export default function CardsPage() {
-  const { isEnglish } = useCountry();
-  const [cards, setCards] = useState<[PlayingCard, PlayingCard] | null>(null);
-  const [session, setSession] = useState<GameNightSession | null>(null);
-  const [recipientId, setRecipientId] = useState("");
-  const [roundScore, setRoundScore] = useState(0);
+export default function BlackjackPage() {
+  const [deck, setDeck] = useState<BlackjackCard[]>([]);
+  const [player, setPlayer] = useState<BlackjackCard[]>([]);
+  const [dealer, setDealer] = useState<BlackjackCard[]>([]);
+  const [finished, setFinished] = useState(false);
+  const [outcome, setOutcome] = useState<BlackjackOutcome | null>(null);
+  const [wins, setWins] = useState(0);
+
+  function newRound() {
+    const nextDeck = createBlackjackDeck();
+    const nextPlayer = [nextDeck.pop()!, nextDeck.pop()!];
+    const nextDealer = [nextDeck.pop()!, nextDeck.pop()!];
+    setDeck(nextDeck);
+    setPlayer(nextPlayer);
+    setDealer(nextDealer);
+    const natural = isBlackjack(nextPlayer);
+    setFinished(natural);
+    setOutcome(natural ? resolveBlackjack(nextPlayer, nextDealer) : null);
+    if (natural && resolveBlackjack(nextPlayer, nextDealer) === "blackjack") setWins((value) => value + 1);
+  }
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      setCards(drawRound());
-      const saved = getGameNightSession();
-      setSession(saved);
-      setRecipientId(saved?.participants[0]?.id ?? "");
-    }, 0);
+    const timer = window.setTimeout(newRound, 0);
     return () => window.clearTimeout(timer);
   }, []);
 
-  const copy = isEnglish ? {
-    back: "Games", eyebrow: "Spanish deck · Local game · Beta", title: "High Card", description: "Draw a Spanish-deck card against the table. The highest card wins the round.", you: "Your card", table: "Table card", win: "You win this round!", lose: "The table wins this round.", tie: "Tie. Draw again!", roundPoints: "round points", pointFor: "Point for", draw: "Draw next cards", restart: "Restart score", loading: "Shuffling cards..."
-  } : {
-    back: "Juegos", eyebrow: "Baraja española · Juego local · Beta", title: "Carta más alta", description: "Saca una carta española contra la mesa. La carta más alta gana la ronda.", you: "Tu carta", table: "Carta de la mesa", win: "¡Ganaste esta ronda!", lose: "La mesa gana esta ronda.", tie: "Empate. ¡Vuelvan a sacar!", roundPoints: "puntos en la ronda", pointFor: "Punto para", draw: "Sacar nuevas cartas", restart: "Reiniciar puntos", loading: "Barajando cartas..."
+  function finishDealer(nextPlayer = player, remainingDeck = deck) {
+    const nextDealer = [...dealer];
+    const nextDeck = [...remainingDeck];
+    while (dealerShouldHit(nextDealer)) nextDealer.push(nextDeck.pop()!);
+    const result = resolveBlackjack(nextPlayer, nextDealer);
+    setDealer(nextDealer);
+    setDeck(nextDeck);
+    setOutcome(result);
+    setFinished(true);
+    if (result === "win" || result === "blackjack") setWins((value) => value + 1);
+  }
+
+  function hit() {
+    if (finished) return;
+    const nextDeck = [...deck];
+    const nextPlayer = [...player, nextDeck.pop()!];
+    setPlayer(nextPlayer);
+    setDeck(nextDeck);
+    if (blackjackHandValue(nextPlayer) >= 21) finishDealer(nextPlayer, nextDeck);
+  }
+
+  const messages: Record<BlackjackOutcome, string> = {
+    blackjack: "¡Blackjack natural!",
+    win: "¡Ganaste la mano!",
+    lose: "La casa gana esta mano.",
+    push: "Empate. Nadie pierde.",
   };
 
-  function awardGameNightPoint() {
-    if (!session || !recipientId) return;
-    const nextSession = { ...session, participants: session.participants.map((participant) => participant.id === recipientId ? { ...participant, score: participant.score + 1 } : participant) };
-    saveGameNightSession(nextSession);
-    setSession(nextSession);
-  }
+  if (!player.length) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Barajando...</div></AppLayout>;
 
-  function nextRound() {
-    const next = drawRound();
-    setCards(next);
-    if (next[0].value > next[1].value) {
-      setRoundScore((score) => score + 1);
-      awardGameNightPoint();
-    }
-  }
+  return (
+    <AppLayout lockViewport>
+      <div className="mx-auto max-w-5xl space-y-5">
+        <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>
+        <section className="mesa-panel-gold rounded-3xl p-5 text-center md:p-7">
+          <p className="text-xs font-black uppercase tracking-[.22em] text-amber-300">Blackjack clásico · Sin apuestas</p>
+          <h1 className="mt-2 flex items-center justify-center gap-3 text-3xl font-black"><Crown className="text-amber-300" /> Blackjack 21</h1>
+          <p className="mt-2 text-slate-300">Acércate a 21 sin pasarte. El crupier debe pedir hasta llegar a 17.</p>
+        </section>
 
-  if (!cards) return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">{copy.loading}</div></AppLayout>;
+        <section className="mesa-premium-surface rounded-[2rem] p-5 text-center md:p-8">
+          <div className="flex items-center justify-between text-xs font-black uppercase tracking-[.16em] text-amber-100/70"><span>Crupier · {finished ? blackjackHandValue(dealer) : "?"}</span><span className="flex items-center gap-2"><Trophy size={15} /> {wins} victorias</span></div>
+          <div className="mt-4 flex min-h-44 -space-x-3 justify-center">{dealer.map((card, index) => <Card key={card.id} card={card} hidden={!finished && index === 1} />)}</div>
+          <div className="my-6 flex items-center gap-3"><span className="h-px flex-1 bg-amber-100/15" /><ShieldCheck className="text-amber-300" /><span className="h-px flex-1 bg-amber-100/15" /></div>
+          <p className="text-xs font-black uppercase tracking-[.16em] text-emerald-100/70">Tu mano · {blackjackHandValue(player)}</p>
+          <div className="mt-4 flex min-h-44 -space-x-3 justify-center">{player.map((card) => <Card key={card.id} card={card} />)}</div>
 
-  const [playerCard, tableCard] = cards;
-  const outcome = playerCard.value === tableCard.value ? copy.tie : playerCard.value > tableCard.value ? copy.win : copy.lose;
-  const cardStyle = (card: PlayingCard) => ({ oros: "text-amber-500", copas: "text-rose-600", espadas: "text-blue-700", bastos: "text-emerald-700" })[card.suit];
-  const cardRank = (card: PlayingCard) => rankLabels[card.rank] ?? String(card.rank);
-
-  return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
-    <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> {copy.back}</Link>
-    <section className="mesa-panel-gold rounded-3xl p-6 text-center md:p-8"><p className="text-xs font-bold uppercase tracking-[.24em] text-rose-300">{copy.eyebrow}</p><h1 className="mt-2 flex justify-center gap-3 text-3xl font-black"><Crown className="text-amber-300" /> {copy.title}</h1><p className="mx-auto mt-3 max-w-xl text-slate-300">{copy.description}</p></section>
-    <section className="mesa-panel rounded-3xl p-6 text-center md:p-9"><div className="flex items-center justify-center gap-5 sm:gap-10"><div><p className="mb-3 text-xs font-black uppercase tracking-[.18em] text-slate-400">{copy.you}</p><div className={`relative flex h-44 w-28 flex-col items-center justify-center rounded-2xl bg-stone-100 text-5xl font-black shadow-xl sm:h-52 sm:w-36 sm:text-6xl ${cardStyle(playerCard)}`}><span className="absolute left-3 top-3 text-lg">{cardRank(playerCard)}</span><span>{cardRank(playerCard)}</span><span className="mt-3 text-4xl">{suitSymbols[playerCard.suit]}</span><span className="absolute bottom-3 text-[10px] uppercase tracking-[.14em]">{suitLabels[playerCard.suit]}</span></div></div><Sparkles className="text-amber-300" /><div><p className="mb-3 text-xs font-black uppercase tracking-[.18em] text-slate-400">{copy.table}</p><div className={`relative flex h-44 w-28 flex-col items-center justify-center rounded-2xl bg-stone-100 text-5xl font-black shadow-xl sm:h-52 sm:w-36 sm:text-6xl ${cardStyle(tableCard)}`}><span className="absolute left-3 top-3 text-lg">{cardRank(tableCard)}</span><span>{cardRank(tableCard)}</span><span className="mt-3 text-4xl">{suitSymbols[tableCard.suit]}</span><span className="absolute bottom-3 text-[10px] uppercase tracking-[.14em]">{suitLabels[tableCard.suit]}</span></div></div></div><p className="mt-7 text-2xl font-black text-amber-200">{outcome}</p><p className="mt-2 text-sm font-bold text-slate-400">{roundScore} {copy.roundPoints}</p>{session && session.participants.length > 1 && <label className="mx-auto mt-6 block max-w-sm rounded-2xl border border-amber-300/35 bg-amber-400/10 p-4 text-left"><span className="flex items-center gap-2 text-sm font-black text-amber-200"><Trophy size={16} /> {copy.pointFor}</span><select value={recipientId} onChange={(event) => setRecipientId(event.target.value)} className="mt-2 w-full rounded-xl border border-slate-600 bg-slate-950 px-3 py-2 font-bold outline-none focus:border-amber-300">{session.participants.map((participant) => <option key={participant.id} value={participant.id}>{participant.name} · {participant.score} pts</option>)}</select></label>}<div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><button onClick={nextRound} className="rounded-xl bg-gradient-to-r from-rose-600 to-red-700 px-6 py-3 font-black">{copy.draw}</button><button onClick={() => setRoundScore(0)} className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-600 px-6 py-3 font-bold hover:bg-slate-800"><RotateCcw size={17} /> {copy.restart}</button></div></section>
-  </div></AppLayout>;
+          <div className="mt-6 min-h-8">
+            {outcome && <p className="mesa-gold-text text-2xl font-black">{messages[outcome]}</p>}
+            {!outcome && <p className="text-sm text-slate-300">¿Pides otra carta o te plantas?</p>}
+          </div>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            {!finished && <><button onClick={hit} className="mesa-action inline-flex items-center gap-2"><Plus size={18} /> Pedir</button><button onClick={() => finishDealer()} className="inline-flex items-center gap-2 rounded-xl border border-amber-200/25 bg-black/25 px-5 py-3 font-black hover:border-amber-200/60"><Hand size={18} /> Plantarse</button></>}
+            {finished && <button onClick={newRound} className="mesa-action inline-flex items-center gap-2"><RotateCcw size={18} /> Nueva mano</button>}
+          </div>
+        </section>
+      </div>
+    </AppLayout>
+  );
 }
