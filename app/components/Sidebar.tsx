@@ -25,7 +25,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="mesa-panel hidden w-[290px] shrink-0 border-y-0 border-l-0 lg:flex lg:min-h-screen lg:flex-col">
+    <aside className="mesa-panel hidden w-[290px] shrink-0 border-y-0 border-l-0 xl:flex xl:min-h-screen xl:flex-col">
       <div className="border-b border-slate-700/70 px-7 py-8">
         <Link href="/dashboard" className="flex items-center gap-3">
           <Image
