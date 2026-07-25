@@ -83,11 +83,11 @@ export default function BingoPage() {
           </section>
 
           <aside className="bingo-caller-panel">
-            <div className="bingo-last-ball"><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
+            <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
             <p className="bingo-progress">{called.length}/75 números</p>
             <button onClick={callNumber} disabled={called.length >= 75} className="bingo-call-button"><Volume2 size={19} /> SACAR NÚMERO</button>
             <button onClick={reset} className="bingo-reset-button"><RotateCcw size={17} /> Nueva ronda</button>
-            <div className="bingo-history">
+            <div key={called.length} className="bingo-history">
               <span>HAN SALIDO</span>
               <p>{called.length ? called.slice(-12).reverse().join(" · ") : "Todavía ninguno"}</p>
             </div>
