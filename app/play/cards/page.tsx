@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowLeft, Hand, Plus, RotateCcw, ShieldCheck, Volume2 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -56,8 +57,14 @@ export default function BlackjackPage() {
   const [wins, setWins] = useState(0);
   const [chips, setChips] = useState(2500);
   const [bet, setBet] = useState(100);
+  const [dealerMotion, setDealerMotion] = useState(0);
+
+  function animateDealer() {
+    setDealerMotion((value) => value + 1);
+  }
 
   function newRound() {
+    animateDealer();
     const nextDeck = createBlackjackDeck();
     const nextPlayer = [nextDeck.pop()!, nextDeck.pop()!];
     const nextDealer = [nextDeck.pop()!, nextDeck.pop()!];
@@ -82,6 +89,7 @@ export default function BlackjackPage() {
   }, []);
 
   function finishDealer(nextPlayer = player, remainingDeck = deck) {
+    animateDealer();
     const nextDealer = [...dealer];
     const nextDeck = [...remainingDeck];
     while (dealerShouldHit(nextDealer)) nextDealer.push(nextDeck.pop()!);
@@ -100,6 +108,7 @@ export default function BlackjackPage() {
 
   function hit() {
     if (finished) return;
+    animateDealer();
     const nextDeck = [...deck];
     const nextPlayer = [...player, nextDeck.pop()!];
     setPlayer(nextPlayer);
@@ -127,6 +136,10 @@ export default function BlackjackPage() {
 
         <section className="casino-blackjack-table">
           <div className="casino-rule"><strong>BLACKJACK PAGA 3 A 2</strong><span>CRUPIER SE PLANTA EN 17</span></div>
+          <div key={dealerMotion} className="casino-dealer-person" aria-label="Crupier repartiendo">
+            <Image src="/blackjack-dealer-v1.png" alt="Crupier de La Mesa" width={1536} height={1024} priority />
+            <span className="casino-dealer-hand" aria-hidden="true" />
+          </div>
           <Seat name="Rosy" balance="8.4K" className="casino-seat-left" />
           <Seat name="Fito" balance="12.7K" className="casino-seat-right" />
 

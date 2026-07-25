@@ -635,6 +635,7 @@ button:disabled:hover {
     position: absolute;
     top: 7%;
     left: 50%;
+    z-index: 4;
     display: flex;
     width: 50%;
     transform: translateX(-50%);
@@ -648,6 +649,37 @@ button:disabled:hover {
 
   .casino-rule strong { font-size: 1.25em; }
 
+  .casino-dealer-person {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    z-index: 1;
+    width: clamp(13rem, 36%, 27rem);
+    transform: translateX(-50%);
+    transform-origin: 50% 85%;
+    animation: casino-dealer-deal .82s cubic-bezier(.2,.72,.24,1) both;
+    filter: drop-shadow(0 15px 18px rgb(0 0 0 / 48%));
+    pointer-events: none;
+  }
+
+  .casino-dealer-person img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, #000 76%, transparent 100%);
+  }
+
+  .casino-dealer-hand {
+    position: absolute;
+    right: 8%;
+    bottom: 9%;
+    width: 25%;
+    height: 20%;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgb(241 183 139 / 28%), transparent 68%);
+    animation: casino-dealer-arm .72s .12s ease-in-out both;
+  }
+
   .casino-dealer-zone,
   .casino-player-zone {
     position: absolute;
@@ -656,7 +688,7 @@ button:disabled:hover {
     text-align: center;
   }
 
-  .casino-dealer-zone { top: 17%; }
+  .casino-dealer-zone { top: 28%; z-index: 3; }
   .casino-player-zone { top: 48%; }
 
   .casino-zone-label {
@@ -891,6 +923,19 @@ button:disabled:hover {
     }
   }
 
+  @keyframes casino-dealer-deal {
+    0% { opacity: .92; transform: translateX(-50%) translateY(-5px) rotateX(0); }
+    34% { opacity: 1; transform: translateX(-50%) translateY(12px) rotateX(-7deg) scale(1.035); }
+    68% { transform: translateX(-50%) translateY(4px) rotateX(-2deg); }
+    100% { opacity: 1; transform: translateX(-50%) translateY(0) rotateX(0); }
+  }
+
+  @keyframes casino-dealer-arm {
+    0% { transform: translate3d(-20%, -25%, 0) rotate(-9deg) scale(.78); opacity: 0; }
+    45% { transform: translate3d(44%, 55%, 3rem) rotate(8deg) scale(1.2); opacity: 1; }
+    100% { transform: translate3d(0, 0, 0) rotate(0) scale(1); opacity: 0; }
+  }
+
   @keyframes casino-card-breathe {
     0%, 100% { filter: brightness(1); }
     50% { filter: brightness(1.18) drop-shadow(0 0 8px rgb(255 210 102 / 38%)); }
@@ -925,7 +970,8 @@ button:disabled:hover {
       background-size: auto 100%;
     }
     .casino-rule { top: 5%; width: 75%; }
-    .casino-dealer-zone { top: 15%; }
+    .casino-dealer-person { top: 5%; width: min(57%, 16rem); }
+    .casino-dealer-zone { top: 27%; }
     .casino-player-zone { top: 43%; }
     .casino-seat { top: 34%; }
     .casino-seat div:last-child { display: none; }
@@ -941,6 +987,8 @@ button:disabled:hover {
   @media (prefers-reduced-motion: reduce) {
     .casino-card,
     .casino-card-back,
+    .casino-dealer-person,
+    .casino-dealer-hand,
     .casino-pot button,
     .casino-result {
       animation: none !important;
