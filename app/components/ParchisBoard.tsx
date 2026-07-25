@@ -43,7 +43,7 @@ function cellStyle(point: Point) {
 
 export default function ParchisBoard({ game, legalMoves, onMove }: Props) {
   return (
-    <div className="mx-auto aspect-square w-full max-w-[44rem] rounded-[1.6rem] border-[8px] border-[#6c4422] bg-[#eadfbf] p-1 shadow-[inset_0_0_0_2px_#d5a84d,0_24px_55px_rgba(0,0,0,.5)]">
+    <div className="game-3d-board mx-auto aspect-square w-full max-w-[44rem] rounded-[1.6rem] border-[8px] border-[#6c4422] bg-[#eadfbf] p-1 shadow-[inset_0_0_0_2px_#d5a84d,0_8px_0_#3d2513,0_28px_55px_rgba(0,0,0,.55)]">
       <div className="relative grid h-full w-full grid-cols-[repeat(19,minmax(0,1fr))] grid-rows-[repeat(19,minmax(0,1fr))] overflow-hidden rounded-xl">
         <div className="col-span-8 row-span-8 bg-rose-500 p-[14%]"><div className="h-full rounded-3xl bg-rose-700/35 shadow-inner" /></div>
         <div className="col-start-12 col-span-8 row-span-8 bg-emerald-500 p-[14%]"><div className="h-full rounded-3xl bg-emerald-700/35 shadow-inner" /></div>
@@ -81,7 +81,7 @@ export default function ParchisBoard({ game, legalMoves, onMove }: Props) {
                 disabled={!movable}
                 aria-label={`Mover ficha ${pieceIndex + 1} de ${player.name}`}
                 style={{ ...cellStyle(point), backgroundColor: playerColors[playerIndex] }}
-                className={`z-10 m-auto flex h-[74%] w-[74%] items-center justify-center rounded-full border-2 border-white/90 text-[8px] font-black text-white shadow-[0_3px_7px_rgba(0,0,0,.5)] transition-all duration-500 sm:text-xs ${movable ? "animate-pulse ring-2 ring-amber-200 hover:scale-125" : ""}`}
+                className={`game-3d-token z-10 m-auto flex h-[74%] w-[74%] items-center justify-center rounded-full border-2 border-white/90 text-[8px] font-black text-white transition-all duration-500 sm:text-xs ${movable ? "animate-pulse ring-2 ring-amber-200 hover:scale-125" : ""}`}
               >
                 {piece.steps === PARCHIS_GOAL ? "★" : pieceIndex + 1}
               </button>

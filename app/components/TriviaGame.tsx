@@ -78,7 +78,7 @@ export default function TriviaGame({
   }
 
   return (
-    <div className="family-table-scene mx-auto max-w-4xl rounded-[2rem] p-4 pt-36 sm:p-6 sm:pt-40 md:p-8 md:pt-44">
+    <div className="family-table-scene game-3d-stage mx-auto max-w-4xl rounded-[2rem] p-4 pt-36 sm:p-6 sm:pt-40 md:p-8 md:pt-44">
       <div className="mb-6 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <span className="flex h-11 w-11 items-center justify-center rounded-full border border-amber-200/35 bg-black/25 text-amber-200 shadow-inner">
@@ -149,7 +149,7 @@ export default function TriviaGame({
               key={option}
               onClick={() => answer(index)}
               disabled={answered}
-              className={`group flex min-h-20 items-center gap-4 rounded-2xl border p-4 text-left transition duration-200 ${
+              className={`game-3d-choice group flex min-h-20 items-center gap-4 rounded-2xl border p-4 text-left transition duration-200 ${
                 isCorrect
                   ? "border-emerald-200/70 bg-emerald-500/30 shadow-[0_0_28px_rgba(52,211,153,.16)]"
                   : isIncorrect

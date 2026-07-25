@@ -101,7 +101,7 @@ export default function ParchisPage() {
           <p className="mt-2 text-sm text-slate-300">Saca con cinco, captura rivales y lleva tus cuatro fichas a la meta exacta.</p>
         </section>
 
-        <section className="mesa-premium-surface rounded-[2rem] p-4 md:p-7">
+        <section className="mesa-premium-surface game-3d-stage rounded-[2rem] p-4 md:p-7">
           <ParchisBoard game={game} legalMoves={legal} onMove={move} />
           <div className="grid gap-3 sm:grid-cols-2">
             {game.players.map((player, playerIndex) => (

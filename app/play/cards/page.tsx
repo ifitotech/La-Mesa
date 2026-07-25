@@ -18,7 +18,7 @@ import {
 function Card({ card, hidden = false }: { card: BlackjackCard; hidden?: boolean }) {
   const red = card.suit === "♥" || card.suit === "♦";
   return (
-    <div className={`relative flex h-36 w-24 shrink-0 flex-col items-center justify-center rounded-xl border-4 border-[#f2e5c1] shadow-[0_16px_32px_rgba(0,0,0,.38)] sm:h-44 sm:w-28 ${hidden ? "bg-[radial-gradient(circle,#1c6748,#08291c)]" : "bg-gradient-to-br from-[#fffdf5] to-[#ded1af]"} ${red ? "text-rose-600" : "text-slate-900"}`}>
+    <div className={`game-3d-card relative flex h-36 w-24 shrink-0 flex-col items-center justify-center rounded-xl border-4 border-[#f2e5c1] sm:h-44 sm:w-28 ${hidden ? "bg-[radial-gradient(circle,#1c6748,#08291c)]" : "bg-gradient-to-br from-[#fffdf5] to-[#ded1af]"} ${red ? "text-rose-600" : "text-slate-900"}`}>
       {hidden ? <span className="font-serif text-xl font-black text-amber-200">LM</span> : <><span className="absolute left-2 top-1 text-lg font-black">{card.rank}</span><span className="text-4xl">{card.suit}</span><span className="absolute bottom-1 right-2 rotate-180 text-lg font-black">{card.rank}</span></>}
     </div>
   );
@@ -90,7 +90,7 @@ export default function BlackjackPage() {
           <p className="mt-2 text-slate-300">Acércate a 21 sin pasarte. El crupier debe pedir hasta llegar a 17.</p>
         </section>
 
-        <section className="blackjack-table-scene rounded-[2rem] p-5 text-center md:p-8">
+        <section className="blackjack-table-scene game-3d-stage rounded-[2rem] p-5 text-center md:p-8">
           <div className="flex items-center justify-between text-xs font-black uppercase tracking-[.16em] text-amber-100/70"><span>Crupier · {finished ? blackjackHandValue(dealer) : "?"}</span><span className="flex items-center gap-2"><Trophy size={15} /> {wins} victorias</span></div>
           <div className="mt-4 flex min-h-44 -space-x-3 justify-center">{dealer.map((card, index) => <Card key={card.id} card={card} hidden={!finished && index === 1} />)}</div>
           <div className="my-6 flex items-center gap-3"><span className="h-px flex-1 bg-amber-100/15" /><ShieldCheck className="text-amber-300" /><span className="h-px flex-1 bg-amber-100/15" /></div>

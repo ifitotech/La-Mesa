@@ -76,7 +76,7 @@ export default function MemoryPage() {
           <p className="mt-2 text-slate-300">Encuentra una pareja para sumar un punto y conservar tu turno.</p>
         </section>
 
-        <section className="family-table-scene rounded-[2rem] p-4 pt-36 md:p-7 md:pt-44">
+        <section className="family-table-scene game-3d-stage rounded-[2rem] p-4 pt-36 md:p-7 md:pt-44">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="flex items-center gap-2 text-xs font-black uppercase tracking-[.18em] text-amber-200/70"><UsersRound size={15} /> Turno</p>
@@ -97,7 +97,7 @@ export default function MemoryPage() {
                   onClick={() => reveal(index)}
                   disabled={Boolean(card.matchedBy) || locked}
                   aria-label={visible ? `Carta ${card.value}` : "Carta oculta"}
-                  className={`relative aspect-[.76] overflow-hidden rounded-xl border text-3xl shadow-xl transition duration-300 sm:rounded-2xl md:text-4xl ${visible ? "border-amber-200/55 bg-gradient-to-br from-[#fff9e8] to-[#dfc889] text-slate-950 shadow-amber-950/30" : "border-amber-200/25 bg-[radial-gradient(circle_at_center,#1e6547,#0b2b1f_70%)] text-amber-200 hover:-translate-y-1 hover:border-amber-200/60"}`}
+                  className={`game-3d-card relative aspect-[.76] overflow-hidden rounded-xl border text-3xl transition duration-300 sm:rounded-2xl md:text-4xl ${visible ? "border-amber-200/55 bg-gradient-to-br from-[#fff9e8] to-[#dfc889] text-slate-950 shadow-amber-950/30" : "border-amber-200/25 bg-[radial-gradient(circle_at_center,#1e6547,#08291c_70%)] text-amber-200 hover:border-amber-200/60"}`}
                 >
                   <span className={`absolute inset-1 rounded-lg border ${visible ? "border-amber-800/15" : "border-amber-200/15"}`} />
                   {visible ? <span className="relative drop-shadow-sm">{card.value}</span> : <span className="relative flex h-full items-center justify-center font-serif text-2xl text-amber-200/80">LM</span>}
