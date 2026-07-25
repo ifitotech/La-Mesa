@@ -18,7 +18,12 @@ type FormData = { email: string; password: string };
 
 export default function LoginPage() {
   const router = useRouter();
-  const { register, handleSubmit, getValues } = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    getValues,
+    formState: { errors },
+  } = useForm<FormData>();
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -116,11 +121,19 @@ export default function LoginPage() {
               type="email"
               autoComplete="email"
               placeholder="tu@correo.com"
-              {...register("email", { required: true })}
+              aria-invalid={Boolean(errors.email)}
+              {...register("email", {
+                required: "Escribe tu correo electrónico.",
+              })}
               className="w-full border-0 bg-transparent py-3 outline-none"
             />
           </span>
         </label>
+        {errors.email && (
+          <p role="alert" className="mt-2 text-sm text-rose-300">
+            {errors.email.message}
+          </p>
+        )}
 
         <label className="mt-4 block text-sm font-bold text-slate-300">
           Contraseña
@@ -130,11 +143,19 @@ export default function LoginPage() {
               type="password"
               autoComplete="current-password"
               placeholder="Tu contraseña"
-              {...register("password", { required: true })}
+              aria-invalid={Boolean(errors.password)}
+              {...register("password", {
+                required: "Escribe tu contraseña.",
+              })}
               className="w-full border-0 bg-transparent py-3 outline-none"
             />
           </span>
         </label>
+        {errors.password && (
+          <p role="alert" className="mt-2 text-sm text-rose-300">
+            {errors.password.message}
+          </p>
+        )}
 
         <button
           type="button"

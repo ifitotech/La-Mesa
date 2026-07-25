@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import MobileNavigation from "./MobileNavigation";
+import NetworkStatus from "./NetworkStatus";
 
 type AppLayoutProps = {
   children: ReactNode;
@@ -20,6 +21,7 @@ export default function AppLayout({
   const shouldLockViewport = lockViewport || pathname.startsWith("/play/");
   return (
     <div className={`${shouldLockViewport ? "h-dvh overflow-hidden overscroll-none" : "min-h-screen"} bg-[#050b12] text-white`}>
+      <NetworkStatus />
       <div className={`flex ${shouldLockViewport ? "h-full min-h-0" : ""}`}>
         <Sidebar />
 
