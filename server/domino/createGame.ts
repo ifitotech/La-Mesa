@@ -4,9 +4,10 @@ import { findStartingPlayer } from "./findStartingPlayer";
 
 export function createGame(
   roomId: string,
-  playerIds: string[]
+  playerIds: string[],
+  maxPip = 6
 ): DominoGame {
-  const { players, stock } = deal(playerIds);
+  const { players, stock } = deal(playerIds, maxPip);
 
   const currentTurn = findStartingPlayer(players);
 

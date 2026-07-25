@@ -32,7 +32,7 @@ export type GameDefinition = {
   description: string;
   minPlayers: number;
   maxPlayers: number;
-  status: "available" | "coming-soon";
+  status: "available" | "beta" | "coming-soon";
   gameNight: boolean;
   icon: LucideIcon;
   accent: string;
@@ -56,7 +56,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Preguntas para compartir, aprender y disfrutar en familia.",
     minPlayers: 1,
     maxPlayers: 12,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: BookOpen,
     accent: "from-amber-500 to-orange-700",
@@ -67,7 +67,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "El clásico de la mesa, preparado para partidas con amigos.",
     minPlayers: 2,
     maxPlayers: 4,
-    status: "available",
+    status: "beta",
     gameNight: true,
     icon: Grid3X3,
     accent: "from-cyan-600 to-blue-600",
@@ -78,7 +78,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Pistas, risas y palabras locales para toda la sala.",
     minPlayers: 2,
     maxPlayers: 12,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: Hand,
     accent: "from-orange-500 to-rose-500",
@@ -89,7 +89,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Un favorito familiar para jugar juntos desde cualquier lugar.",
     minPlayers: 2,
     maxPlayers: 20,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: Trophy,
     accent: "from-emerald-500 to-teal-600",
@@ -100,7 +100,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Carreras, estrategia y revancha para la próxima Game Night.",
     minPlayers: 2,
     maxPlayers: 4,
-    status: "coming-soon",
+    status: "beta",
     gameNight: true,
     icon: Dices,
     accent: "from-amber-500 to-orange-600",
@@ -112,7 +112,7 @@ export const gameCatalog: GameDefinition[] = [
     minPlayers: 2,
     maxPlayers: 6,
     status: "coming-soon",
-    gameNight: true,
+    gameNight: false,
     icon: Crown,
     accent: "from-pink-500 to-rose-600",
   },
@@ -122,7 +122,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Preguntas para parejas: recuerdos, risas, conexión y planes compartidos.",
     minPlayers: 2,
     maxPlayers: 2,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: Heart,
     accent: "from-rose-500 to-pink-600",
@@ -133,7 +133,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Encuentra las parejas de cartas antes de que se acabe la ronda.",
     minPlayers: 1,
     maxPlayers: 6,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: Layers3,
     accent: "from-sky-500 to-indigo-600",
@@ -144,7 +144,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Actúa, adivina y ríete con retos para toda la familia.",
     minPlayers: 2,
     maxPlayers: 12,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: Theater,
     accent: "from-amber-500 to-rose-600",
@@ -155,7 +155,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Cartas rápidas para romper el hielo y animar la Game Night.",
     minPlayers: 2,
     maxPlayers: 12,
-    status: "available",
+    status: "beta",
     gameNight: false,
     icon: Flame,
     accent: "from-fuchsia-500 to-rose-600",

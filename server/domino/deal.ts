@@ -2,8 +2,9 @@ import { DominoPlayer } from "@/types/domino";
 import { createSet } from "./createSet";
 import { shuffle } from "./shuffle";
 
-export function deal(playerIds: string[]) {
-  const deck = shuffle(createSet());
+export function deal(playerIds: string[], maxPip = 6) {
+  const deck = shuffle(createSet(maxPip));
+  const tilesPerPlayer = maxPip === 9 ? 10 : 7;
 
   const players: DominoPlayer[] = playerIds.map(
     (uid) => ({
@@ -13,7 +14,7 @@ export function deal(playerIds: string[]) {
     })
   );
 
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < tilesPerPlayer; i++) {
     for (const player of players) {
       const tile = deck.pop();
 

@@ -1,10 +1,10 @@
 import { DominoTile } from "@/types/domino";
 
-export function createSet(): DominoTile[] {
+export function createSet(maxPip = 6): DominoTile[] {
   const tiles: DominoTile[] = [];
 
-  for (let left = 0; left <= 6; left++) {
-    for (let right = left; right <= 6; right++) {
+  for (let left = 0; left <= maxPip; left++) {
+    for (let right = left; right <= maxPip; right++) {
       tiles.push({
         id: crypto.randomUUID(),
         left,
