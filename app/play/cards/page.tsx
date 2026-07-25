@@ -19,8 +19,8 @@ function Card({ card, hidden = false, index = 0 }: { card: BlackjackCard; hidden
   const red = card.suit === "♥" || card.suit === "♦";
   return (
     <div
-      className={`casino-card ${hidden ? "casino-card-back" : ""} ${red ? "text-rose-600" : "text-slate-950"}`}
-      style={{ "--card-index": index } as React.CSSProperties}
+      className={`casino-card ${hidden ? "casino-card-back" : "casino-card-face"} ${red ? "text-rose-600" : "text-slate-950"}`}
+      style={{ "--card-index": index, "--deal-delay": `${index * 110}ms` } as React.CSSProperties}
     >
       {hidden ? (
         <span className="casino-card-monogram">LM</span>
@@ -146,7 +146,7 @@ export default function BlackjackPage() {
             </button>
           </div>
 
-          <div className="casino-result" aria-live="polite">
+          <div key={outcome ?? "playing"} className={`casino-result ${outcome ? `casino-result-${outcome}` : ""}`} aria-live="polite">
             {outcome ? messages[outcome] : "PIDE CARTA O PLÁNTATE"}
           </div>
 

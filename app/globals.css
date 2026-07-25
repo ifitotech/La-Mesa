@@ -677,6 +677,7 @@ button:disabled:hover {
 
   .casino-card {
     --card-index: 0;
+    --deal-delay: 0ms;
     position: relative;
     width: clamp(3.8rem, 8vw, 5.8rem);
     aspect-ratio: .7;
@@ -687,6 +688,10 @@ button:disabled:hover {
     background: linear-gradient(135deg, #fffefa, #d9ceb3);
     box-shadow: 0 4px 0 #8d8065, 0 13px 20px rgb(0 0 0 / 46%);
     font-family: Georgia, serif;
+    transform-origin: 50% 120%;
+    animation: casino-deal-card .48s cubic-bezier(.18,.82,.25,1.18) both;
+    animation-delay: var(--deal-delay);
+    backface-visibility: hidden;
   }
 
   .casino-card::after {
@@ -704,6 +709,11 @@ button:disabled:hover {
     border-color: #d8a947;
     background: repeating-linear-gradient(45deg, #741d28 0 5px, #4b0c17 5px 10px);
     color: #ffe29a;
+    animation-name: casino-deal-card, casino-card-breathe;
+    animation-duration: .48s, 2.4s;
+    animation-delay: var(--deal-delay), calc(var(--deal-delay) + .55s);
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: both;
   }
 
   .casino-card-monogram { font-weight: 950; }
@@ -778,6 +788,7 @@ button:disabled:hover {
     color: white;
     font-size: .52rem;
     line-height: 1;
+    animation: casino-chip-float 2.6s ease-in-out infinite;
   }
 
   .casino-pot strong { font-size: 1rem; }
@@ -794,6 +805,20 @@ button:disabled:hover {
     font-weight: 950;
     letter-spacing: .1em;
     text-shadow: 0 3px 7px #000;
+  }
+
+  .casino-result-win,
+  .casino-result-blackjack {
+    animation: casino-result-win .72s cubic-bezier(.2,.9,.25,1.2) both;
+  }
+
+  .casino-result-lose {
+    color: #ffb4b4;
+    animation: casino-result-lose .48s ease both;
+  }
+
+  .casino-result-push {
+    animation: casino-result-push .6s ease both;
   }
 
   .casino-controls {
@@ -822,6 +847,16 @@ button:disabled:hover {
     text-shadow: 0 2px 4px rgb(0 0 0 / 52%);
   }
 
+  .casino-control:hover:not(:disabled) {
+    transform: translateY(-4px) scale(1.025);
+    filter: brightness(1.12);
+  }
+
+  .casino-control:active:not(:disabled) {
+    transform: translateY(5px) scale(.98);
+    box-shadow: inset 0 3px 7px rgb(0 0 0 / 30%), 0 1px 0 #44240f;
+  }
+
   .casino-control-red { background: linear-gradient(#f32f5b, #8d0b2e); }
   .casino-control-green { background: linear-gradient(#37dc7d, #08743b); }
   .casino-control-gold { background: linear-gradient(#ffd96b, #a76912); color: #351a04; text-shadow: none; }
@@ -841,6 +876,48 @@ button:disabled:hover {
   .casino-avatar-me { grid-row: 1 / 3; background: radial-gradient(circle at 35% 25%, #237d59, #08251a); }
   .casino-me span { color: #ffe08a; font-weight: 800; }
 
+  @keyframes casino-deal-card {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -13rem, 6rem) rotateX(68deg) rotateZ(-16deg) scale(.55);
+    }
+    72% {
+      opacity: 1;
+      transform: translate3d(0, .45rem, 1rem) rotateX(-5deg) rotateZ(calc((var(--card-index) - 1) * 2deg)) scale(1.04);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(calc((var(--card-index) - 1) * 2deg)) translateZ(calc(var(--card-index) * 2px));
+    }
+  }
+
+  @keyframes casino-card-breathe {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.18) drop-shadow(0 0 8px rgb(255 210 102 / 38%)); }
+  }
+
+  @keyframes casino-chip-float {
+    0%, 100% { transform: translateY(0) rotateZ(-2deg); }
+    50% { transform: translateY(-6px) rotateZ(3deg); }
+  }
+
+  @keyframes casino-result-win {
+    0% { opacity: 0; transform: translateX(-50%) scale(.5) rotateX(70deg); }
+    65% { opacity: 1; transform: translateX(-50%) scale(1.16) rotateX(0); text-shadow: 0 0 26px #ffd96a; }
+    100% { transform: translateX(-50%) scale(1); }
+  }
+
+  @keyframes casino-result-lose {
+    0%, 100% { transform: translateX(-50%); }
+    25% { transform: translateX(calc(-50% - 8px)); }
+    75% { transform: translateX(calc(-50% + 8px)); }
+  }
+
+  @keyframes casino-result-push {
+    0% { opacity: 0; transform: translateX(-50%) scale(.8); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1); }
+  }
+
   @media (max-width: 640px) {
     .casino-blackjack-table {
       min-height: calc(100dvh - 10.8rem);
@@ -859,6 +936,15 @@ button:disabled:hover {
     .casino-control svg { width: 1rem; }
     .casino-me { bottom: 4.5%; left: 2.5%; }
     .casino-me strong, .casino-me span { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .casino-card,
+    .casino-card-back,
+    .casino-pot button,
+    .casino-result {
+      animation: none !important;
+    }
   }
 }
 
