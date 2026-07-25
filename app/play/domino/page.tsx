@@ -9,13 +9,17 @@ import DominoTile from "@/app/components/DominoTile";
 import { useCountry } from "@/contexts/CountryContext";
 import { createGame } from "@/server/domino/createGame";
 import { drawTile } from "@/server/domino/drawTile";
+import { advanceTurn } from "@/server/domino/advanceTurn";
+import { canPlayerMove } from "@/server/domino/canPlayerMove";
+import { finishBlockedDominoGame, playComputerTurn } from "@/server/domino/playComputerTurn";
 import { playTileOnSide } from "@/server/domino/playTileOnSide";
 import { DominoGame, DominoTile as DominoPiece } from "@/types/domino";
 
 const practicePlayer = "practice-player";
+const computerPlayer = "la-mesa-dealer";
 
 function newPracticeGame(maxPip: 6 | 9) {
-  return createGame("practice", [practicePlayer], maxPip);
+  return createGame("practice", [practicePlayer, computerPlayer], maxPip);
 }
 
 function copyGame(game: DominoGame): DominoGame {
@@ -47,6 +51,23 @@ export default function SoloDominoPage() {
     return () => window.clearTimeout(timer);
   }, [text.start]);
 
+  useEffect(() => {
+    if (!game || game.status !== "playing" || game.currentTurn !== computerPlayer) return;
+    const timer = window.setTimeout(() => {
+      const nextGame = copyGame(game);
+      const result = playComputerTurn(nextGame, computerPlayer);
+      setGame(nextGame);
+      setMessage(
+        result === "won"
+          ? (isEnglish ? "La Mesa won the round." : "La Mesa ganó la ronda.")
+          : result === "blocked"
+            ? (isEnglish ? "Blocked round. The lowest hand wins." : "Ronda cerrada. Gana la mano con menos puntos.")
+            : (isEnglish ? "La Mesa played. Your turn." : "La Mesa jugó. Es tu turno."),
+      );
+    }, 700);
+    return () => window.clearTimeout(timer);
+  }, [game, isEnglish]);
+
   function restart() {
     setGame(newPracticeGame(maxPip));
     setMessage(text.newReady);
@@ -72,8 +93,9 @@ export default function SoloDominoPage() {
       setMessage(text.won);
       return;
     }
+    advanceTurn(nextGame);
     setGame(nextGame);
-    setMessage(text.move);
+    setMessage(isEnglish ? "Good move. La Mesa is thinking..." : "Buena jugada. La Mesa está pensando...");
   }
 
   function draw() {
@@ -88,11 +110,12 @@ export default function SoloDominoPage() {
     const leftEnd = nextGame.board[0]?.left;
     const rightEnd = nextGame.board.at(-1)?.right;
     const hasMove = nextPlayer.hand.some((tile) => nextGame.board.length === 0 || tile.left === leftEnd || tile.right === leftEnd || tile.left === rightEnd || tile.right === rightEnd);
-    if (!hasMove) {
-      setGame({ ...nextGame, status: "finished" });
+    if (!hasMove && finishBlockedDominoGame(nextGame)) {
+      setGame(nextGame);
       setMessage(text.noMove);
       return;
     }
+    if (!canPlayerMove(nextGame, practicePlayer)) advanceTurn(nextGame);
     setGame(nextGame);
     setMessage(text.stockEmpty);
   }
