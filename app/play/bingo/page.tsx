@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, CircleDot, RotateCcw, Volume2 } from "lucide-react";
+import { ArrowLeft, CircleDot, Pause, Play, RotateCcw, Volume2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
@@ -14,6 +14,7 @@ export default function BingoPage() {
   const [called, setCalled] = useState<number[]>([]);
   const [marked, setMarked] = useState<Set<number>>(() => new Set([12]));
   const [winner, setWinner] = useState(false);
+  const [autoCalling, setAutoCalling] = useState(false);
   const lastNumber = called.at(-1);
 
   useEffect(() => {
@@ -21,10 +22,27 @@ export default function BingoPage() {
     return () => window.clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (!autoCalling || called.length >= 75) return;
+    const timer = window.setTimeout(() => {
+      const available = Array.from({ length: 75 }, (_, index) => index + 1).filter((number) => !called.includes(number));
+      announceNumber(available[Math.floor(Math.random() * available.length)]);
+    }, 3500);
+    return () => window.clearTimeout(timer);
+  }, [autoCalling, called]);
+
+  function announceNumber(number: number) {
+    setCalled((values) => [...values, number]);
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(`Número ${number}`));
+    }
+  }
+
   function callNumber() {
     const available = Array.from({ length: 75 }, (_, index) => index + 1).filter((number) => !called.includes(number));
     if (!available.length) return;
-    setCalled((values) => [...values, available[Math.floor(Math.random() * available.length)]]);
+    announceNumber(available[Math.floor(Math.random() * available.length)]);
   }
 
   function mark(position: number) {
@@ -45,6 +63,7 @@ export default function BingoPage() {
     setCalled([]);
     setMarked(new Set([12]));
     setWinner(false);
+    setAutoCalling(false);
   }
 
   function newPlayerCard() {
@@ -86,6 +105,9 @@ export default function BingoPage() {
             <div key={lastNumber ?? "empty"} className={`bingo-last-ball ${lastNumber ? "is-drawn" : ""}`}><span>ÚLTIMO</span><strong>{lastNumber ?? "–"}</strong></div>
             <p className="bingo-progress">{called.length}/75 números</p>
             <button onClick={callNumber} disabled={called.length >= 75} className="bingo-call-button"><Volume2 size={19} /> SACAR NÚMERO</button>
+            <button onClick={() => setAutoCalling((value) => !value)} disabled={called.length >= 75} className={`bingo-auto-button ${autoCalling ? "is-running" : ""}`}>
+              {autoCalling ? <Pause size={17} /> : <Play size={17} />} {autoCalling ? "PAUSAR" : "AUTOMÁTICO"}
+            </button>
             <button onClick={reset} className="bingo-reset-button"><RotateCcw size={17} /> Nueva ronda</button>
             <div key={called.length} className="bingo-history">
               <span>HAN SALIDO</span>
