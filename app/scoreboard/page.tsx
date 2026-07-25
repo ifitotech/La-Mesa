@@ -8,20 +8,28 @@ import { GameNightMode, getGameNightSession, saveGameNightSession } from "@/lib/
 
 type ScorePlayer = { id: string; name: string; score: number };
 
-function getInitialPlayers(): ScorePlayer[] {
-  return getGameNightSession()?.participants ?? [];
-}
-
 const modeLabels: Record<GameNightMode, string> = { solo: "Solo", individual: "Con más personas", teams: "Por equipos" };
 
 export default function ScoreboardPage() {
-  const [players, setPlayers] = useState<ScorePlayer[]>(getInitialPlayers);
-  const [mode] = useState<GameNightMode>(() => getGameNightSession()?.mode ?? "individual");
+  const [players, setPlayers] = useState<ScorePlayer[]>([]);
+  const [mode, setMode] = useState<GameNightMode>("individual");
   const [name, setName] = useState("");
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const session = getGameNightSession();
+      setPlayers(session?.participants ?? []);
+      setMode(session?.mode ?? "individual");
+      setHydrated(true);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
     saveGameNightSession({ mode, participants: players, triviaSeconds: getGameNightSession()?.triviaSeconds });
-  }, [mode, players]);
+  }, [hydrated, mode, players]);
 
   const ranking = [...players].sort((a, b) => b.score - a.score);
 

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { House, PartyPopper, Plus, Trophy, UsersRound } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import GameModeCatalog from "@/app/components/GameModeCatalog";
@@ -11,10 +11,22 @@ import { GameNightMode, GameNightParticipant, GameNightSession, getGameNightSess
 const modeLabels: Record<GameNightMode, string> = { solo: "Solo", individual: "Con más personas", teams: "Por equipos" };
 
 export default function GameNightPage() {
-  const [session, setSession] = useState<GameNightSession | null>(getGameNightSession);
-  const [mode, setMode] = useState<GameNightMode>(session?.mode ?? "individual");
-  const [participants, setParticipants] = useState<GameNightParticipant[]>(session?.participants ?? []);
+  const [session, setSession] = useState<GameNightSession | null>(null);
+  const [mode, setMode] = useState<GameNightMode>("individual");
+  const [participants, setParticipants] = useState<GameNightParticipant[]>([]);
   const [name, setName] = useState("");
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const saved = getGameNightSession();
+      setSession(saved);
+      setMode(saved?.mode ?? "individual");
+      setParticipants(saved?.participants ?? []);
+      setHydrated(true);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   function selectMode(nextMode: GameNightMode) {
     setMode(nextMode);
@@ -36,6 +48,8 @@ export default function GameNightPage() {
     saveGameNightSession(nextSession);
     setSession(nextSession);
   }
+
+  if (!hydrated) return <AppLayout><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando tu Game Night...</div></AppLayout>;
 
   return <AppLayout><div className="mx-auto max-w-7xl space-y-8">
     <section className="mesa-panel-gold rounded-3xl p-7 md:p-10"><PartyPopper className="text-amber-300" size={36} /><p className="mt-5 text-xs font-bold uppercase tracking-[.25em] text-amber-300">Presencial · Sin conexión</p><h1 className="mt-2 text-4xl font-black md:text-5xl">Juegos de Game Night</h1><p className="mt-4 max-w-2xl text-slate-300">Organiza la reunión primero; después cambia de juego sin perder el marcador de la noche.</p></section>
