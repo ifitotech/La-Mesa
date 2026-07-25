@@ -1,7 +1,6 @@
 "use client";
 
 import { ArrowLeft, Hand, Plus, RotateCcw, ShieldCheck, Volume2 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -136,10 +135,7 @@ export default function BlackjackPage() {
 
         <section className="casino-blackjack-table">
           <div className="casino-rule"><strong>BLACKJACK PAGA 3 A 2</strong><span>CRUPIER SE PLANTA EN 17</span></div>
-          <div key={dealerMotion} className="casino-dealer-person" aria-label="Crupier repartiendo">
-            <Image src="/blackjack-dealer-v1.png" alt="Crupier de La Mesa" width={1536} height={1024} priority />
-            <span className="casino-dealer-hand" aria-hidden="true" />
-          </div>
+          <span key={dealerMotion} className="casino-dealer-motion" aria-hidden="true" />
           <Seat name="Rosy" balance="8.4K" className="casino-seat-left" />
           <Seat name="Fito" balance="12.7K" className="casino-seat-right" />
 
