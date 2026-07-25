@@ -1865,6 +1865,57 @@ button:disabled:hover {
     0 7px 0 #3d1e10,
     0 16px 0 #24110c,
     0 28px 38px rgb(0 0 0 / 52%);
+  transform-style: preserve-3d;
+}
+
+.parchis-home {
+  position: relative;
+  transform: translateZ(3px);
+  box-shadow: inset 0 5px 9px rgb(255 255 255 / 22%), inset 0 -9px 14px rgb(0 0 0 / 22%), 0 3px 0 rgb(70 35 20 / 30%);
+}
+
+.parchis-home > div {
+  border: 2px solid rgb(255 255 255 / 13%);
+  background: rgb(0 0 0 / 17%);
+  box-shadow: inset 0 8px 15px rgb(0 0 0 / 24%), inset 0 -2px rgb(255 255 255 / 11%);
+}
+
+.parchis-home-blue {
+  background: linear-gradient(145deg, #45aaff, #1677da 58%, #0951a6) !important;
+}
+
+.parchis-home-yellow {
+  background: linear-gradient(145deg, #ffe056, #e9b817 58%, #b67b05) !important;
+}
+
+.parchis-home-green {
+  background: linear-gradient(145deg, #48e77d, #20bd61 58%, #087f3b) !important;
+}
+
+.parchis-home-red {
+  background: linear-gradient(145deg, #ff6a60, #e5483e 58%, #a82025) !important;
+}
+
+.parchis-lane {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgb(0 0 0 / 25%);
+  box-shadow: inset 0 2px rgb(255 255 255 / 25%), inset 0 -3px rgb(0 0 0 / 18%);
+}
+
+.parchis-lane-blue { background: #2589e8 !important; }
+.parchis-lane-yellow { background: #efc229 !important; }
+.parchis-lane-green { background: #20bd61 !important; }
+.parchis-lane-red { background: #e5483e !important; }
+
+.parchis-board-stage .game-3d-board > div > span {
+  transform: translateZ(2px);
+  box-shadow: inset 0 1px rgb(255 255 255 / 55%), inset 0 -2px rgb(0 0 0 / 12%);
+}
+
+.parchis-board-stage .game-3d-board > div > div[class*="conic-gradient"] {
+  transform: translateZ(6px);
+  box-shadow: inset 0 4px 8px rgb(255 255 255 / 18%), inset 0 -6px 10px rgb(0 0 0 / 20%), 0 5px 8px rgb(0 0 0 / 28%);
 }
 
 .parchis-board-stage .game-3d-token {
