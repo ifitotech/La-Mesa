@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Dice5, RotateCcw, ShieldCheck, Trophy } from "lucide-react";
+import { ArrowLeft, Dice5, RotateCcw, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -16,16 +16,12 @@ import {
 } from "@/lib/parchis-engine";
 import { getGameNightSession } from "@/lib/game-night-session";
 
-const colors = [
-  { panel: "border-rose-300/40 bg-rose-500/15", token: "bg-rose-500", text: "text-rose-200" },
-  { panel: "border-emerald-300/40 bg-emerald-500/15", token: "bg-emerald-500", text: "text-emerald-200" },
-  { panel: "border-amber-300/40 bg-amber-400/15", token: "bg-amber-400", text: "text-amber-200" },
-  { panel: "border-blue-300/40 bg-blue-500/15", token: "bg-blue-500", text: "text-blue-200" },
-];
+const playerColors = ["red", "green", "yellow", "blue"];
 
 export default function ParchisPage() {
   const [game, setGame] = useState<ParchisState | null>(null);
   const [roll, setRoll] = useState<number | null>(null);
+  const [diceKey, setDiceKey] = useState(0);
   const [message, setMessage] = useState("Tira el dado para comenzar.");
 
   useEffect(() => {
@@ -47,17 +43,18 @@ export default function ParchisPage() {
   function rollDice() {
     if (!game || game.winner || roll !== null) return;
     const value = Math.floor(Math.random() * 6) + 1;
+    setDiceKey((key) => key + 1);
     const next = structuredClone(game);
     const legal = legalParchisMoves(next, value);
     if (!legal.length) {
       passParchisTurn(next);
       setGame(next);
       setRoll(null);
-      setMessage(`Salió ${value}. No había movimientos válidos; pasa el turno.`);
+      setMessage(`Salió ${value}. No había movimientos; pasa el turno.`);
       return;
     }
     setRoll(value);
-    setMessage(`Salió ${value}. Elige una ficha válida.`);
+    setMessage(`Salió ${value}. Elige una ficha iluminada.`);
   }
 
   function move(pieceIndex: number) {
@@ -72,65 +69,57 @@ export default function ParchisPage() {
     setRoll(null);
     setMessage(
       result.won
-        ? `¡${next.players.find((player) => player.id === next.winner)?.name} ganó la partida!`
+        ? `¡${next.players.find((player) => player.id === next.winner)?.name} ganó!`
         : result.captured.length
-          ? "¡Captura! La ficha rival vuelve a casa y conservas el turno."
+          ? "¡Captura! Conservas el turno."
           : result.reachedGoal
             ? "¡Ficha en la meta! Conservas el turno."
             : result.extraTurn
               ? "Sacaste seis. Vuelve a tirar."
-              : "Movimiento completado. Siguiente turno.",
+              : "Movimiento completado.",
     );
   }
 
-  if (!game) {
-    return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando el tablero...</div></AppLayout>;
-  }
+  if (!game) return <AppLayout immersive lockViewport><div className="grid h-dvh place-items-center text-slate-300">Preparando el tablero…</div></AppLayout>;
 
   const active = game.players[game.turn];
   const legal = roll === null ? [] : legalParchisMoves(game, roll);
   const winner = game.players.find((player) => player.id === game.winner);
 
   return (
-    <AppLayout lockViewport>
-      <div className="mx-auto max-w-5xl space-y-5">
-        <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>
-        <section className="mesa-panel-gold rounded-3xl p-5 text-center md:p-7">
-          <p className="text-xs font-black uppercase tracking-[.22em] text-amber-300">Reglas clásicas · 2 a 4 jugadores</p>
-          <h1 className="mt-2 text-3xl font-black">Parchís</h1>
-          <p className="mt-2 text-sm text-slate-300">Saca con cinco, captura rivales y lleva tus cuatro fichas a la meta exacta.</p>
-        </section>
+    <AppLayout immersive lockViewport>
+      <div className="parchis-screen">
+        <header className="parchis-topbar">
+          <Link href="/games" aria-label="Regresar a juegos"><ArrowLeft size={20} /></Link>
+          <h1>PARCHÍS</h1>
+          <button onClick={reset} aria-label="Nueva partida"><RotateCcw size={18} /></button>
+        </header>
 
-        <section className="mesa-premium-surface game-3d-stage rounded-[2rem] p-4 md:p-7">
+        <div className="parchis-player-strip">
+          {game.players.map((player, index) => (
+            <article key={player.id} className={`parchis-player-card is-${playerColors[index]} ${active.id === player.id && !winner ? "is-active" : ""}`}>
+              <span>{player.name.slice(0, 1)}</span>
+              <div><strong>{player.name}</strong><small>{player.pieces.filter((piece) => piece.steps === PARCHIS_GOAL).length}/4 meta</small></div>
+            </article>
+          ))}
+        </div>
+
+        <section className="parchis-board-stage">
           <ParchisBoard game={game} legalMoves={legal} onMove={move} />
-          <div className="grid gap-3 sm:grid-cols-2">
-            {game.players.map((player, playerIndex) => (
-              <article key={player.id} className={`rounded-2xl border p-4 ${colors[playerIndex].panel} ${active.id === player.id && !winner ? "ring-2 ring-amber-200/60" : ""}`}>
-                <div className="flex items-center justify-between gap-3">
-                  <h2 className={`font-black ${colors[playerIndex].text}`}>{player.name}</h2>
-                  <span className="text-xs font-bold text-slate-300">{player.pieces.filter((piece) => piece.steps === PARCHIS_GOAL).length}/4 en meta</span>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="mt-5 rounded-2xl border border-amber-100/15 bg-black/25 p-5 text-center">
-            {winner ? (
-              <p className="flex items-center justify-center gap-2 text-xl font-black text-amber-200"><Trophy /> ¡{winner.name} ganó!</p>
-            ) : (
-              <>
-                <p className="text-xs font-black uppercase tracking-[.2em] text-amber-200/70">Turno actual</p>
-                <p className="mt-2 text-2xl font-black">{active.name}</p>
-              </>
-            )}
-            <p className="mt-2 text-sm text-slate-300">{message}</p>
-            <div className="mt-5 flex flex-wrap justify-center gap-3">
-              <button onClick={rollDice} disabled={roll !== null || Boolean(winner)} className="mesa-action inline-flex items-center gap-2 disabled:opacity-40"><Dice5 size={19} /> {roll === null ? "Tirar dado" : `Dado: ${roll}`}</button>
-              <button onClick={reset} className="inline-flex items-center gap-2 rounded-xl border border-amber-100/20 bg-black/20 px-4 py-3 font-bold"><RotateCcw size={17} /> Nueva partida</button>
-            </div>
-            <p className="mt-4 flex items-center justify-center gap-2 text-xs text-emerald-100/55"><ShieldCheck size={14} /> Las casillas seguras no permiten capturas.</p>
-          </div>
+          {winner && <div className="parchis-winner"><Trophy /> ¡{winner.name} ganó!</div>}
         </section>
+
+        <footer className="parchis-controls">
+          <div className="parchis-turn-info">
+            <span>TURNO</span>
+            <strong>{active.name}</strong>
+            <p>{message}</p>
+          </div>
+          <div key={diceKey} className={`parchis-die ${roll ? "has-roll" : ""}`}>{roll ?? "?"}</div>
+          <button onClick={rollDice} disabled={roll !== null || Boolean(winner)} className="parchis-roll-button">
+            <Dice5 size={21} /> {roll === null ? "TIRAR DADO" : "MUEVE UNA FICHA"}
+          </button>
+        </footer>
       </div>
     </AppLayout>
   );
