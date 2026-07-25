@@ -1,0 +1,42 @@
+[debug] [2026-07-25T17:22:21.460Z] ----------------------------------------------------------------------
+[debug] [2026-07-25T17:22:21.462Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rodol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --project la-mesa-68771 --only firestore:rules,firestore:indexes,storage
+[debug] [2026-07-25T17:22:21.462Z] CLI Version:   15.24.0
+[debug] [2026-07-25T17:22:21.462Z] Platform:      win32
+[debug] [2026-07-25T17:22:21.462Z] Node Version:  v24.18.0
+[debug] [2026-07-25T17:22:21.462Z] Detected Agent: codex_cli
+[debug] [2026-07-25T17:22:21.462Z] Time:          Sat Jul 25 2026 13:22:21 GMT-0400 (Eastern Daylight Time)
+[debug] [2026-07-25T17:22:21.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-25T17:22:26.955Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-25T17:22:26.955Z] > authorizing via signed-in user (farandulero93@gmail.com)
+[debug] [2026-07-25T17:22:26.955Z] [iam] checking project la-mesa-68771 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2026-07-25T17:22:26.965Z] Checked if tokens are valid: false, expires at: 1784949183372
+[debug] [2026-07-25T17:22:26.966Z] Checked if tokens are valid: false, expires at: 1784949183372
+[debug] [2026-07-25T17:22:26.966Z] > refreshing access token with scopes: []
+[debug] [2026-07-25T17:22:26.968Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-07-25T17:22:26.968Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-25T17:22:27.147Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-07-25T17:22:27.147Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-25T17:22:27.158Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/la-mesa-68771:testIamPermissions [none]
+[debug] [2026-07-25T17:22:27.158Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/la-mesa-68771:testIamPermissions  x-goog-user-project=la-mesa-68771
+[debug] [2026-07-25T17:22:27.158Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/la-mesa-68771:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2026-07-25T17:22:27.347Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/la-mesa-68771:testIamPermissions 200
+[debug] [2026-07-25T17:22:27.348Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/la-mesa-68771:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[info] 
+[info] === Deploying to 'la-mesa-68771'...
+[info] 
+[info] i  deploying storage, firestore 
+[info] i  storage: ensuring required API firebasestorage.googleapis.com is enabled... 
+[debug] [2026-07-25T17:22:27.351Z] Checked if tokens are valid: true, expires at: 1785003746147
+[debug] [2026-07-25T17:22:27.351Z] Checked if tokens are valid: true, expires at: 1785003746147
+[debug] [2026-07-25T17:22:27.351Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com [none]
+[debug] [2026-07-25T17:22:27.351Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com  x-goog-user-project=la-mesa-68771
+[debug] [2026-07-25T17:22:27.742Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com 200
+[debug] [2026-07-25T17:22:27.742Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com [omitted]
+[warn] !  storage: missing required API firebasestorage.googleapis.com. Enabling now... 
+[debug] [2026-07-25T17:22:27.743Z] Checked if tokens are valid: true, expires at: 1785003746147
+[debug] [2026-07-25T17:22:27.743Z] Checked if tokens are valid: true, expires at: 1785003746147
+[debug] [2026-07-25T17:22:27.743Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com:enable [none]
+[debug] [2026-07-25T17:22:27.743Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com:enable  x-goog-user-project=la-mesa-68771
+[debug] [2026-07-25T17:22:28.508Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com:enable 200
+[debug] [2026-07-25T17:22:28.508Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/la-mesa-68771/services/firebasestorage.googleapis.com:enable [omitted]
