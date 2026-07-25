@@ -67,7 +67,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "El clásico de la mesa, preparado para partidas con amigos.",
     minPlayers: 2,
     maxPlayers: 4,
-    status: "beta",
+    status: "available",
     gameNight: true,
     icon: Grid3X3,
     accent: "from-cyan-600 to-blue-600",
@@ -101,7 +101,7 @@ export const gameCatalog: GameDefinition[] = [
     minPlayers: 2,
     maxPlayers: 4,
     status: "beta",
-    gameNight: true,
+    gameNight: false,
     icon: Dices,
     accent: "from-amber-500 to-orange-600",
   },
@@ -111,7 +111,7 @@ export const gameCatalog: GameDefinition[] = [
     description: "Una colección de juegos de cartas para cada tipo de reunión.",
     minPlayers: 2,
     maxPlayers: 6,
-    status: "coming-soon",
+    status: "beta",
     gameNight: false,
     icon: Crown,
     accent: "from-pink-500 to-rose-600",
@@ -175,7 +175,7 @@ export function getGameDefinition(gameId: GameId): GameDefinition {
 // The United States catalog is curated separately. Do not add games here
 // unless its dedicated catalog has been approved.
 export function isGameEnabledForCountry(gameId: GameId, countryCode: string) {
-  return countryCode !== "US" || gameId !== "cards";
+  return countryCode !== "US" || (gameId !== "cards" && gameId !== "parchis");
 }
 
 const englishGameCopy: Record<GameId, { name: string; description: string }> = {

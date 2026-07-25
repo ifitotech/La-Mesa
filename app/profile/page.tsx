@@ -1,5 +1,6 @@
 "use client";
 
+import { updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
@@ -13,8 +14,7 @@ import { useAuthContext } from "@/contexts/AuthContext";
 import {
   Player,
   subscribeToPlayer,
-  updateAvatar,
-  updateCountry,
+  updatePlayerProfile,
 } from "@/services/player";
 
 export default function ProfilePage() {
@@ -23,8 +23,10 @@ export default function ProfilePage() {
   const [player, setPlayer] = useState<Player | null>(null);
   const [selectedAvatar, setSelectedAvatar] = useState("avatar_001");
   const [selectedCountry, setSelectedCountry] = useState("CU");
+  const [displayName, setDisplayName] = useState("");
   const [loadingPlayer, setLoadingPlayer] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [feedback, setFeedback] = useState<string | null>(null);
 
   useEffect(() => {
     if (!user) return;
@@ -34,6 +36,7 @@ export default function ProfilePage() {
         setPlayer(data);
         setSelectedAvatar(data.avatar || "avatar_001");
         setSelectedCountry(data.country || "CU");
+        setDisplayName(data.displayName || user.displayName || "Jugador");
       }
 
       setLoadingPlayer(false);
@@ -44,18 +47,24 @@ export default function ProfilePage() {
 
   async function handleSave() {
     if (!user || !player) return;
+    const cleanName = displayName.trim().slice(0, 24);
 
-    if (
-      selectedAvatar === player.avatar &&
-      selectedCountry === player.country
-    ) return;
+    if (!cleanName) {
+      setFeedback("Escribe un nombre para tu perfil.");
+      return;
+    }
+
+    if (selectedAvatar === player.avatar && selectedCountry === player.country && cleanName === player.displayName) return;
 
     try {
       setSaving(true);
-      await Promise.all([
-        updateAvatar(user.uid, selectedAvatar),
-        updateCountry(user.uid, selectedCountry),
-      ]);
+      setFeedback(null);
+      await updatePlayerProfile(user.uid, { displayName: cleanName, avatar: selectedAvatar, country: selectedCountry });
+      if (cleanName !== user.displayName) await updateProfile(user, { displayName: cleanName });
+      setFeedback("Perfil actualizado correctamente.");
+    } catch (error) {
+      console.error(error);
+      setFeedback("No pudimos guardar los cambios. Revisa tu conexión e inténtalo otra vez.");
     } finally {
       setSaving(false);
     }
@@ -93,6 +102,8 @@ export default function ProfilePage() {
           gems={player.gems}
           streak={player.streak}
           ranking={player.ranking}
+          avatar={player.avatar}
+          photoURL={player.photoURL}
         />
 
         <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
@@ -109,17 +120,19 @@ export default function ProfilePage() {
               />
             </div>
 
+            <label className="mt-7 block text-sm font-bold text-slate-200">
+              Nombre visible
+              <input value={displayName} onChange={(event) => setDisplayName(event.target.value)} maxLength={24} className="mt-2 w-full rounded-xl border border-slate-700 bg-slate-950/65 px-4 py-3 font-semibold text-white outline-none transition focus:border-violet-400" />
+            </label>
+
             <button
               onClick={handleSave}
-              disabled={
-                saving ||
-                selectedAvatar === player.avatar &&
-                selectedCountry === player.country
-              }
+              disabled={saving || (selectedAvatar === player.avatar && selectedCountry === player.country && displayName.trim() === player.displayName)}
               className="mt-8 w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3 font-semibold transition hover:from-violet-500 hover:to-purple-600 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {saving ? "Guardando..." : "💾 Guardar cambios"}
             </button>
+            {feedback && <p className="mt-3 text-center text-sm text-slate-300">{feedback}</p>}
           </div>
 
           <div className="mesa-panel rounded-3xl p-6">
@@ -148,10 +161,10 @@ export default function ProfilePage() {
         </div>
 
         <ProfileStats
-          gamesPlayed={0}
-          wins={0}
-          losses={0}
-          trophies={0}
+          gamesPlayed={player.gamesPlayed ?? 0}
+          wins={player.wins ?? 0}
+          losses={player.losses ?? 0}
+          trophies={player.trophies ?? 0}
         />
       </div>
     </AppLayout>

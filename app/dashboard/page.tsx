@@ -48,7 +48,7 @@ export default function DashboardPage() {
   ] : [
     { title: "Dominó", subtitle: "Doble seis o doble nueve", href: "/play/domino", icon: "🎲", visual: "🁣", accent: "from-cyan-500 via-blue-700 to-[#071d50]", ready: true },
     { title: "Cartas españolas", subtitle: "Oros, copas, espadas y bastos", href: "/play/cards", icon: "🃏", visual: "🂡", accent: "from-rose-500 via-red-700 to-[#3b0a18]", ready: true },
-    { title: "Parchís", subtitle: "Próximamente en La Mesa", icon: "🎲", visual: "🎯", accent: "from-amber-400 via-orange-600 to-[#55210b]", ready: false },
+    { title: "Parchís", subtitle: "Tira el dado y llega a la meta", href: "/play/parchis", icon: "🎲", visual: "🎯", accent: "from-amber-400 via-orange-600 to-[#55210b]", ready: true },
   ];
 
   const welcome = isEnglish ? `${country.greeting}! Let the night begin.` : `${country.greeting} ¡Que empiece la reunión!`;

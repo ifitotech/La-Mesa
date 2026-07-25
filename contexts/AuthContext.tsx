@@ -12,6 +12,7 @@ import {
 } from "react";
 
 import { auth } from "@/firebase/config";
+import { ensurePlayerProfile } from "@/services/auth";
 import { setUserPresence } from "@/services/presence";
 
 type AuthContextType = {
@@ -43,6 +44,11 @@ export function AuthProvider({
       (currentUser) => {
         setUser(currentUser);
         setLoading(false);
+        if (currentUser) {
+          void ensurePlayerProfile(currentUser).catch((error) => {
+            console.warn("No se pudo sincronizar el perfil de jugador.", error);
+          });
+        }
       },
       (error) => {
         console.warn("Firebase Auth no está disponible; se usará el modo invitado.", error);

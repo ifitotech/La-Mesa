@@ -1,18 +1,16 @@
 "use client";
 
 import Select from "react-select";
-import ReactCountryFlag from "react-country-flag";
-
-import { countries } from "@/services/countries";
+import { countryProfiles } from "@/lib/country-profile";
 
 type Props = {
   value: string;
   onChange: (country: string) => void;
 };
 
-const options = countries.map((country) => ({
-  value: country.value,
-  label: country.label,
+const options = countryProfiles.map((country) => ({
+  value: country.code,
+  label: `${country.flag} ${country.name}`,
 }));
 
 export default function CountryPicker({
@@ -32,15 +30,6 @@ export default function CountryPicker({
       placeholder="Select your country..."
       formatOptionLabel={(option) => (
         <div className="flex items-center gap-3">
-          <ReactCountryFlag
-            countryCode={option.value}
-            svg
-            style={{
-              width: "1.5em",
-              height: "1.5em",
-            }}
-          />
-
           <span>{option.label}</span>
         </div>
       )}

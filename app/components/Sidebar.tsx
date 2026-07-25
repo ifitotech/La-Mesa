@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import {
   Gamepad2,
   Home,
@@ -12,6 +13,10 @@ import {
   UserRound,
   UsersRound,
 } from "lucide-react";
+
+import Avatar from "@/app/components/Avatar";
+import { useAuthContext } from "@/contexts/AuthContext";
+import { Player, subscribeToPlayer } from "@/services/player";
 
 const menu = [
   { label: "Game Night", detail: "Juegos en la misma casa", href: "/game-night", icon: Gamepad2, color: "from-emerald-500 to-green-700" },
@@ -23,6 +28,14 @@ const menu = [
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const { user } = useAuthContext();
+  const [player, setPlayer] = useState<Player | null>(null);
+  const activePlayer = user ? player : null;
+
+  useEffect(() => {
+    if (!user) return;
+    return subscribeToPlayer(user.uid, setPlayer);
+  }, [user]);
 
   return (
     <aside className="mesa-panel hidden w-[290px] shrink-0 border-y-0 border-l-0 xl:flex xl:min-h-screen xl:flex-col">
@@ -46,18 +59,18 @@ export default function Sidebar() {
         </p>
       </div>
 
-      <div className="mx-5 mt-5 rounded-2xl border border-slate-700/70 bg-slate-950/45 p-4">
+      <Link href="/profile" className="mx-5 mt-5 rounded-2xl border border-slate-700/70 bg-slate-950/45 p-4 transition hover:border-blue-300/50">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-violet-400 bg-gradient-to-br from-violet-500 to-cyan-400 font-bold text-slate-950">P</div>
+          <Avatar avatar={activePlayer?.avatar} photoURL={activePlayer?.photoURL} name={activePlayer?.displayName ?? "Jugador"} size="sm" />
           <div className="min-w-0">
-            <p className="truncate font-bold">Tu Game Night</p>
-            <p className="text-xs text-slate-400">Nivel y recompensas</p>
+            <p className="truncate font-bold">{activePlayer?.displayName ?? "Tu Game Night"}</p>
+            <p className="text-xs text-slate-400">Nivel {activePlayer?.level ?? 1} · Perfil y recompensas</p>
           </div>
         </div>
         <div className="mt-4 h-2 overflow-hidden rounded-full bg-slate-800">
-          <div className="h-full w-2/3 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-400" />
+          <div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-400" style={{ width: `${Math.min(100, Math.max(8, ((activePlayer?.xp ?? 0) % 100) + 8))}%` }} />
         </div>
-      </div>
+      </Link>
 
       <nav className="flex-1 space-y-2 px-5 py-5">
         {menu.map((item) => {

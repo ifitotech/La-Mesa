@@ -1,4 +1,5 @@
 import {
+  User,
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
@@ -14,6 +15,44 @@ import {
 } from "firebase/firestore";
 
 import { auth, db } from "@/firebase/config";
+
+export async function ensurePlayerProfile(user: User) {
+  const userRef = doc(db, "users", user.uid);
+  const existingPlayer = await getDoc(userRef);
+
+  if (!existingPlayer.exists()) {
+    await setDoc(userRef, {
+      uid: user.uid,
+      email: user.email ?? "",
+      displayName: user.displayName ?? user.email?.split("@")[0] ?? "Jugador",
+      photoURL: user.photoURL ?? "",
+      avatar: "avatar_001",
+      country: "CU",
+      level: 1,
+      xp: 0,
+      coins: 1000,
+      gems: 25,
+      streak: 0,
+      ranking: 0,
+      gamesPlayed: 0,
+      wins: 0,
+      losses: 0,
+      trophies: 0,
+      presence: "online",
+      createdAt: serverTimestamp(),
+      lastLogin: serverTimestamp(),
+    });
+    return;
+  }
+
+  await setDoc(userRef, {
+    email: user.email ?? "",
+    displayName: user.displayName ?? existingPlayer.data().displayName ?? "Jugador",
+    photoURL: user.photoURL ?? existingPlayer.data().photoURL ?? "",
+    lastLogin: serverTimestamp(),
+    presence: "online",
+  }, { merge: true });
+}
 
 export async function registerUser(
   email: string,
@@ -41,6 +80,11 @@ export async function registerUser(
     gems: 25,
     streak: 0,
     ranking: 0,
+    avatar: "avatar_001",
+    gamesPlayed: 0,
+    wins: 0,
+    losses: 0,
+    trophies: 0,
     createdAt: serverTimestamp(),
     lastLogin: serverTimestamp(),
   });
@@ -65,35 +109,7 @@ export async function loginWithGoogle() {
   provider.setCustomParameters({ prompt: "select_account" });
 
   const credential = await signInWithPopup(auth, provider);
-  const userRef = doc(db, "users", credential.user.uid);
-  const existingPlayer = await getDoc(userRef);
-
-  if (!existingPlayer.exists()) {
-    await setDoc(userRef, {
-      uid: credential.user.uid,
-      email: credential.user.email ?? "",
-      displayName: credential.user.displayName ?? "Jugador",
-      photoURL: credential.user.photoURL ?? "",
-      avatar: "avatar_001",
-      country: "CU",
-      level: 1,
-      xp: 0,
-      coins: 1000,
-      gems: 25,
-      streak: 0,
-      ranking: 0,
-      presence: "online",
-      createdAt: serverTimestamp(),
-      lastLogin: serverTimestamp(),
-    });
-  } else {
-    await setDoc(userRef, {
-      displayName: credential.user.displayName ?? "Jugador",
-      photoURL: credential.user.photoURL ?? "",
-      lastLogin: serverTimestamp(),
-      presence: "online",
-    }, { merge: true });
-  }
+  await ensurePlayerProfile(credential.user);
 
   return credential;
 }

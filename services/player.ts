@@ -22,6 +22,10 @@ export type Player = {
   streak: number;
   ranking: number;
   onboardingCompleted?: boolean;
+  gamesPlayed?: number;
+  wins?: number;
+  losses?: number;
+  trophies?: number;
 };
 
 export async function getPlayer(uid: string): Promise<Player | null> {
@@ -105,4 +109,11 @@ export async function updateCountry(
     country,
     ...(onboardingCompleted ? { onboardingCompleted: true } : {}),
   });
+}
+
+export async function updatePlayerProfile(
+  uid: string,
+  profile: Pick<Player, "displayName" | "avatar" | "country">
+) {
+  await updateDoc(doc(db, "users", uid), profile);
 }

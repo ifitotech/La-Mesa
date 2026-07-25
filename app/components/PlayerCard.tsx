@@ -2,6 +2,7 @@
 
 import { Coins, Flame, Gem, Trophy } from "lucide-react";
 
+import Avatar from "@/app/components/Avatar";
 import XPBar from "@/app/components/XPBar";
 import { getLevelInfo } from "@/services/level";
 
@@ -14,6 +15,8 @@ type PlayerCardProps = {
   gems: number;
   streak: number;
   ranking: number;
+  avatar?: string;
+  photoURL?: string;
 };
 
 export default function PlayerCard({
@@ -25,6 +28,8 @@ export default function PlayerCard({
   gems,
   streak,
   ranking,
+  avatar,
+  photoURL,
 }: PlayerCardProps) {
   const levelInfo = getLevelInfo(level);
 
@@ -32,9 +37,11 @@ export default function PlayerCard({
     <div className="mesa-panel-gold overflow-hidden rounded-3xl p-6 md:p-7">
       <div className="flex flex-col gap-7 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center gap-6">
-          <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-4xl">
+          <div className="hidden h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-4xl">
             👤
           </div>
+
+          <Avatar avatar={avatar} photoURL={photoURL} name={name} size="lg" />
 
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-amber-300">
