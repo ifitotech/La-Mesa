@@ -10,11 +10,13 @@ import NetworkStatus from "./NetworkStatus";
 
 type AppLayoutProps = {
   children: ReactNode;
+  immersive?: boolean;
   lockViewport?: boolean;
 };
 
 export default function AppLayout({
   children,
+  immersive = false,
   lockViewport = false,
 }: AppLayoutProps) {
   const pathname = usePathname();
@@ -23,13 +25,15 @@ export default function AppLayout({
     <div data-route={pathname} className={`${shouldLockViewport ? "h-dvh overflow-hidden overscroll-none" : "min-h-screen"} bg-transparent text-white`}>
       <NetworkStatus />
       <div className={`flex ${shouldLockViewport ? "h-full min-h-0" : ""}`}>
-        <Sidebar />
+        {!immersive && <Sidebar />}
 
         <div className={`flex flex-1 flex-col ${shouldLockViewport ? "min-h-0" : "min-h-screen"}`}>
-          <Topbar />
+          {!immersive && <Topbar />}
 
           <main
-            className={`flex-1 overflow-x-hidden px-4 pb-24 pt-5 sm:px-6 md:py-7 xl:px-8 xl:pb-8 ${
+            className={`flex-1 overflow-x-hidden ${
+              immersive ? "p-0" : "px-4 pb-24 pt-5 sm:px-6 md:py-7 xl:px-8 xl:pb-8"
+            } ${
               shouldLockViewport
                 ? "min-h-0 overflow-y-auto overscroll-contain touch-pan-y"
                 : ""
@@ -37,7 +41,7 @@ export default function AppLayout({
           >
             {children}
           </main>
-          <MobileNavigation />
+          {!immersive && <MobileNavigation />}
         </div>
       </div>
     </div>

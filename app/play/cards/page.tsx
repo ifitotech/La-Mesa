@@ -122,10 +122,10 @@ export default function BlackjackPage() {
     push: "EMPATE",
   };
 
-  if (!player.length) return <AppLayout lockViewport><div className="p-10 text-center text-amber-200">Barajando la mesa…</div></AppLayout>;
+  if (!player.length) return <AppLayout immersive lockViewport><div className="p-10 text-center text-amber-200">Barajando la mesa…</div></AppLayout>;
 
   return (
-    <AppLayout lockViewport>
+    <AppLayout immersive lockViewport>
       <div className="casino-game-shell">
         <header className="casino-hud">
           <Link href="/games" aria-label="Regresar a juegos"><ArrowLeft /></Link>

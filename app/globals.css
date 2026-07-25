@@ -575,9 +575,11 @@ button:disabled:hover {
   }
 
   .casino-game-shell {
-    width: min(100%, 76rem);
+    width: 100%;
+    height: 100dvh;
     margin: 0 auto;
     color: white;
+    background: #06090d;
   }
 
   .casino-hud {
@@ -622,13 +624,21 @@ button:disabled:hover {
   .casino-blackjack-table {
     position: relative;
     width: 100%;
-    min-height: min(75vh, 49rem);
+    height: calc(100dvh - 3.6rem);
+    min-height: 34rem;
     overflow: hidden;
     border: 1px solid rgb(255 218 124 / 38%);
     border-radius: 2rem;
     background: url("/blackjack-casino-room-v2.png") center / cover no-repeat;
     box-shadow: inset 0 1px rgb(255 255 255 / 20%), 0 35px 80px rgb(0 0 0 / 58%);
     perspective: 1300px;
+  }
+
+  [data-route="/play/cards"] main .casino-blackjack-table {
+    border-color: rgb(255 218 124 / 38%);
+    background-image: url("/blackjack-casino-room-v2.png");
+    background-position: center;
+    background-size: cover;
   }
 
   .casino-rule {
@@ -942,7 +952,8 @@ button:disabled:hover {
   @media (max-width: 640px) {
     .casino-blackjack-table {
       min-height: calc(100dvh - 10.8rem);
-      border-radius: 1.35rem;
+      height: calc(100dvh - 3.6rem);
+      border-radius: 0;
       background-size: auto 100%;
     }
     .casino-rule { top: 5%; width: 75%; }
