@@ -1,10 +1,11 @@
 "use client";
 
-import { ArrowLeft, Dice5, Home, RotateCcw, ShieldCheck, Trophy } from "lucide-react";
+import { ArrowLeft, Dice5, RotateCcw, ShieldCheck, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
+import ParchisBoard from "@/app/components/ParchisBoard";
 import {
   PARCHIS_GOAL,
   ParchisState,
@@ -100,29 +101,14 @@ export default function ParchisPage() {
           <p className="mt-2 text-sm text-slate-300">Saca con cinco, captura rivales y lleva tus cuatro fichas a la meta exacta.</p>
         </section>
 
-        <section className="parchis-table-scene rounded-[2rem] p-4 pt-44 md:p-7 md:pt-56">
+        <section className="parchis-table-scene rounded-[2rem] p-4 md:p-7">
+          <ParchisBoard game={game} legalMoves={legal} onMove={move} />
           <div className="grid gap-3 sm:grid-cols-2">
             {game.players.map((player, playerIndex) => (
               <article key={player.id} className={`rounded-2xl border p-4 ${colors[playerIndex].panel} ${active.id === player.id && !winner ? "ring-2 ring-amber-200/60" : ""}`}>
                 <div className="flex items-center justify-between gap-3">
                   <h2 className={`font-black ${colors[playerIndex].text}`}>{player.name}</h2>
                   <span className="text-xs font-bold text-slate-300">{player.pieces.filter((piece) => piece.steps === PARCHIS_GOAL).length}/4 en meta</span>
-                </div>
-                <div className="mt-4 grid grid-cols-4 gap-2">
-                  {player.pieces.map((piece, pieceIndex) => {
-                    const movable = active.id === player.id && legal.includes(pieceIndex);
-                    return (
-                      <button
-                        key={piece.id}
-                        onClick={() => move(pieceIndex)}
-                        disabled={!movable}
-                        aria-label={`Ficha ${pieceIndex + 1} de ${player.name}`}
-                        className={`relative flex aspect-square items-center justify-center rounded-full border-4 border-white/75 shadow-lg ${colors[playerIndex].token} ${movable ? "animate-pulse ring-4 ring-amber-200/50 hover:scale-105" : "disabled:opacity-65"}`}
-                      >
-                        {piece.steps === -1 ? <Home size={17} /> : piece.steps === PARCHIS_GOAL ? <Trophy size={17} /> : <span className="text-xs font-black">{piece.steps}</span>}
-                      </button>
-                    );
-                  })}
                 </div>
               </article>
             ))}

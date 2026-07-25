@@ -41,13 +41,34 @@ export function boardCell(player: ParchisPlayer, piece: ParchisPiece) {
   return (player.start + piece.steps) % PARCHIS_TRACK_SIZE;
 }
 
+function isBlockedCell(state: ParchisState, cell: number, movingPlayerId: string) {
+  const occupants = state.players.flatMap((player) =>
+    player.pieces
+      .filter((piece) => boardCell(player, piece) === cell)
+      .map(() => player.id),
+  );
+  if (occupants.length < 2) return false;
+  return occupants.some((playerId) => playerId !== movingPlayerId) || new Set(occupants).size === 1;
+}
+
+function crossesBarrier(state: ParchisState, player: ParchisPlayer, piece: ParchisPiece, roll: number) {
+  if (piece.steps >= PARCHIS_TRACK_SIZE) return false;
+  const startStep = piece.steps === -1 ? 0 : piece.steps;
+  const trackDistance = Math.min(roll, PARCHIS_TRACK_SIZE - startStep);
+  for (let offset = piece.steps === -1 ? 0 : 1; offset <= trackDistance; offset += 1) {
+    const cell = (player.start + startStep + offset) % PARCHIS_TRACK_SIZE;
+    if (isBlockedCell(state, cell, player.id)) return true;
+  }
+  return false;
+}
+
 export function legalParchisMoves(state: ParchisState, roll: number) {
   const player = state.players[state.turn];
   if (!player || state.winner) return [];
   return player.pieces.flatMap((piece, index) => {
     if (piece.steps === PARCHIS_GOAL) return [];
-    if (piece.steps === -1) return roll === 5 ? [index] : [];
-    return piece.steps + roll <= PARCHIS_GOAL ? [index] : [];
+    if (piece.steps === -1) return roll === 5 && !crossesBarrier(state, player, piece, roll) ? [index] : [];
+    return piece.steps + roll <= PARCHIS_GOAL && !crossesBarrier(state, player, piece, roll) ? [index] : [];
   });
 }
 

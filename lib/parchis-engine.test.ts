@@ -41,4 +41,12 @@ describe("parchis-engine", () => {
     expect(moveParchisPiece(game, 0, 6)?.extraTurn).toBe(true);
     expect(game.turn).toBe(0);
   });
+
+  it("no permite atravesar una barrera de dos fichas", () => {
+    const game = createParchisGame(["Ana", "Luis"]);
+    game.players[0].pieces[0].steps = 4;
+    game.players[1].pieces[0].steps = 57;
+    game.players[1].pieces[1].steps = 57;
+    expect(legalParchisMoves(game, 3)).not.toContain(0);
+  });
 });
