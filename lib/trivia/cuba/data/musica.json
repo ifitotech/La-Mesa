@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "CU-MU-001",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: género que combina influencias hispanas y africanas?",
+    "options": [
+      "son cubano",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es son cubano: género que combina influencias hispanas y africanas."
+  },
+  {
+    "id": "CU-MU-002",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «son cubano»?",
+    "options": [
+      "género que combina influencias hispanas y africanas",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«son cubano» se relaciona con género que combina influencias hispanas y africanas."
+  },
+  {
+    "id": "CU-MU-003",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: manifestación musical y danzaria de raíces africanas?",
+    "options": [
+      "rumba cubana",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es rumba cubana: manifestación musical y danzaria de raíces africanas."
+  },
+  {
+    "id": "CU-MU-004",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «rumba cubana»?",
+    "options": [
+      "manifestación musical y danzaria de raíces africanas",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«rumba cubana» se relaciona con manifestación musical y danzaria de raíces africanas."
+  },
+  {
+    "id": "CU-MU-005",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: género y baile desarrollado en Cuba?",
+    "options": [
+      "danzón",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es danzón: género y baile desarrollado en Cuba."
+  },
+  {
+    "id": "CU-MU-006",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «danzón»?",
+    "options": [
+      "género y baile desarrollado en Cuba",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«danzón» se relaciona con género y baile desarrollado en Cuba."
+  },
+  {
+    "id": "CU-MU-007",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: género popularizado internacionalmente por músicos cubanos?",
+    "options": [
+      "mambo",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es mambo: género popularizado internacionalmente por músicos cubanos."
+  },
+  {
+    "id": "CU-MU-008",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «mambo»?",
+    "options": [
+      "género popularizado internacionalmente por músicos cubanos",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«mambo» se relaciona con género popularizado internacionalmente por músicos cubanos."
+  },
+  {
+    "id": "CU-MU-009",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: género creado por Enrique Jorrín?",
+    "options": [
+      "chachachá",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es chachachá: género creado por Enrique Jorrín."
+  },
+  {
+    "id": "CU-MU-010",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «chachachá»?",
+    "options": [
+      "género creado por Enrique Jorrín",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«chachachá» se relaciona con género creado por Enrique Jorrín."
+  },
+  {
+    "id": "CU-MU-011",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: género romántico con gran tradición en Cuba?",
+    "options": [
+      "bolero cubano",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es bolero cubano: género romántico con gran tradición en Cuba."
+  },
+  {
+    "id": "CU-MU-012",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «bolero cubano»?",
+    "options": [
+      "género romántico con gran tradición en Cuba",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«bolero cubano» se relaciona con género romántico con gran tradición en Cuba."
+  },
+  {
+    "id": "CU-MU-013",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: movimiento asociado a Silvio Rodríguez y Pablo Milanés?",
+    "options": [
+      "Nueva Trova",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Nueva Trova: movimiento asociado a Silvio Rodríguez y Pablo Milanés."
+  },
+  {
+    "id": "CU-MU-014",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Nueva Trova»?",
+    "options": [
+      "movimiento asociado a Silvio Rodríguez y Pablo Milanés",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Nueva Trova» se relaciona con movimiento asociado a Silvio Rodríguez y Pablo Milanés."
+  },
+  {
+    "id": "CU-MU-015",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: estilo bailable cubano moderno?",
+    "options": [
+      "timba",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es timba: estilo bailable cubano moderno."
+  },
+  {
+    "id": "CU-MU-016",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «timba»?",
+    "options": [
+      "estilo bailable cubano moderno",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«timba» se relaciona con estilo bailable cubano moderno."
+  },
+  {
+    "id": "CU-MU-017",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: uno de los estilos de la rumba cubana?",
+    "options": [
+      "guaguancó",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es guaguancó: uno de los estilos de la rumba cubana."
+  },
+  {
+    "id": "CU-MU-018",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «guaguancó»?",
+    "options": [
+      "uno de los estilos de la rumba cubana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«guaguancó» se relaciona con uno de los estilos de la rumba cubana."
+  },
+  {
+    "id": "CU-MU-019",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: expresión musical campesina?",
+    "options": [
+      "punto cubano",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es punto cubano: expresión musical campesina."
+  },
+  {
+    "id": "CU-MU-020",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «punto cubano»?",
+    "options": [
+      "expresión musical campesina",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«punto cubano» se relaciona con expresión musical campesina."
+  },
+  {
+    "id": "CU-MU-021",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante conocido como el Bárbaro del Ritmo?",
+    "options": [
+      "Benny Moré",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Benny Moré: cantante conocido como el Bárbaro del Ritmo."
+  },
+  {
+    "id": "CU-MU-022",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Benny Moré»?",
+    "options": [
+      "cantante conocido como el Bárbaro del Ritmo",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Benny Moré» se relaciona con cantante conocido como el Bárbaro del Ritmo."
+  },
+  {
+    "id": "CU-MU-023",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante conocida como la Reina de la Salsa?",
+    "options": [
+      "Celia Cruz",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Celia Cruz: cantante conocida como la Reina de la Salsa."
+  },
+  {
+    "id": "CU-MU-024",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Celia Cruz»?",
+    "options": [
+      "cantante conocida como la Reina de la Salsa",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Celia Cruz» se relaciona con cantante conocida como la Reina de la Salsa."
+  },
+  {
+    "id": "CU-MU-025",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: músico asociado a Buena Vista Social Club?",
+    "options": [
+      "Compay Segundo",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Compay Segundo: músico asociado a Buena Vista Social Club."
+  },
+  {
+    "id": "CU-MU-026",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Compay Segundo»?",
+    "options": [
+      "músico asociado a Buena Vista Social Club",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Compay Segundo» se relaciona con músico asociado a Buena Vista Social Club."
+  },
+  {
+    "id": "CU-MU-027",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante asociado a Buena Vista Social Club?",
+    "options": [
+      "Ibrahim Ferrer",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Ibrahim Ferrer: cantante asociado a Buena Vista Social Club."
+  },
+  {
+    "id": "CU-MU-028",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Ibrahim Ferrer»?",
+    "options": [
+      "cantante asociado a Buena Vista Social Club",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Ibrahim Ferrer» se relaciona con cantante asociado a Buena Vista Social Club."
+  },
+  {
+    "id": "CU-MU-029",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante cubana de larga trayectoria internacional?",
+    "options": [
+      "Omara Portuondo",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Omara Portuondo: cantante cubana de larga trayectoria internacional."
+  },
+  {
+    "id": "CU-MU-030",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Omara Portuondo»?",
+    "options": [
+      "cantante cubana de larga trayectoria internacional",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Omara Portuondo» se relaciona con cantante cubana de larga trayectoria internacional."
+  },
+  {
+    "id": "CU-MU-031",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: pianista, compositor y fundador de Irakere?",
+    "options": [
+      "Chucho Valdés",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Chucho Valdés: pianista, compositor y fundador de Irakere."
+  },
+  {
+    "id": "CU-MU-032",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Chucho Valdés»?",
+    "options": [
+      "pianista, compositor y fundador de Irakere",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Chucho Valdés» se relaciona con pianista, compositor y fundador de Irakere."
+  },
+  {
+    "id": "CU-MU-033",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: pianista y compositor cubano?",
+    "options": [
+      "Bebo Valdés",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Bebo Valdés: pianista y compositor cubano."
+  },
+  {
+    "id": "CU-MU-034",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Bebo Valdés»?",
+    "options": [
+      "pianista y compositor cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Bebo Valdés» se relaciona con pianista y compositor cubano."
+  },
+  {
+    "id": "CU-MU-035",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: compositor de La comparsa y Malagueña?",
+    "options": [
+      "Ernesto Lecuona",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Ernesto Lecuona: compositor de La comparsa y Malagueña."
+  },
+  {
+    "id": "CU-MU-036",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Ernesto Lecuona»?",
+    "options": [
+      "compositor de La comparsa y Malagueña",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Ernesto Lecuona» se relaciona con compositor de La comparsa y Malagueña."
+  },
+  {
+    "id": "CU-MU-037",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantautor cubano de la Nueva Trova?",
+    "options": [
+      "Silvio Rodríguez",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Silvio Rodríguez: cantautor cubano de la Nueva Trova."
+  },
+  {
+    "id": "CU-MU-038",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Silvio Rodríguez»?",
+    "options": [
+      "cantautor cubano de la Nueva Trova",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Silvio Rodríguez» se relaciona con cantautor cubano de la Nueva Trova."
+  },
+  {
+    "id": "CU-MU-039",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantautor cubano de la Nueva Trova?",
+    "options": [
+      "Pablo Milanés",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Pablo Milanés: cantautor cubano de la Nueva Trova."
+  },
+  {
+    "id": "CU-MU-040",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Pablo Milanés»?",
+    "options": [
+      "cantautor cubano de la Nueva Trova",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Pablo Milanés» se relaciona con cantautor cubano de la Nueva Trova."
+  },
+  {
+    "id": "CU-MU-041",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: fundador de Los Van Van?",
+    "options": [
+      "Juan Formell",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Juan Formell: fundador de Los Van Van."
+  },
+  {
+    "id": "CU-MU-042",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Juan Formell»?",
+    "options": [
+      "fundador de Los Van Van",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Juan Formell» se relaciona con fundador de Los Van Van."
+  },
+  {
+    "id": "CU-MU-043",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: agrupación clave en la música bailable cubana?",
+    "options": [
+      "Los Van Van",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Los Van Van: agrupación clave en la música bailable cubana."
+  },
+  {
+    "id": "CU-MU-044",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Los Van Van»?",
+    "options": [
+      "agrupación clave en la música bailable cubana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Los Van Van» se relaciona con agrupación clave en la música bailable cubana."
+  },
+  {
+    "id": "CU-MU-045",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: grupo que fusionó jazz y música afrocubana?",
+    "options": [
+      "Irakere",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Irakere: grupo que fusionó jazz y música afrocubana."
+  },
+  {
+    "id": "CU-MU-046",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Irakere»?",
+    "options": [
+      "grupo que fusionó jazz y música afrocubana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Irakere» se relaciona con grupo que fusionó jazz y música afrocubana."
+  },
+  {
+    "id": "CU-MU-047",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: proyecto que difundió música tradicional cubana?",
+    "options": [
+      "Buena Vista Social Club",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Buena Vista Social Club: proyecto que difundió música tradicional cubana."
+  },
+  {
+    "id": "CU-MU-048",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Buena Vista Social Club»?",
+    "options": [
+      "proyecto que difundió música tradicional cubana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Buena Vista Social Club» se relaciona con proyecto que difundió música tradicional cubana."
+  },
+  {
+    "id": "CU-MU-049",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: charanga cubana de larga trayectoria?",
+    "options": [
+      "Orquesta Aragón",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Orquesta Aragón: charanga cubana de larga trayectoria."
+  },
+  {
+    "id": "CU-MU-050",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Orquesta Aragón»?",
+    "options": [
+      "charanga cubana de larga trayectoria",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Orquesta Aragón» se relaciona con charanga cubana de larga trayectoria."
+  },
+  {
+    "id": "CU-MU-051",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: agrupación fundada por Ignacio Piñeiro?",
+    "options": [
+      "Septeto Nacional",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Septeto Nacional: agrupación fundada por Ignacio Piñeiro."
+  },
+  {
+    "id": "CU-MU-052",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Septeto Nacional»?",
+    "options": [
+      "agrupación fundada por Ignacio Piñeiro",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Septeto Nacional» se relaciona con agrupación fundada por Ignacio Piñeiro."
+  },
+  {
+    "id": "CU-MU-053",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: grupo fundamental en la historia del son?",
+    "options": [
+      "Trío Matamoros",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Trío Matamoros: grupo fundamental en la historia del son."
+  },
+  {
+    "id": "CU-MU-054",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Trío Matamoros»?",
+    "options": [
+      "grupo fundamental en la historia del son",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Trío Matamoros» se relaciona con grupo fundamental en la historia del son."
+  },
+  {
+    "id": "CU-MU-055",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: trovador cubano?",
+    "options": [
+      "Sindo Garay",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Sindo Garay: trovador cubano."
+  },
+  {
+    "id": "CU-MU-056",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Sindo Garay»?",
+    "options": [
+      "trovador cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Sindo Garay» se relaciona con trovador cubano."
+  },
+  {
+    "id": "CU-MU-057",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: trovadora cubana?",
+    "options": [
+      "María Teresa Vera",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es María Teresa Vera: trovadora cubana."
+  },
+  {
+    "id": "CU-MU-058",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «María Teresa Vera»?",
+    "options": [
+      "trovadora cubana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«María Teresa Vera» se relaciona con trovadora cubana."
+  },
+  {
+    "id": "CU-MU-059",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: pianista y cantante cubano?",
+    "options": [
+      "Bola de Nieve",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Bola de Nieve: pianista y cantante cubano."
+  },
+  {
+    "id": "CU-MU-060",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Bola de Nieve»?",
+    "options": [
+      "pianista y cantante cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Bola de Nieve» se relaciona con pianista y cantante cubano."
+  },
+  {
+    "id": "CU-MU-061",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: músico asociado a la popularización del mambo?",
+    "options": [
+      "Pérez Prado",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Pérez Prado: músico asociado a la popularización del mambo."
+  },
+  {
+    "id": "CU-MU-062",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Pérez Prado»?",
+    "options": [
+      "músico asociado a la popularización del mambo",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Pérez Prado» se relaciona con músico asociado a la popularización del mambo."
+  },
+  {
+    "id": "CU-MU-063",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: violinista y compositor creador del chachachá?",
+    "options": [
+      "Enrique Jorrín",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Enrique Jorrín: violinista y compositor creador del chachachá."
+  },
+  {
+    "id": "CU-MU-064",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Enrique Jorrín»?",
+    "options": [
+      "violinista y compositor creador del chachachá",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Enrique Jorrín» se relaciona con violinista y compositor creador del chachachá."
+  },
+  {
+    "id": "CU-MU-065",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: compositor y músico del Trío Matamoros?",
+    "options": [
+      "Miguel Matamoros",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Miguel Matamoros: compositor y músico del Trío Matamoros."
+  },
+  {
+    "id": "CU-MU-066",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Miguel Matamoros»?",
+    "options": [
+      "compositor y músico del Trío Matamoros",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Miguel Matamoros» se relaciona con compositor y músico del Trío Matamoros."
+  },
+  {
+    "id": "CU-MU-067",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: músico influyente en el desarrollo del son montuno?",
+    "options": [
+      "Arsenio Rodríguez",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Arsenio Rodríguez: músico influyente en el desarrollo del son montuno."
+  },
+  {
+    "id": "CU-MU-068",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Arsenio Rodríguez»?",
+    "options": [
+      "músico influyente en el desarrollo del son montuno",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Arsenio Rodríguez» se relaciona con músico influyente en el desarrollo del son montuno."
+  },
+  {
+    "id": "CU-MU-069",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: compositor asociado a la guaracha?",
+    "options": [
+      "Ñico Saquito",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Ñico Saquito: compositor asociado a la guaracha."
+  },
+  {
+    "id": "CU-MU-070",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Ñico Saquito»?",
+    "options": [
+      "compositor asociado a la guaracha",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Ñico Saquito» se relaciona con compositor asociado a la guaracha."
+  },
+  {
+    "id": "CU-MU-071",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante cubana de gran intensidad interpretativa?",
+    "options": [
+      "La Lupe",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es La Lupe: cantante cubana de gran intensidad interpretativa."
+  },
+  {
+    "id": "CU-MU-072",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «La Lupe»?",
+    "options": [
+      "cantante cubana de gran intensidad interpretativa",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«La Lupe» se relaciona con cantante cubana de gran intensidad interpretativa."
+  },
+  {
+    "id": "CU-MU-073",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante cubanoestadounidense de fama internacional?",
+    "options": [
+      "Gloria Estefan",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Gloria Estefan: cantante cubanoestadounidense de fama internacional."
+  },
+  {
+    "id": "CU-MU-074",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Gloria Estefan»?",
+    "options": [
+      "cantante cubanoestadounidense de fama internacional",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Gloria Estefan» se relaciona con cantante cubanoestadounidense de fama internacional."
+  },
+  {
+    "id": "CU-MU-075",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante y compositor cubano?",
+    "options": [
+      "Willy Chirino",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Willy Chirino: cantante y compositor cubano."
+  },
+  {
+    "id": "CU-MU-076",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Willy Chirino»?",
+    "options": [
+      "cantante y compositor cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Willy Chirino» se relaciona con cantante y compositor cubano."
+  },
+  {
+    "id": "CU-MU-077",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: trompetista y pianista cubano?",
+    "options": [
+      "Arturo Sandoval",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Arturo Sandoval: trompetista y pianista cubano."
+  },
+  {
+    "id": "CU-MU-078",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Arturo Sandoval»?",
+    "options": [
+      "trompetista y pianista cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Arturo Sandoval» se relaciona con trompetista y pianista cubano."
+  },
+  {
+    "id": "CU-MU-079",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: saxofonista y clarinetista cubano?",
+    "options": [
+      "Paquito D'Rivera",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Paquito D'Rivera: saxofonista y clarinetista cubano."
+  },
+  {
+    "id": "CU-MU-080",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Paquito D'Rivera»?",
+    "options": [
+      "saxofonista y clarinetista cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Paquito D'Rivera» se relaciona con saxofonista y clarinetista cubano."
+  },
+  {
+    "id": "CU-MU-081",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: pianista cubano de jazz?",
+    "options": [
+      "Gonzalo Rubalcaba",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Gonzalo Rubalcaba: pianista cubano de jazz."
+  },
+  {
+    "id": "CU-MU-082",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Gonzalo Rubalcaba»?",
+    "options": [
+      "pianista cubano de jazz",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Gonzalo Rubalcaba» se relaciona con pianista cubano de jazz."
+  },
+  {
+    "id": "CU-MU-083",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: grupo cubano de hip hop?",
+    "options": [
+      "Orishas",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Orishas: grupo cubano de hip hop."
+  },
+  {
+    "id": "CU-MU-084",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Orishas»?",
+    "options": [
+      "grupo cubano de hip hop",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Orishas» se relaciona con grupo cubano de hip hop."
+  },
+  {
+    "id": "CU-MU-085",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: dúo cubano de música urbana?",
+    "options": [
+      "Gente de Zona",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Gente de Zona: dúo cubano de música urbana."
+  },
+  {
+    "id": "CU-MU-086",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Gente de Zona»?",
+    "options": [
+      "dúo cubano de música urbana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Gente de Zona» se relaciona con dúo cubano de música urbana."
+  },
+  {
+    "id": "CU-MU-087",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantautor y productor cubano?",
+    "options": [
+      "Descemer Bueno",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Descemer Bueno: cantautor y productor cubano."
+  },
+  {
+    "id": "CU-MU-088",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Descemer Bueno»?",
+    "options": [
+      "cantautor y productor cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Descemer Bueno» se relaciona con cantautor y productor cubano."
+  },
+  {
+    "id": "CU-MU-089",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantautor cubano?",
+    "options": [
+      "Carlos Varela",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Carlos Varela: cantautor cubano."
+  },
+  {
+    "id": "CU-MU-090",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Carlos Varela»?",
+    "options": [
+      "cantautor cubano",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Carlos Varela» se relaciona con cantautor cubano."
+  },
+  {
+    "id": "CU-MU-091",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantautora cubana?",
+    "options": [
+      "Liuba María Hevia",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Liuba María Hevia: cantautora cubana."
+  },
+  {
+    "id": "CU-MU-092",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Liuba María Hevia»?",
+    "options": [
+      "cantautora cubana",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Liuba María Hevia» se relaciona con cantautora cubana."
+  },
+  {
+    "id": "CU-MU-093",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: cantante cubano de salsa y timba?",
+    "options": [
+      "Isaac Delgado",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Isaac Delgado: cantante cubano de salsa y timba."
+  },
+  {
+    "id": "CU-MU-094",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Isaac Delgado»?",
+    "options": [
+      "cantante cubano de salsa y timba",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Isaac Delgado» se relaciona con cantante cubano de salsa y timba."
+  },
+  {
+    "id": "CU-MU-095",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: músico conocido como el Caballero del Son?",
+    "options": [
+      "Adalberto Álvarez",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Adalberto Álvarez: músico conocido como el Caballero del Son."
+  },
+  {
+    "id": "CU-MU-096",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Adalberto Álvarez»?",
+    "options": [
+      "músico conocido como el Caballero del Son",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Adalberto Álvarez» se relaciona con músico conocido como el Caballero del Son."
+  },
+  {
+    "id": "CU-MU-097",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: agrupación vinculada al desarrollo de la timba?",
+    "options": [
+      "NG La Banda",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es NG La Banda: agrupación vinculada al desarrollo de la timba."
+  },
+  {
+    "id": "CU-MU-098",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «NG La Banda»?",
+    "options": [
+      "agrupación vinculada al desarrollo de la timba",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«NG La Banda» se relaciona con agrupación vinculada al desarrollo de la timba."
+  },
+  {
+    "id": "CU-MU-099",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción de la música cubana: agrupación cubana de música bailable?",
+    "options": [
+      "Charanga Habanera",
+      "una liga deportiva",
+      "una montaña",
+      "un plato típico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Charanga Habanera: agrupación cubana de música bailable."
+  },
+  {
+    "id": "CU-MU-100",
+    "country": "CU",
+    "category": "musica",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Charanga Habanera»?",
+    "options": [
+      "agrupación cubana de música bailable",
+      "un campeonato de automovilismo",
+      "una especie marina",
+      "un sistema político europeo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Charanga Habanera» se relaciona con agrupación cubana de música bailable."
+  }
+]

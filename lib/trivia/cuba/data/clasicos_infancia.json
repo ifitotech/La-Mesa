@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "CU-CI-001",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la peregrina» en la infancia cubana?",
+    "options": [
+      "un juego de saltos sobre casillas dibujadas en el suelo",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la peregrina» se recuerda como un juego de saltos sobre casillas dibujadas en el suelo."
+  },
+  {
+    "id": "CU-CI-002",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la peregrina»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: un juego de saltos sobre casillas dibujadas en el suelo."
+  },
+  {
+    "id": "CU-CI-003",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el pon» en la infancia cubana?",
+    "options": [
+      "un juego infantil de persecución parecido a la lleva",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el pon» se recuerda como un juego infantil de persecución parecido a la lleva."
+  },
+  {
+    "id": "CU-CI-004",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el pon»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: un juego infantil de persecución parecido a la lleva."
+  },
+  {
+    "id": "CU-CI-005",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «las bolas» en la infancia cubana?",
+    "options": [
+      "canicas usadas para juegos de puntería",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«las bolas» se recuerda como canicas usadas para juegos de puntería."
+  },
+  {
+    "id": "CU-CI-006",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «las bolas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: canicas usadas para juegos de puntería."
+  },
+  {
+    "id": "CU-CI-007",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la suiza» en la infancia cubana?",
+    "options": [
+      "una cuerda para saltar",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la suiza» se recuerda como una cuerda para saltar."
+  },
+  {
+    "id": "CU-CI-008",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la suiza»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: una cuerda para saltar."
+  },
+  {
+    "id": "CU-CI-009",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los papalotes» en la infancia cubana?",
+    "options": [
+      "cometas que se vuelan con hilo",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los papalotes» se recuerda como cometas que se vuelan con hilo."
+  },
+  {
+    "id": "CU-CI-010",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los papalotes»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: cometas que se vuelan con hilo."
+  },
+  {
+    "id": "CU-CI-011",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el trompo» en la infancia cubana?",
+    "options": [
+      "un juguete que gira sobre una punta",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el trompo» se recuerda como un juguete que gira sobre una punta."
+  },
+  {
+    "id": "CU-CI-012",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el trompo»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: un juguete que gira sobre una punta."
+  },
+  {
+    "id": "CU-CI-013",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el escondido» en la infancia cubana?",
+    "options": [
+      "juego en que una persona busca a las demás",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el escondido» se recuerda como juego en que una persona busca a las demás."
+  },
+  {
+    "id": "CU-CI-014",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el escondido»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego en que una persona busca a las demás."
+  },
+  {
+    "id": "CU-CI-015",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la quimbumbia» en la infancia cubana?",
+    "options": [
+      "juego tradicional con un palito pequeño golpeado por otro",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la quimbumbia» se recuerda como juego tradicional con un palito pequeño golpeado por otro."
+  },
+  {
+    "id": "CU-CI-016",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la quimbumbia»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego tradicional con un palito pequeño golpeado por otro."
+  },
+  {
+    "id": "CU-CI-017",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la placa» en la infancia cubana?",
+    "options": [
+      "un juego de calle con pelota y bases improvisadas",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la placa» se recuerda como un juego de calle con pelota y bases improvisadas."
+  },
+  {
+    "id": "CU-CI-018",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la placa»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: un juego de calle con pelota y bases improvisadas."
+  },
+  {
+    "id": "CU-CI-019",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el cuatro esquinas» en la infancia cubana?",
+    "options": [
+      "juego de cambio rápido entre cuatro posiciones",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el cuatro esquinas» se recuerda como juego de cambio rápido entre cuatro posiciones."
+  },
+  {
+    "id": "CU-CI-020",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el cuatro esquinas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de cambio rápido entre cuatro posiciones."
+  },
+  {
+    "id": "CU-CI-021",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el arroz con leche» en la infancia cubana?",
+    "options": [
+      "canción y ronda infantil",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el arroz con leche» se recuerda como canción y ronda infantil."
+  },
+  {
+    "id": "CU-CI-022",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el arroz con leche»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: canción y ronda infantil."
+  },
+  {
+    "id": "CU-CI-023",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la señorita Ana» en la infancia cubana?",
+    "options": [
+      "juego o canción de ronda tradicional",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la señorita Ana» se recuerda como juego o canción de ronda tradicional."
+  },
+  {
+    "id": "CU-CI-024",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la señorita Ana»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego o canción de ronda tradicional."
+  },
+  {
+    "id": "CU-CI-025",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la rueda rueda» en la infancia cubana?",
+    "options": [
+      "ronda infantil cantada",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la rueda rueda» se recuerda como ronda infantil cantada."
+  },
+  {
+    "id": "CU-CI-026",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la rueda rueda»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: ronda infantil cantada."
+  },
+  {
+    "id": "CU-CI-027",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el patio de mi casa» en la infancia cubana?",
+    "options": [
+      "canción usada en juegos de corro",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el patio de mi casa» se recuerda como canción usada en juegos de corro."
+  },
+  {
+    "id": "CU-CI-028",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el patio de mi casa»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: canción usada en juegos de corro."
+  },
+  {
+    "id": "CU-CI-029",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los yaquis» en la infancia cubana?",
+    "options": [
+      "juego de destreza con piezas pequeñas y una pelota",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los yaquis» se recuerda como juego de destreza con piezas pequeñas y una pelota."
+  },
+  {
+    "id": "CU-CI-030",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los yaquis»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de destreza con piezas pequeñas y una pelota."
+  },
+  {
+    "id": "CU-CI-031",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el parchís» en la infancia cubana?",
+    "options": [
+      "juego de mesa de recorrido con fichas",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el parchís» se recuerda como juego de mesa de recorrido con fichas."
+  },
+  {
+    "id": "CU-CI-032",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el parchís»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de mesa de recorrido con fichas."
+  },
+  {
+    "id": "CU-CI-033",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «las damas» en la infancia cubana?",
+    "options": [
+      "juego de tablero con fichas diagonales",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«las damas» se recuerda como juego de tablero con fichas diagonales."
+  },
+  {
+    "id": "CU-CI-034",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «las damas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de tablero con fichas diagonales."
+  },
+  {
+    "id": "CU-CI-035",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el dominó» en la infancia cubana?",
+    "options": [
+      "juego de fichas muy popular en reuniones familiares",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el dominó» se recuerda como juego de fichas muy popular en reuniones familiares."
+  },
+  {
+    "id": "CU-CI-036",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el dominó»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de fichas muy popular en reuniones familiares."
+  },
+  {
+    "id": "CU-CI-037",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los muñequitos rusos» en la infancia cubana?",
+    "options": [
+      "dibujos animados soviéticos vistos por generaciones en Cuba",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los muñequitos rusos» se recuerda como dibujos animados soviéticos vistos por generaciones en Cuba."
+  },
+  {
+    "id": "CU-CI-038",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los muñequitos rusos»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: dibujos animados soviéticos vistos por generaciones en Cuba."
+  },
+  {
+    "id": "CU-CI-039",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «Elpidio Valdés» en la infancia cubana?",
+    "options": [
+      "personaje animado cubano asociado a las luchas independentistas",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Elpidio Valdés» se recuerda como personaje animado cubano asociado a las luchas independentistas."
+  },
+  {
+    "id": "CU-CI-040",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «Elpidio Valdés»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: personaje animado cubano asociado a las luchas independentistas."
+  },
+  {
+    "id": "CU-CI-041",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «Vampiros en La Habana» en la infancia cubana?",
+    "options": [
+      "película animada cubana muy conocida",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Vampiros en La Habana» se recuerda como película animada cubana muy conocida."
+  },
+  {
+    "id": "CU-CI-042",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «Vampiros en La Habana»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: película animada cubana muy conocida."
+  },
+  {
+    "id": "CU-CI-043",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los muñequitos de las cinco» en la infancia cubana?",
+    "options": [
+      "franja televisiva infantil recordada por muchas generaciones",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los muñequitos de las cinco» se recuerda como franja televisiva infantil recordada por muchas generaciones."
+  },
+  {
+    "id": "CU-CI-044",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los muñequitos de las cinco»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: franja televisiva infantil recordada por muchas generaciones."
+  },
+  {
+    "id": "CU-CI-045",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la merienda escolar» en la infancia cubana?",
+    "options": [
+      "comida ligera llevada o recibida durante la escuela",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la merienda escolar» se recuerda como comida ligera llevada o recibida durante la escuela."
+  },
+  {
+    "id": "CU-CI-046",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la merienda escolar»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: comida ligera llevada o recibida durante la escuela."
+  },
+  {
+    "id": "CU-CI-047",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la libreta forrada» en la infancia cubana?",
+    "options": [
+      "cuaderno escolar protegido con papel o plástico",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la libreta forrada» se recuerda como cuaderno escolar protegido con papel o plástico."
+  },
+  {
+    "id": "CU-CI-048",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la libreta forrada»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: cuaderno escolar protegido con papel o plástico."
+  },
+  {
+    "id": "CU-CI-049",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "easy",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el uniforme escolar» en la infancia cubana?",
+    "options": [
+      "ropa reglamentaria usada para asistir a clases",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el uniforme escolar» se recuerda como ropa reglamentaria usada para asistir a clases."
+  },
+  {
+    "id": "CU-CI-050",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el uniforme escolar»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: ropa reglamentaria usada para asistir a clases."
+  },
+  {
+    "id": "CU-CI-051",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la pañoleta» en la infancia cubana?",
+    "options": [
+      "prenda asociada a la Organización de Pioneros",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la pañoleta» se recuerda como prenda asociada a la Organización de Pioneros."
+  },
+  {
+    "id": "CU-CI-052",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la pañoleta»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: prenda asociada a la Organización de Pioneros."
+  },
+  {
+    "id": "CU-CI-053",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el matutino» en la infancia cubana?",
+    "options": [
+      "actividad escolar al inicio de la jornada",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el matutino» se recuerda como actividad escolar al inicio de la jornada."
+  },
+  {
+    "id": "CU-CI-054",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el matutino»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: actividad escolar al inicio de la jornada."
+  },
+  {
+    "id": "CU-CI-055",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la guardia pioneril» en la infancia cubana?",
+    "options": [
+      "tarea escolar de vigilancia o responsabilidad",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la guardia pioneril» se recuerda como tarea escolar de vigilancia o responsabilidad."
+  },
+  {
+    "id": "CU-CI-056",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la guardia pioneril»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: tarea escolar de vigilancia o responsabilidad."
+  },
+  {
+    "id": "CU-CI-057",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el círculo infantil» en la infancia cubana?",
+    "options": [
+      "institución de atención y educación preescolar",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el círculo infantil» se recuerda como institución de atención y educación preescolar."
+  },
+  {
+    "id": "CU-CI-058",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el círculo infantil»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: institución de atención y educación preescolar."
+  },
+  {
+    "id": "CU-CI-059",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el campismo» en la infancia cubana?",
+    "options": [
+      "salida recreativa a instalaciones de naturaleza",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el campismo» se recuerda como salida recreativa a instalaciones de naturaleza."
+  },
+  {
+    "id": "CU-CI-060",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el campismo»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: salida recreativa a instalaciones de naturaleza."
+  },
+  {
+    "id": "CU-CI-061",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la caldosa» en la infancia cubana?",
+    "options": [
+      "comida colectiva típica de celebraciones y actividades",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la caldosa» se recuerda como comida colectiva típica de celebraciones y actividades."
+  },
+  {
+    "id": "CU-CI-062",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la caldosa»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: comida colectiva típica de celebraciones y actividades."
+  },
+  {
+    "id": "CU-CI-063",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el granizado» en la infancia cubana?",
+    "options": [
+      "bebida fría de hielo raspado y saborizante",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el granizado» se recuerda como bebida fría de hielo raspado y saborizante."
+  },
+  {
+    "id": "CU-CI-064",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el granizado»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: bebida fría de hielo raspado y saborizante."
+  },
+  {
+    "id": "CU-CI-065",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el bocadito» en la infancia cubana?",
+    "options": [
+      "pequeño sándwich común en fiestas",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el bocadito» se recuerda como pequeño sándwich común en fiestas."
+  },
+  {
+    "id": "CU-CI-066",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el bocadito»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: pequeño sándwich común en fiestas."
+  },
+  {
+    "id": "CU-CI-067",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la croqueta» en la infancia cubana?",
+    "options": [
+      "fritura muy presente en meriendas y celebraciones",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la croqueta» se recuerda como fritura muy presente en meriendas y celebraciones."
+  },
+  {
+    "id": "CU-CI-068",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la croqueta»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: fritura muy presente en meriendas y celebraciones."
+  },
+  {
+    "id": "CU-CI-069",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el refresco de bolsita» en la infancia cubana?",
+    "options": [
+      "bebida congelada o servida en bolsa",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el refresco de bolsita» se recuerda como bebida congelada o servida en bolsa."
+  },
+  {
+    "id": "CU-CI-070",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el refresco de bolsita»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: bebida congelada o servida en bolsa."
+  },
+  {
+    "id": "CU-CI-071",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la pelota de trapo» en la infancia cubana?",
+    "options": [
+      "pelota improvisada con telas",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la pelota de trapo» se recuerda como pelota improvisada con telas."
+  },
+  {
+    "id": "CU-CI-072",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la pelota de trapo»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: pelota improvisada con telas."
+  },
+  {
+    "id": "CU-CI-073",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los carriolas» en la infancia cubana?",
+    "options": [
+      "vehículos artesanales para deslizarse o competir",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los carriolas» se recuerda como vehículos artesanales para deslizarse o competir."
+  },
+  {
+    "id": "CU-CI-074",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los carriolas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: vehículos artesanales para deslizarse o competir."
+  },
+  {
+    "id": "CU-CI-075",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la chivichana» en la infancia cubana?",
+    "options": [
+      "tabla con ruedas usada para bajar pendientes",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la chivichana» se recuerda como tabla con ruedas usada para bajar pendientes."
+  },
+  {
+    "id": "CU-CI-076",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la chivichana»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: tabla con ruedas usada para bajar pendientes."
+  },
+  {
+    "id": "CU-CI-077",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los tirapiedras» en la infancia cubana?",
+    "options": [
+      "hondas caseras usadas como juguete",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los tirapiedras» se recuerda como hondas caseras usadas como juguete."
+  },
+  {
+    "id": "CU-CI-078",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los tirapiedras»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: hondas caseras usadas como juguete."
+  },
+  {
+    "id": "CU-CI-079",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «las postalitas» en la infancia cubana?",
+    "options": [
+      "tarjetas coleccionables intercambiadas entre niños",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«las postalitas» se recuerda como tarjetas coleccionables intercambiadas entre niños."
+  },
+  {
+    "id": "CU-CI-080",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «las postalitas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: tarjetas coleccionables intercambiadas entre niños."
+  },
+  {
+    "id": "CU-CI-081",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «los álbumes de postalitas» en la infancia cubana?",
+    "options": [
+      "cuadernos para completar colecciones",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«los álbumes de postalitas» se recuerda como cuadernos para completar colecciones."
+  },
+  {
+    "id": "CU-CI-082",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «los álbumes de postalitas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: cuadernos para completar colecciones."
+  },
+  {
+    "id": "CU-CI-083",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el teléfono de vasos» en la infancia cubana?",
+    "options": [
+      "juguete hecho con vasos y una cuerda",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el teléfono de vasos» se recuerda como juguete hecho con vasos y una cuerda."
+  },
+  {
+    "id": "CU-CI-084",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el teléfono de vasos»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juguete hecho con vasos y una cuerda."
+  },
+  {
+    "id": "CU-CI-085",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «las casitas con sábanas» en la infancia cubana?",
+    "options": [
+      "refugios infantiles improvisados dentro de casa",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«las casitas con sábanas» se recuerda como refugios infantiles improvisados dentro de casa."
+  },
+  {
+    "id": "CU-CI-086",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «las casitas con sábanas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: refugios infantiles improvisados dentro de casa."
+  },
+  {
+    "id": "CU-CI-087",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el juego de las sillas» en la infancia cubana?",
+    "options": [
+      "juego musical donde falta una silla en cada ronda",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el juego de las sillas» se recuerda como juego musical donde falta una silla en cada ronda."
+  },
+  {
+    "id": "CU-CI-088",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el juego de las sillas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego musical donde falta una silla en cada ronda."
+  },
+  {
+    "id": "CU-CI-089",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la gallinita ciega» en la infancia cubana?",
+    "options": [
+      "juego con los ojos vendados",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la gallinita ciega» se recuerda como juego con los ojos vendados."
+  },
+  {
+    "id": "CU-CI-090",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la gallinita ciega»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego con los ojos vendados."
+  },
+  {
+    "id": "CU-CI-091",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el quemado» en la infancia cubana?",
+    "options": [
+      "juego de pelota donde se intenta golpear a rivales",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el quemado» se recuerda como juego de pelota donde se intenta golpear a rivales."
+  },
+  {
+    "id": "CU-CI-092",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el quemado»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de pelota donde se intenta golpear a rivales."
+  },
+  {
+    "id": "CU-CI-093",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «policías y ladrones» en la infancia cubana?",
+    "options": [
+      "juego de roles y persecución",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«policías y ladrones» se recuerda como juego de roles y persecución."
+  },
+  {
+    "id": "CU-CI-094",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «policías y ladrones»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de roles y persecución."
+  },
+  {
+    "id": "CU-CI-095",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «las escondidas» en la infancia cubana?",
+    "options": [
+      "juego de ocultarse mientras otra persona busca",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«las escondidas» se recuerda como juego de ocultarse mientras otra persona busca."
+  },
+  {
+    "id": "CU-CI-096",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «las escondidas»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de ocultarse mientras otra persona busca."
+  },
+  {
+    "id": "CU-CI-097",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «la matatena» en la infancia cubana?",
+    "options": [
+      "juego de habilidad semejante a los yaquis",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la matatena» se recuerda como juego de habilidad semejante a los yaquis."
+  },
+  {
+    "id": "CU-CI-098",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «la matatena»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de habilidad semejante a los yaquis."
+  },
+  {
+    "id": "CU-CI-099",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "recognition",
+    "question": "¿Qué era o qué es «el teléfono descompuesto» en la infancia cubana?",
+    "options": [
+      "juego de repetir un mensaje de persona en persona",
+      "un trámite administrativo",
+      "una marca de automóvil",
+      "un programa financiero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el teléfono descompuesto» se recuerda como juego de repetir un mensaje de persona en persona."
+  },
+  {
+    "id": "CU-CI-100",
+    "country": "CU",
+    "category": "clasicos_infancia",
+    "difficulty": "medium",
+    "type": "context",
+    "question": "¿Con cuál recuerdo infantil se relaciona mejor «el teléfono descompuesto»?",
+    "options": [
+      "juegos, escuela, televisión o meriendas de la niñez",
+      "documentos legales",
+      "mercados financieros",
+      "viajes espaciales"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Este elemento forma parte de recuerdos comunes de la infancia en Cuba: juego de repetir un mensaje de persona en persona."
+  }
+]

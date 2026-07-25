@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "CU-DE-001",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: uno de los deportes más populares y tradicionales de Cuba?",
+    "options": [
+      "béisbol",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es béisbol: uno de los deportes más populares y tradicionales de Cuba."
+  },
+  {
+    "id": "CU-DE-002",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «béisbol»?",
+    "options": [
+      "uno de los deportes más populares y tradicionales de Cuba",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«béisbol» se relaciona con uno de los deportes más populares y tradicionales de Cuba."
+  },
+  {
+    "id": "CU-DE-003",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: disciplina en la que Cuba ha logrado numerosos títulos olímpicos?",
+    "options": [
+      "boxeo",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es boxeo: disciplina en la que Cuba ha logrado numerosos títulos olímpicos."
+  },
+  {
+    "id": "CU-DE-004",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «boxeo»?",
+    "options": [
+      "disciplina en la que Cuba ha logrado numerosos títulos olímpicos",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«boxeo» se relaciona con disciplina en la que Cuba ha logrado numerosos títulos olímpicos."
+  },
+  {
+    "id": "CU-DE-005",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: deporte en el que Cuba ha tenido selecciones de gran nivel internacional?",
+    "options": [
+      "voleibol",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es voleibol: deporte en el que Cuba ha tenido selecciones de gran nivel internacional."
+  },
+  {
+    "id": "CU-DE-006",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «voleibol»?",
+    "options": [
+      "deporte en el que Cuba ha tenido selecciones de gran nivel internacional",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«voleibol» se relaciona con deporte en el que Cuba ha tenido selecciones de gran nivel internacional."
+  },
+  {
+    "id": "CU-DE-007",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: deporte asociado a Javier Sotomayor y Ana Fidelia Quirot?",
+    "options": [
+      "atletismo",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es atletismo: deporte asociado a Javier Sotomayor y Ana Fidelia Quirot."
+  },
+  {
+    "id": "CU-DE-008",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «atletismo»?",
+    "options": [
+      "deporte asociado a Javier Sotomayor y Ana Fidelia Quirot",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«atletismo» se relaciona con deporte asociado a Javier Sotomayor y Ana Fidelia Quirot."
+  },
+  {
+    "id": "CU-DE-009",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: disciplina en la que Cuba ha obtenido importantes resultados olímpicos?",
+    "options": [
+      "judo",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es judo: disciplina en la que Cuba ha obtenido importantes resultados olímpicos."
+  },
+  {
+    "id": "CU-DE-010",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «judo»?",
+    "options": [
+      "disciplina en la que Cuba ha obtenido importantes resultados olímpicos",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«judo» se relaciona con disciplina en la que Cuba ha obtenido importantes resultados olímpicos."
+  },
+  {
+    "id": "CU-DE-011",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: deporte de combate con fuerte tradición competitiva en Cuba?",
+    "options": [
+      "lucha",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es lucha: deporte de combate con fuerte tradición competitiva en Cuba."
+  },
+  {
+    "id": "CU-DE-012",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «lucha»?",
+    "options": [
+      "deporte de combate con fuerte tradición competitiva en Cuba",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«lucha» se relaciona con deporte de combate con fuerte tradición competitiva en Cuba."
+  },
+  {
+    "id": "CU-DE-013",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: disciplina con presencia histórica en el deporte cubano?",
+    "options": [
+      "esgrima",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es esgrima: disciplina con presencia histórica en el deporte cubano."
+  },
+  {
+    "id": "CU-DE-014",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «esgrima»?",
+    "options": [
+      "disciplina con presencia histórica en el deporte cubano",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«esgrima» se relaciona con disciplina con presencia histórica en el deporte cubano."
+  },
+  {
+    "id": "CU-DE-015",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: deporte mental asociado en Cuba a José Raúl Capablanca?",
+    "options": [
+      "ajedrez",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es ajedrez: deporte mental asociado en Cuba a José Raúl Capablanca."
+  },
+  {
+    "id": "CU-DE-016",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «ajedrez»?",
+    "options": [
+      "deporte mental asociado en Cuba a José Raúl Capablanca",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«ajedrez» se relaciona con deporte mental asociado en Cuba a José Raúl Capablanca."
+  },
+  {
+    "id": "CU-DE-017",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: campeón mundial de ajedrez cubano?",
+    "options": [
+      "José Raúl Capablanca",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es José Raúl Capablanca: campeón mundial de ajedrez cubano."
+  },
+  {
+    "id": "CU-DE-018",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «José Raúl Capablanca»?",
+    "options": [
+      "campeón mundial de ajedrez cubano",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«José Raúl Capablanca» se relaciona con campeón mundial de ajedrez cubano."
+  },
+  {
+    "id": "CU-DE-019",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: saltador de altura cubano y campeón olímpico?",
+    "options": [
+      "Javier Sotomayor",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Javier Sotomayor: saltador de altura cubano y campeón olímpico."
+  },
+  {
+    "id": "CU-DE-020",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Javier Sotomayor»?",
+    "options": [
+      "saltador de altura cubano y campeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Javier Sotomayor» se relaciona con saltador de altura cubano y campeón olímpico."
+  },
+  {
+    "id": "CU-DE-021",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: corredora cubana especialista en 800 metros?",
+    "options": [
+      "Ana Fidelia Quirot",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Ana Fidelia Quirot: corredora cubana especialista en 800 metros."
+  },
+  {
+    "id": "CU-DE-022",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Ana Fidelia Quirot»?",
+    "options": [
+      "corredora cubana especialista en 800 metros",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Ana Fidelia Quirot» se relaciona con corredora cubana especialista en 800 metros."
+  },
+  {
+    "id": "CU-DE-023",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: boxeador cubano triple campeón olímpico?",
+    "options": [
+      "Teófilo Stevenson",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Teófilo Stevenson: boxeador cubano triple campeón olímpico."
+  },
+  {
+    "id": "CU-DE-024",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Teófilo Stevenson»?",
+    "options": [
+      "boxeador cubano triple campeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Teófilo Stevenson» se relaciona con boxeador cubano triple campeón olímpico."
+  },
+  {
+    "id": "CU-DE-025",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: boxeador cubano triple campeón olímpico?",
+    "options": [
+      "Félix Savón",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Félix Savón: boxeador cubano triple campeón olímpico."
+  },
+  {
+    "id": "CU-DE-026",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Félix Savón»?",
+    "options": [
+      "boxeador cubano triple campeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Félix Savón» se relaciona con boxeador cubano triple campeón olímpico."
+  },
+  {
+    "id": "CU-DE-027",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: luchador cubano de estilo grecorromano y multicampeón olímpico?",
+    "options": [
+      "Mijaín López",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Mijaín López: luchador cubano de estilo grecorromano y multicampeón olímpico."
+  },
+  {
+    "id": "CU-DE-028",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Mijaín López»?",
+    "options": [
+      "luchador cubano de estilo grecorromano y multicampeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Mijaín López» se relaciona con luchador cubano de estilo grecorromano y multicampeón olímpico."
+  },
+  {
+    "id": "CU-DE-029",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: voleibolista cubana destacada internacionalmente?",
+    "options": [
+      "Regla Torres",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Regla Torres: voleibolista cubana destacada internacionalmente."
+  },
+  {
+    "id": "CU-DE-030",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Regla Torres»?",
+    "options": [
+      "voleibolista cubana destacada internacionalmente",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Regla Torres» se relaciona con voleibolista cubana destacada internacionalmente."
+  },
+  {
+    "id": "CU-DE-031",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: voleibolista cubana de gran reconocimiento?",
+    "options": [
+      "Mireya Luis",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Mireya Luis: voleibolista cubana de gran reconocimiento."
+  },
+  {
+    "id": "CU-DE-032",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Mireya Luis»?",
+    "options": [
+      "voleibolista cubana de gran reconocimiento",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Mireya Luis» se relaciona con voleibolista cubana de gran reconocimiento."
+  },
+  {
+    "id": "CU-DE-033",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: pelotero cubano reconocido por su bateo?",
+    "options": [
+      "Omar Linares",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Omar Linares: pelotero cubano reconocido por su bateo."
+  },
+  {
+    "id": "CU-DE-034",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Omar Linares»?",
+    "options": [
+      "pelotero cubano reconocido por su bateo",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Omar Linares» se relaciona con pelotero cubano reconocido por su bateo."
+  },
+  {
+    "id": "CU-DE-035",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: pelotero cubano miembro de varios salones de la fama?",
+    "options": [
+      "Martín Dihigo",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Martín Dihigo: pelotero cubano miembro de varios salones de la fama."
+  },
+  {
+    "id": "CU-DE-036",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Martín Dihigo»?",
+    "options": [
+      "pelotero cubano miembro de varios salones de la fama",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Martín Dihigo» se relaciona con pelotero cubano miembro de varios salones de la fama."
+  },
+  {
+    "id": "CU-DE-037",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: boxeador cubano campeón mundial profesional?",
+    "options": [
+      "Kid Chocolate",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Kid Chocolate: boxeador cubano campeón mundial profesional."
+  },
+  {
+    "id": "CU-DE-038",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Kid Chocolate»?",
+    "options": [
+      "boxeador cubano campeón mundial profesional",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Kid Chocolate» se relaciona con boxeador cubano campeón mundial profesional."
+  },
+  {
+    "id": "CU-DE-039",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: atleta cubano campeón olímpico en 400 y 800 metros?",
+    "options": [
+      "Alberto Juantorena",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Alberto Juantorena: atleta cubano campeón olímpico en 400 y 800 metros."
+  },
+  {
+    "id": "CU-DE-040",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Alberto Juantorena»?",
+    "options": [
+      "atleta cubano campeón olímpico en 400 y 800 metros",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Alberto Juantorena» se relaciona con atleta cubano campeón olímpico en 400 y 800 metros."
+  },
+  {
+    "id": "CU-DE-041",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: saltador de longitud cubano campeón olímpico?",
+    "options": [
+      "Iván Pedroso",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Iván Pedroso: saltador de longitud cubano campeón olímpico."
+  },
+  {
+    "id": "CU-DE-042",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Iván Pedroso»?",
+    "options": [
+      "saltador de longitud cubano campeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Iván Pedroso» se relaciona con saltador de longitud cubano campeón olímpico."
+  },
+  {
+    "id": "CU-DE-043",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: vallista cubano campeón olímpico?",
+    "options": [
+      "Dayron Robles",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Dayron Robles: vallista cubano campeón olímpico."
+  },
+  {
+    "id": "CU-DE-044",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Dayron Robles»?",
+    "options": [
+      "vallista cubano campeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Dayron Robles» se relaciona con vallista cubano campeón olímpico."
+  },
+  {
+    "id": "CU-DE-045",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: voleibolista cubana y medallista olímpica?",
+    "options": [
+      "Yumilka Ruiz",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Yumilka Ruiz: voleibolista cubana y medallista olímpica."
+  },
+  {
+    "id": "CU-DE-046",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Yumilka Ruiz»?",
+    "options": [
+      "voleibolista cubana y medallista olímpica",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Yumilka Ruiz» se relaciona con voleibolista cubana y medallista olímpica."
+  },
+  {
+    "id": "CU-DE-047",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: judoca cubana campeona olímpica?",
+    "options": [
+      "Idalys Ortiz",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Idalys Ortiz: judoca cubana campeona olímpica."
+  },
+  {
+    "id": "CU-DE-048",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Idalys Ortiz»?",
+    "options": [
+      "judoca cubana campeona olímpica",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Idalys Ortiz» se relaciona con judoca cubana campeona olímpica."
+  },
+  {
+    "id": "CU-DE-049",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: judoca cubana campeona olímpica?",
+    "options": [
+      "Driulis González",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Driulis González: judoca cubana campeona olímpica."
+  },
+  {
+    "id": "CU-DE-050",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Driulis González»?",
+    "options": [
+      "judoca cubana campeona olímpica",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Driulis González» se relaciona con judoca cubana campeona olímpica."
+  },
+  {
+    "id": "CU-DE-051",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: luchador cubano campeón olímpico?",
+    "options": [
+      "Héctor Milián",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Héctor Milián: luchador cubano campeón olímpico."
+  },
+  {
+    "id": "CU-DE-052",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Héctor Milián»?",
+    "options": [
+      "luchador cubano campeón olímpico",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Héctor Milián» se relaciona con luchador cubano campeón olímpico."
+  },
+  {
+    "id": "CU-DE-053",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: participación olímpica con una destacada cosecha de medallas?",
+    "options": [
+      "Cuba en Barcelona 1992",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Cuba en Barcelona 1992: participación olímpica con una destacada cosecha de medallas."
+  },
+  {
+    "id": "CU-DE-054",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Cuba en Barcelona 1992»?",
+    "options": [
+      "participación olímpica con una destacada cosecha de medallas",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Cuba en Barcelona 1992» se relaciona con participación olímpica con una destacada cosecha de medallas."
+  },
+  {
+    "id": "CU-DE-055",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: apodo de la selección femenina cubana de voleibol?",
+    "options": [
+      "las Morenas del Caribe",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es las Morenas del Caribe: apodo de la selección femenina cubana de voleibol."
+  },
+  {
+    "id": "CU-DE-056",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «las Morenas del Caribe»?",
+    "options": [
+      "apodo de la selección femenina cubana de voleibol",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«las Morenas del Caribe» se relaciona con apodo de la selección femenina cubana de voleibol."
+  },
+  {
+    "id": "CU-DE-057",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: principal campeonato doméstico de béisbol en Cuba?",
+    "options": [
+      "Serie Nacional de Béisbol",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Serie Nacional de Béisbol: principal campeonato doméstico de béisbol en Cuba."
+  },
+  {
+    "id": "CU-DE-058",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Serie Nacional de Béisbol»?",
+    "options": [
+      "principal campeonato doméstico de béisbol en Cuba",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Serie Nacional de Béisbol» se relaciona con principal campeonato doméstico de béisbol en Cuba."
+  },
+  {
+    "id": "CU-DE-059",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: gran estadio de béisbol ubicado en La Habana?",
+    "options": [
+      "Estadio Latinoamericano",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Estadio Latinoamericano: gran estadio de béisbol ubicado en La Habana."
+  },
+  {
+    "id": "CU-DE-060",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Estadio Latinoamericano»?",
+    "options": [
+      "gran estadio de béisbol ubicado en La Habana",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Estadio Latinoamericano» se relaciona con gran estadio de béisbol ubicado en La Habana."
+  },
+  {
+    "id": "CU-DE-061",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: equipo de béisbol asociado a La Habana?",
+    "options": [
+      "Industriales",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Industriales: equipo de béisbol asociado a La Habana."
+  },
+  {
+    "id": "CU-DE-062",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Industriales»?",
+    "options": [
+      "equipo de béisbol asociado a La Habana",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Industriales» se relaciona con equipo de béisbol asociado a La Habana."
+  },
+  {
+    "id": "CU-DE-063",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: equipo tradicional de la Serie Nacional?",
+    "options": [
+      "Santiago de Cuba",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Santiago de Cuba: equipo tradicional de la Serie Nacional."
+  },
+  {
+    "id": "CU-DE-064",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Santiago de Cuba»?",
+    "options": [
+      "equipo tradicional de la Serie Nacional",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Santiago de Cuba» se relaciona con equipo tradicional de la Serie Nacional."
+  },
+  {
+    "id": "CU-DE-065",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: equipo tradicional del béisbol cubano?",
+    "options": [
+      "Villa Clara",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Villa Clara: equipo tradicional del béisbol cubano."
+  },
+  {
+    "id": "CU-DE-066",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Villa Clara»?",
+    "options": [
+      "equipo tradicional del béisbol cubano",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Villa Clara» se relaciona con equipo tradicional del béisbol cubano."
+  },
+  {
+    "id": "CU-DE-067",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: provincia con fuerte tradición beisbolera?",
+    "options": [
+      "Pinar del Río",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Pinar del Río: provincia con fuerte tradición beisbolera."
+  },
+  {
+    "id": "CU-DE-068",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Pinar del Río»?",
+    "options": [
+      "provincia con fuerte tradición beisbolera",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Pinar del Río» se relaciona con provincia con fuerte tradición beisbolera."
+  },
+  {
+    "id": "CU-DE-069",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: escuela deportiva reconocida mundialmente?",
+    "options": [
+      "boxeo amateur cubano",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es boxeo amateur cubano: escuela deportiva reconocida mundialmente."
+  },
+  {
+    "id": "CU-DE-070",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «boxeo amateur cubano»?",
+    "options": [
+      "escuela deportiva reconocida mundialmente",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«boxeo amateur cubano» se relaciona con escuela deportiva reconocida mundialmente."
+  },
+  {
+    "id": "CU-DE-071",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: prueba en la que destacó Javier Sotomayor?",
+    "options": [
+      "salto de altura",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es salto de altura: prueba en la que destacó Javier Sotomayor."
+  },
+  {
+    "id": "CU-DE-072",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «salto de altura»?",
+    "options": [
+      "prueba en la que destacó Javier Sotomayor",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«salto de altura» se relaciona con prueba en la que destacó Javier Sotomayor."
+  },
+  {
+    "id": "CU-DE-073",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: prueba principal de Ana Fidelia Quirot?",
+    "options": [
+      "800 metros",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es 800 metros: prueba principal de Ana Fidelia Quirot."
+  },
+  {
+    "id": "CU-DE-074",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «800 metros»?",
+    "options": [
+      "prueba principal de Ana Fidelia Quirot",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«800 metros» se relaciona con prueba principal de Ana Fidelia Quirot."
+  },
+  {
+    "id": "CU-DE-075",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: modalidad en la que destacó Mijaín López?",
+    "options": [
+      "lucha grecorromana",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es lucha grecorromana: modalidad en la que destacó Mijaín López."
+  },
+  {
+    "id": "CU-DE-076",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «lucha grecorromana»?",
+    "options": [
+      "modalidad en la que destacó Mijaín López",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«lucha grecorromana» se relaciona con modalidad en la que destacó Mijaín López."
+  },
+  {
+    "id": "CU-DE-077",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: disciplina en la que Cuba ganó títulos olímpicos en los años noventa?",
+    "options": [
+      "voleibol femenino",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es voleibol femenino: disciplina en la que Cuba ganó títulos olímpicos en los años noventa."
+  },
+  {
+    "id": "CU-DE-078",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «voleibol femenino»?",
+    "options": [
+      "disciplina en la que Cuba ganó títulos olímpicos en los años noventa",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«voleibol femenino» se relaciona con disciplina en la que Cuba ganó títulos olímpicos en los años noventa."
+  },
+  {
+    "id": "CU-DE-079",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: tradición impulsada por el legado de Capablanca?",
+    "options": [
+      "ajedrez cubano",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es ajedrez cubano: tradición impulsada por el legado de Capablanca."
+  },
+  {
+    "id": "CU-DE-080",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «ajedrez cubano»?",
+    "options": [
+      "tradición impulsada por el legado de Capablanca",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«ajedrez cubano» se relaciona con tradición impulsada por el legado de Capablanca."
+  },
+  {
+    "id": "CU-DE-081",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: evento de carrera conocido como Marabana?",
+    "options": [
+      "maratón de La Habana",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es maratón de La Habana: evento de carrera conocido como Marabana."
+  },
+  {
+    "id": "CU-DE-082",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «maratón de La Habana»?",
+    "options": [
+      "evento de carrera conocido como Marabana",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«maratón de La Habana» se relaciona con evento de carrera conocido como Marabana."
+  },
+  {
+    "id": "CU-DE-083",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: principal maratón popular de La Habana?",
+    "options": [
+      "Marabana",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Marabana: principal maratón popular de La Habana."
+  },
+  {
+    "id": "CU-DE-084",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «Marabana»?",
+    "options": [
+      "principal maratón popular de La Habana",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Marabana» se relaciona con principal maratón popular de La Habana."
+  },
+  {
+    "id": "CU-DE-085",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: forma popular de referirse al béisbol en Cuba?",
+    "options": [
+      "pelota",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es pelota: forma popular de referirse al béisbol en Cuba."
+  },
+  {
+    "id": "CU-DE-086",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «pelota»?",
+    "options": [
+      "forma popular de referirse al béisbol en Cuba",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«pelota» se relaciona con forma popular de referirse al béisbol en Cuba."
+  },
+  {
+    "id": "CU-DE-087",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: batazo que permite recorrer todas las bases?",
+    "options": [
+      "jonrón",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es jonrón: batazo que permite recorrer todas las bases."
+  },
+  {
+    "id": "CU-DE-088",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «jonrón»?",
+    "options": [
+      "batazo que permite recorrer todas las bases",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«jonrón» se relaciona con batazo que permite recorrer todas las bases."
+  },
+  {
+    "id": "CU-DE-089",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: final de combate frecuente en el boxeo?",
+    "options": [
+      "nocaut",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es nocaut: final de combate frecuente en el boxeo."
+  },
+  {
+    "id": "CU-DE-090",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «nocaut»?",
+    "options": [
+      "final de combate frecuente en el boxeo",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«nocaut» se relaciona con final de combate frecuente en el boxeo."
+  },
+  {
+    "id": "CU-DE-091",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: máximo premio en una competencia olímpica?",
+    "options": [
+      "medalla de oro",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es medalla de oro: máximo premio en una competencia olímpica."
+  },
+  {
+    "id": "CU-DE-092",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «medalla de oro»?",
+    "options": [
+      "máximo premio en una competencia olímpica",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«medalla de oro» se relaciona con máximo premio en una competencia olímpica."
+  },
+  {
+    "id": "CU-DE-093",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: prueba de atletismo por equipos?",
+    "options": [
+      "relevo 4x400",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es relevo 4x400: prueba de atletismo por equipos."
+  },
+  {
+    "id": "CU-DE-094",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «relevo 4x400»?",
+    "options": [
+      "prueba de atletismo por equipos",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«relevo 4x400» se relaciona con prueba de atletismo por equipos."
+  },
+  {
+    "id": "CU-DE-095",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: otra forma de llamar al salto de longitud?",
+    "options": [
+      "salto largo",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es salto largo: otra forma de llamar al salto de longitud."
+  },
+  {
+    "id": "CU-DE-096",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «salto largo»?",
+    "options": [
+      "otra forma de llamar al salto de longitud",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«salto largo» se relaciona con otra forma de llamar al salto de longitud."
+  },
+  {
+    "id": "CU-DE-097",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: superficie utilizada en judo?",
+    "options": [
+      "tatami",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es tatami: superficie utilizada en judo."
+  },
+  {
+    "id": "CU-DE-098",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «tatami»?",
+    "options": [
+      "superficie utilizada en judo",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«tatami» se relaciona con superficie utilizada en judo."
+  },
+  {
+    "id": "CU-DE-099",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción deportiva cubana: superficie donde se juega ajedrez?",
+    "options": [
+      "tablero",
+      "críquet australiano",
+      "esquí alpino",
+      "curling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es tablero: superficie donde se juega ajedrez."
+  },
+  {
+    "id": "CU-DE-100",
+    "country": "CU",
+    "category": "deportes",
+    "difficulty": "medium",
+    "type": "association",
+    "question": "¿Con qué se relaciona correctamente «tablero»?",
+    "options": [
+      "superficie donde se juega ajedrez",
+      "una receta tradicional",
+      "una provincia extranjera",
+      "un instrumento musical"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«tablero» se relaciona con superficie donde se juega ajedrez."
+  }
+]

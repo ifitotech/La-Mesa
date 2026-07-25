@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "CU-CG-001",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: capital de Cuba?",
+    "options": [
+      "La Habana",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es La Habana, que se identifica como capital de Cuba."
+  },
+  {
+    "id": "CU-CG-002",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «La Habana»?",
+    "options": [
+      "capital de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«La Habana» se asocia con capital de Cuba."
+  },
+  {
+    "id": "CU-CG-003",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: ciudad histórica del oriente cubano?",
+    "options": [
+      "Santiago de Cuba",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Santiago de Cuba, que se identifica como ciudad histórica del oriente cubano."
+  },
+  {
+    "id": "CU-CG-004",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Santiago de Cuba»?",
+    "options": [
+      "ciudad histórica del oriente cubano",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Santiago de Cuba» se asocia con ciudad histórica del oriente cubano."
+  },
+  {
+    "id": "CU-CG-005",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: punto más alto de Cuba?",
+    "options": [
+      "Pico Turquino",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Pico Turquino, que se identifica como punto más alto de Cuba."
+  },
+  {
+    "id": "CU-CG-006",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Pico Turquino»?",
+    "options": [
+      "punto más alto de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Pico Turquino» se asocia con punto más alto de Cuba."
+  },
+  {
+    "id": "CU-CG-007",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: principal cordillera del oriente cubano?",
+    "options": [
+      "Sierra Maestra",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Sierra Maestra, que se identifica como principal cordillera del oriente cubano."
+  },
+  {
+    "id": "CU-CG-008",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Sierra Maestra»?",
+    "options": [
+      "principal cordillera del oriente cubano",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Sierra Maestra» se asocia con principal cordillera del oriente cubano."
+  },
+  {
+    "id": "CU-CG-009",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: río más largo de Cuba?",
+    "options": [
+      "río Cauto",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es río Cauto, que se identifica como río más largo de Cuba."
+  },
+  {
+    "id": "CU-CG-010",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «río Cauto»?",
+    "options": [
+      "río más largo de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«río Cauto» se asocia con río más largo de Cuba."
+  },
+  {
+    "id": "CU-CG-011",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: segunda isla más grande del archipiélago cubano?",
+    "options": [
+      "Isla de la Juventud",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Isla de la Juventud, que se identifica como segunda isla más grande del archipiélago cubano."
+  },
+  {
+    "id": "CU-CG-012",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Isla de la Juventud»?",
+    "options": [
+      "segunda isla más grande del archipiélago cubano",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Isla de la Juventud» se asocia con segunda isla más grande del archipiélago cubano."
+  },
+  {
+    "id": "CU-CG-013",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: famosa zona turística de playa en Matanzas?",
+    "options": [
+      "Varadero",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Varadero, que se identifica como famosa zona turística de playa en Matanzas."
+  },
+  {
+    "id": "CU-CG-014",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Varadero»?",
+    "options": [
+      "famosa zona turística de playa en Matanzas",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Varadero» se asocia con famosa zona turística de playa en Matanzas."
+  },
+  {
+    "id": "CU-CG-015",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: paisaje conocido por mogotes y cultivo de tabaco?",
+    "options": [
+      "Valle de Viñales",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Valle de Viñales, que se identifica como paisaje conocido por mogotes y cultivo de tabaco."
+  },
+  {
+    "id": "CU-CG-016",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Valle de Viñales»?",
+    "options": [
+      "paisaje conocido por mogotes y cultivo de tabaco",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Valle de Viñales» se asocia con paisaje conocido por mogotes y cultivo de tabaco."
+  },
+  {
+    "id": "CU-CG-017",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: paseo marítimo emblemático de la capital?",
+    "options": [
+      "Malecón de La Habana",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Malecón de La Habana, que se identifica como paseo marítimo emblemático de la capital."
+  },
+  {
+    "id": "CU-CG-018",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Malecón de La Habana»?",
+    "options": [
+      "paseo marítimo emblemático de la capital",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Malecón de La Habana» se asocia con paseo marítimo emblemático de la capital."
+  },
+  {
+    "id": "CU-CG-019",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: fortaleza histórica a la entrada de la bahía de La Habana?",
+    "options": [
+      "Castillo del Morro",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Castillo del Morro, que se identifica como fortaleza histórica a la entrada de la bahía de La Habana."
+  },
+  {
+    "id": "CU-CG-020",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Castillo del Morro»?",
+    "options": [
+      "fortaleza histórica a la entrada de la bahía de La Habana",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Castillo del Morro» se asocia con fortaleza histórica a la entrada de la bahía de La Habana."
+  },
+  {
+    "id": "CU-CG-021",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: Héroe Nacional de Cuba?",
+    "options": [
+      "José Martí",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es José Martí, que se identifica como Héroe Nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-022",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «José Martí»?",
+    "options": [
+      "Héroe Nacional de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«José Martí» se asocia con Héroe Nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-023",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: iniciador de la Guerra de los Diez Años?",
+    "options": [
+      "Carlos Manuel de Céspedes",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Carlos Manuel de Céspedes, que se identifica como iniciador de la Guerra de los Diez Años."
+  },
+  {
+    "id": "CU-CG-024",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Carlos Manuel de Céspedes»?",
+    "options": [
+      "iniciador de la Guerra de los Diez Años",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Carlos Manuel de Céspedes» se asocia con iniciador de la Guerra de los Diez Años."
+  },
+  {
+    "id": "CU-CG-025",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: líder independentista conocido como el Titán de Bronce?",
+    "options": [
+      "Antonio Maceo",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Antonio Maceo, que se identifica como líder independentista conocido como el Titán de Bronce."
+  },
+  {
+    "id": "CU-CG-026",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Antonio Maceo»?",
+    "options": [
+      "líder independentista conocido como el Titán de Bronce",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Antonio Maceo» se asocia con líder independentista conocido como el Titán de Bronce."
+  },
+  {
+    "id": "CU-CG-027",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: general en jefe del Ejército Libertador?",
+    "options": [
+      "Máximo Gómez",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Máximo Gómez, que se identifica como general en jefe del Ejército Libertador."
+  },
+  {
+    "id": "CU-CG-028",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Máximo Gómez»?",
+    "options": [
+      "general en jefe del Ejército Libertador",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Máximo Gómez» se asocia con general en jefe del Ejército Libertador."
+  },
+  {
+    "id": "CU-CG-029",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: figura histórica conocida como Madre de la Patria?",
+    "options": [
+      "Mariana Grajales",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Mariana Grajales, que se identifica como figura histórica conocida como Madre de la Patria."
+  },
+  {
+    "id": "CU-CG-030",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Mariana Grajales»?",
+    "options": [
+      "figura histórica conocida como Madre de la Patria",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Mariana Grajales» se asocia con figura histórica conocida como Madre de la Patria."
+  },
+  {
+    "id": "CU-CG-031",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: inicio de la Guerra de los Diez Años?",
+    "options": [
+      "10 de octubre de 1868",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es 10 de octubre de 1868, que se identifica como inicio de la Guerra de los Diez Años."
+  },
+  {
+    "id": "CU-CG-032",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «10 de octubre de 1868»?",
+    "options": [
+      "inicio de la Guerra de los Diez Años",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«10 de octubre de 1868» se asocia con inicio de la Guerra de los Diez Años."
+  },
+  {
+    "id": "CU-CG-033",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: instauración de la República de Cuba?",
+    "options": [
+      "20 de mayo de 1902",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es 20 de mayo de 1902, que se identifica como instauración de la República de Cuba."
+  },
+  {
+    "id": "CU-CG-034",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «20 de mayo de 1902»?",
+    "options": [
+      "instauración de la República de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«20 de mayo de 1902» se asocia con instauración de la República de Cuba."
+  },
+  {
+    "id": "CU-CG-035",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: asalto a los cuarteles Moncada y Carlos Manuel de Céspedes?",
+    "options": [
+      "26 de julio de 1953",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es 26 de julio de 1953, que se identifica como asalto a los cuarteles Moncada y Carlos Manuel de Céspedes."
+  },
+  {
+    "id": "CU-CG-036",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «26 de julio de 1953»?",
+    "options": [
+      "asalto a los cuarteles Moncada y Carlos Manuel de Céspedes",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«26 de julio de 1953» se asocia con asalto a los cuarteles Moncada y Carlos Manuel de Céspedes."
+  },
+  {
+    "id": "CU-CG-037",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: fecha asociada al triunfo de la Revolución cubana?",
+    "options": [
+      "1 de enero de 1959",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es 1 de enero de 1959, que se identifica como fecha asociada al triunfo de la Revolución cubana."
+  },
+  {
+    "id": "CU-CG-038",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «1 de enero de 1959»?",
+    "options": [
+      "fecha asociada al triunfo de la Revolución cubana",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«1 de enero de 1959» se asocia con fecha asociada al triunfo de la Revolución cubana."
+  },
+  {
+    "id": "CU-CG-039",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: árbol nacional de Cuba?",
+    "options": [
+      "la palma real",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es la palma real, que se identifica como árbol nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-040",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «la palma real»?",
+    "options": [
+      "árbol nacional de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la palma real» se asocia con árbol nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-041",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: flor nacional de Cuba?",
+    "options": [
+      "la mariposa",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es la mariposa, que se identifica como flor nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-042",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «la mariposa»?",
+    "options": [
+      "flor nacional de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la mariposa» se asocia con flor nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-043",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: ave nacional de Cuba?",
+    "options": [
+      "el tocororo",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el tocororo, que se identifica como ave nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-044",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el tocororo»?",
+    "options": [
+      "ave nacional de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el tocororo» se asocia con ave nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-045",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: bandera nacional cubana?",
+    "options": [
+      "la bandera de la estrella solitaria",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es la bandera de la estrella solitaria, que se identifica como bandera nacional cubana."
+  },
+  {
+    "id": "CU-CG-046",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «la bandera de la estrella solitaria»?",
+    "options": [
+      "bandera nacional cubana",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la bandera de la estrella solitaria» se asocia con bandera nacional cubana."
+  },
+  {
+    "id": "CU-CG-047",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: escudo nacional de Cuba?",
+    "options": [
+      "el escudo de la palma real",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el escudo de la palma real, que se identifica como escudo nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-048",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el escudo de la palma real»?",
+    "options": [
+      "escudo nacional de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el escudo de la palma real» se asocia con escudo nacional de Cuba."
+  },
+  {
+    "id": "CU-CG-049",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "easy",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: moneda nacional?",
+    "options": [
+      "el peso cubano",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el peso cubano, que se identifica como moneda nacional."
+  },
+  {
+    "id": "CU-CG-050",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el peso cubano»?",
+    "options": [
+      "moneda nacional",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el peso cubano» se asocia con moneda nacional."
+  },
+  {
+    "id": "CU-CG-051",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: prenda tradicional asociada a Cuba y el Caribe?",
+    "options": [
+      "la guayabera",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es la guayabera, que se identifica como prenda tradicional asociada a Cuba y el Caribe."
+  },
+  {
+    "id": "CU-CG-052",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «la guayabera»?",
+    "options": [
+      "prenda tradicional asociada a Cuba y el Caribe",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la guayabera» se asocia con prenda tradicional asociada a Cuba y el Caribe."
+  },
+  {
+    "id": "CU-CG-053",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: género musical fundamental de la cultura cubana?",
+    "options": [
+      "el son cubano",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el son cubano, que se identifica como género musical fundamental de la cultura cubana."
+  },
+  {
+    "id": "CU-CG-054",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el son cubano»?",
+    "options": [
+      "género musical fundamental de la cultura cubana",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el son cubano» se asocia con género musical fundamental de la cultura cubana."
+  },
+  {
+    "id": "CU-CG-055",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: manifestación musical y danzaria de raíces africanas?",
+    "options": [
+      "la rumba cubana",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es la rumba cubana, que se identifica como manifestación musical y danzaria de raíces africanas."
+  },
+  {
+    "id": "CU-CG-056",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «la rumba cubana»?",
+    "options": [
+      "manifestación musical y danzaria de raíces africanas",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la rumba cubana» se asocia con manifestación musical y danzaria de raíces africanas."
+  },
+  {
+    "id": "CU-CG-057",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: género y baile desarrollado en Cuba?",
+    "options": [
+      "el danzón",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el danzón, que se identifica como género y baile desarrollado en Cuba."
+  },
+  {
+    "id": "CU-CG-058",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el danzón»?",
+    "options": [
+      "género y baile desarrollado en Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el danzón» se asocia con género y baile desarrollado en Cuba."
+  },
+  {
+    "id": "CU-CG-059",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: producto agrícola de fama internacional?",
+    "options": [
+      "el tabaco cubano",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el tabaco cubano, que se identifica como producto agrícola de fama internacional."
+  },
+  {
+    "id": "CU-CG-060",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el tabaco cubano»?",
+    "options": [
+      "producto agrícola de fama internacional",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el tabaco cubano» se asocia con producto agrícola de fama internacional."
+  },
+  {
+    "id": "CU-CG-061",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: bebida fuerte y concentrada de gran presencia cultural?",
+    "options": [
+      "el café cubano",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el café cubano, que se identifica como bebida fuerte y concentrada de gran presencia cultural."
+  },
+  {
+    "id": "CU-CG-062",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el café cubano»?",
+    "options": [
+      "bebida fuerte y concentrada de gran presencia cultural",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el café cubano» se asocia con bebida fuerte y concentrada de gran presencia cultural."
+  },
+  {
+    "id": "CU-CG-063",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: plato de carne deshebrada muy conocido?",
+    "options": [
+      "ropa vieja",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es ropa vieja, que se identifica como plato de carne deshebrada muy conocido."
+  },
+  {
+    "id": "CU-CG-064",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «ropa vieja»?",
+    "options": [
+      "plato de carne deshebrada muy conocido",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«ropa vieja» se asocia con plato de carne deshebrada muy conocido."
+  },
+  {
+    "id": "CU-CG-065",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: combinación de arroz y frijoles negros?",
+    "options": [
+      "moros y cristianos",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es moros y cristianos, que se identifica como combinación de arroz y frijoles negros."
+  },
+  {
+    "id": "CU-CG-066",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «moros y cristianos»?",
+    "options": [
+      "combinación de arroz y frijoles negros",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«moros y cristianos» se asocia con combinación de arroz y frijoles negros."
+  },
+  {
+    "id": "CU-CG-067",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: yuca acompañada con salsa de ajo y cítricos?",
+    "options": [
+      "yuca con mojo",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es yuca con mojo, que se identifica como yuca acompañada con salsa de ajo y cítricos."
+  },
+  {
+    "id": "CU-CG-068",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «yuca con mojo»?",
+    "options": [
+      "yuca acompañada con salsa de ajo y cítricos",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«yuca con mojo» se asocia con yuca acompañada con salsa de ajo y cítricos."
+  },
+  {
+    "id": "CU-CG-069",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: plato frecuente en celebraciones?",
+    "options": [
+      "lechón asado",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es lechón asado, que se identifica como plato frecuente en celebraciones."
+  },
+  {
+    "id": "CU-CG-070",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «lechón asado»?",
+    "options": [
+      "plato frecuente en celebraciones",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«lechón asado» se asocia con plato frecuente en celebraciones."
+  },
+  {
+    "id": "CU-CG-071",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: rodajas de plátano verde fritas y aplastadas?",
+    "options": [
+      "tostones",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es tostones, que se identifica como rodajas de plátano verde fritas y aplastadas."
+  },
+  {
+    "id": "CU-CG-072",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «tostones»?",
+    "options": [
+      "rodajas de plátano verde fritas y aplastadas",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«tostones» se asocia con rodajas de plátano verde fritas y aplastadas."
+  },
+  {
+    "id": "CU-CG-073",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: gran humedal situado en Matanzas?",
+    "options": [
+      "Ciénaga de Zapata",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Ciénaga de Zapata, que se identifica como gran humedal situado en Matanzas."
+  },
+  {
+    "id": "CU-CG-074",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Ciénaga de Zapata»?",
+    "options": [
+      "gran humedal situado en Matanzas",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Ciénaga de Zapata» se asocia con gran humedal situado en Matanzas."
+  },
+  {
+    "id": "CU-CG-075",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: bahía ubicada en el extremo oriental de Cuba?",
+    "options": [
+      "bahía de Guantánamo",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es bahía de Guantánamo, que se identifica como bahía ubicada en el extremo oriental de Cuba."
+  },
+  {
+    "id": "CU-CG-076",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «bahía de Guantánamo»?",
+    "options": [
+      "bahía ubicada en el extremo oriental de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«bahía de Guantánamo» se asocia con bahía ubicada en el extremo oriental de Cuba."
+  },
+  {
+    "id": "CU-CG-077",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: ciudad conocida por su trazado urbano laberíntico?",
+    "options": [
+      "Camagüey",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Camagüey, que se identifica como ciudad conocida por su trazado urbano laberíntico."
+  },
+  {
+    "id": "CU-CG-078",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Camagüey»?",
+    "options": [
+      "ciudad conocida por su trazado urbano laberíntico",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Camagüey» se asocia con ciudad conocida por su trazado urbano laberíntico."
+  },
+  {
+    "id": "CU-CG-079",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: ciudad colonial declarada Patrimonio Mundial?",
+    "options": [
+      "Trinidad",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Trinidad, que se identifica como ciudad colonial declarada Patrimonio Mundial."
+  },
+  {
+    "id": "CU-CG-080",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Trinidad»?",
+    "options": [
+      "ciudad colonial declarada Patrimonio Mundial",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Trinidad» se asocia con ciudad colonial declarada Patrimonio Mundial."
+  },
+  {
+    "id": "CU-CG-081",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: ciudad conocida como la Perla del Sur?",
+    "options": [
+      "Cienfuegos",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Cienfuegos, que se identifica como ciudad conocida como la Perla del Sur."
+  },
+  {
+    "id": "CU-CG-082",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Cienfuegos»?",
+    "options": [
+      "ciudad conocida como la Perla del Sur",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Cienfuegos» se asocia con ciudad conocida como la Perla del Sur."
+  },
+  {
+    "id": "CU-CG-083",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: primera villa fundada por los españoles en Cuba?",
+    "options": [
+      "Baracoa",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Baracoa, que se identifica como primera villa fundada por los españoles en Cuba."
+  },
+  {
+    "id": "CU-CG-084",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Baracoa»?",
+    "options": [
+      "primera villa fundada por los españoles en Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Baracoa» se asocia con primera villa fundada por los españoles en Cuba."
+  },
+  {
+    "id": "CU-CG-085",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: ciudad apodada la Atenas de Cuba?",
+    "options": [
+      "Matanzas",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Matanzas, que se identifica como ciudad apodada la Atenas de Cuba."
+  },
+  {
+    "id": "CU-CG-086",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Matanzas»?",
+    "options": [
+      "ciudad apodada la Atenas de Cuba",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Matanzas» se asocia con ciudad apodada la Atenas de Cuba."
+  },
+  {
+    "id": "CU-CG-087",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: provincia famosa por el cultivo del tabaco?",
+    "options": [
+      "Pinar del Río",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Pinar del Río, que se identifica como provincia famosa por el cultivo del tabaco."
+  },
+  {
+    "id": "CU-CG-088",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Pinar del Río»?",
+    "options": [
+      "provincia famosa por el cultivo del tabaco",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Pinar del Río» se asocia con provincia famosa por el cultivo del tabaco."
+  },
+  {
+    "id": "CU-CG-089",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: provincia oriental con importantes playas y patrimonio?",
+    "options": [
+      "Holguín",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Holguín, que se identifica como provincia oriental con importantes playas y patrimonio."
+  },
+  {
+    "id": "CU-CG-090",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Holguín»?",
+    "options": [
+      "provincia oriental con importantes playas y patrimonio",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Holguín» se asocia con provincia oriental con importantes playas y patrimonio."
+  },
+  {
+    "id": "CU-CG-091",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: provincia nombrada por el yate Granma?",
+    "options": [
+      "Granma",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Granma, que se identifica como provincia nombrada por el yate Granma."
+  },
+  {
+    "id": "CU-CG-092",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Granma»?",
+    "options": [
+      "provincia nombrada por el yate Granma",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Granma» se asocia con provincia nombrada por el yate Granma."
+  },
+  {
+    "id": "CU-CG-093",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: edificio monumental de la capital?",
+    "options": [
+      "el Capitolio de La Habana",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es el Capitolio de La Habana, que se identifica como edificio monumental de la capital."
+  },
+  {
+    "id": "CU-CG-094",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «el Capitolio de La Habana»?",
+    "options": [
+      "edificio monumental de la capital",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«el Capitolio de La Habana» se asocia con edificio monumental de la capital."
+  },
+  {
+    "id": "CU-CG-095",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: gran espacio cívico de La Habana?",
+    "options": [
+      "la Plaza de la Revolución",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es la Plaza de la Revolución, que se identifica como gran espacio cívico de La Habana."
+  },
+  {
+    "id": "CU-CG-096",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «la Plaza de la Revolución»?",
+    "options": [
+      "gran espacio cívico de La Habana",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«la Plaza de la Revolución» se asocia con gran espacio cívico de La Habana."
+  },
+  {
+    "id": "CU-CG-097",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: una de las universidades más antiguas de América?",
+    "options": [
+      "Universidad de La Habana",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Universidad de La Habana, que se identifica como una de las universidades más antiguas de América."
+  },
+  {
+    "id": "CU-CG-098",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Universidad de La Habana»?",
+    "options": [
+      "una de las universidades más antiguas de América",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Universidad de La Habana» se asocia con una de las universidades más antiguas de América."
+  },
+  {
+    "id": "CU-CG-099",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "identify",
+    "question": "¿Cuál opción corresponde a esta descripción: institución cultural fundada en La Habana?",
+    "options": [
+      "Casa de las Américas",
+      "una institución extranjera",
+      "un término sin relación con Cuba",
+      "una marca comercial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La respuesta correcta es Casa de las Américas, que se identifica como institución cultural fundada en La Habana."
+  },
+  {
+    "id": "CU-CG-100",
+    "country": "CU",
+    "category": "cultura_general",
+    "difficulty": "medium",
+    "type": "description",
+    "question": "¿Qué se asocia correctamente con «Casa de las Américas»?",
+    "options": [
+      "institución cultural fundada en La Habana",
+      "una capital europea",
+      "un deporte de invierno",
+      "un sistema operativo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "«Casa de las Américas» se asocia con institución cultural fundada en La Habana."
+  }
+]

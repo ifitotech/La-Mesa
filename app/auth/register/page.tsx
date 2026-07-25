@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
-import { registerUser } from "@/services/auth";
+import { loginWithGoogle, registerUser } from "@/services/auth";
 
 type FormData = {
   email: string;
@@ -30,9 +30,18 @@ export default function RegisterPage() {
 
       reset();
 
-      router.push("/dashboard");
-    } catch (error: any) {
-      setMessage(error.message);
+      router.push("/onboarding");
+    } catch (error: unknown) {
+      setMessage(error instanceof Error ? error.message : "No se pudo crear la cuenta.");
+    }
+  };
+
+  const handleGoogleLogin = async () => {
+    try {
+      await loginWithGoogle();
+      router.push("/onboarding");
+    } catch (error: unknown) {
+      setMessage(error instanceof Error ? error.message : "No se pudo registrar con Google.");
     }
   };
 
@@ -68,6 +77,17 @@ export default function RegisterPage() {
           className="w-full rounded-lg bg-green-600 py-3 font-semibold text-white hover:bg-green-700"
         >
           Crear cuenta
+        </button>
+
+        <div className="my-5 flex items-center gap-3 text-xs text-slate-400"><span className="h-px flex-1 bg-slate-300" />o continúa con<span className="h-px flex-1 bg-slate-300" /></div>
+
+        <button
+          type="button"
+          onClick={handleGoogleLogin}
+          className="flex w-full items-center justify-center gap-3 rounded-lg border border-slate-300 bg-white py-3 font-semibold text-slate-800 hover:bg-slate-50"
+        >
+          <span className="text-lg font-black text-red-500">G</span>
+          Registrarme con Google
         </button>
 
         {message && (

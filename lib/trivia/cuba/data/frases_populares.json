@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "CU-FP-001",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en talla»?",
+    "options": [
+      "estar bromeando o conversando de forma relajada",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en talla» suele significar estar bromeando o conversando de forma relajada."
+  },
+  {
+    "id": "CU-FP-002",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en talla»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar bromeando o conversando de forma relajada.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar bromeando o conversando de forma relajada."
+  },
+  {
+    "id": "CU-FP-003",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar escapao»?",
+    "options": [
+      "ser muy bueno o hábil en algo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar escapao» suele significar ser muy bueno o hábil en algo."
+  },
+  {
+    "id": "CU-FP-004",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar escapao»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de ser muy bueno o hábil en algo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar ser muy bueno o hábil en algo."
+  },
+  {
+    "id": "CU-FP-005",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «echar un pie»?",
+    "options": [
+      "irse de un lugar",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «echar un pie» suele significar irse de un lugar."
+  },
+  {
+    "id": "CU-FP-006",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «echar un pie»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de irse de un lugar.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar irse de un lugar."
+  },
+  {
+    "id": "CU-FP-007",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «dar chucho»?",
+    "options": [
+      "bromear o provocar amistosamente",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «dar chucho» suele significar bromear o provocar amistosamente."
+  },
+  {
+    "id": "CU-FP-008",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «dar chucho»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de bromear o provocar amistosamente.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar bromear o provocar amistosamente."
+  },
+  {
+    "id": "CU-FP-009",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «formar un bateo»?",
+    "options": [
+      "crear un problema o una discusión",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «formar un bateo» suele significar crear un problema o una discusión."
+  },
+  {
+    "id": "CU-FP-010",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «formar un bateo»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de crear un problema o una discusión.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar crear un problema o una discusión."
+  },
+  {
+    "id": "CU-FP-011",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en candela»?",
+    "options": [
+      "estar en una situación difícil o intensa",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en candela» suele significar estar en una situación difícil o intensa."
+  },
+  {
+    "id": "CU-FP-012",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en candela»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar en una situación difícil o intensa.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar en una situación difícil o intensa."
+  },
+  {
+    "id": "CU-FP-013",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «qué bolá»?",
+    "options": [
+      "saludo informal equivalente a qué pasa",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «qué bolá» suele significar saludo informal equivalente a qué pasa."
+  },
+  {
+    "id": "CU-FP-014",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «qué bolá»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de saludo informal equivalente a qué pasa.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar saludo informal equivalente a qué pasa."
+  },
+  {
+    "id": "CU-FP-015",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «asere»?",
+    "options": [
+      "forma informal de llamar a un amigo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «asere» suele significar forma informal de llamar a un amigo."
+  },
+  {
+    "id": "CU-FP-016",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «asere»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de forma informal de llamar a un amigo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar forma informal de llamar a un amigo."
+  },
+  {
+    "id": "CU-FP-017",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «meter la pata»?",
+    "options": [
+      "cometer un error",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «meter la pata» suele significar cometer un error."
+  },
+  {
+    "id": "CU-FP-018",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «meter la pata»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de cometer un error.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar cometer un error."
+  },
+  {
+    "id": "CU-FP-019",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «no coger lucha»?",
+    "options": [
+      "no preocuparse demasiado",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «no coger lucha» suele significar no preocuparse demasiado."
+  },
+  {
+    "id": "CU-FP-020",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «no coger lucha»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de no preocuparse demasiado.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar no preocuparse demasiado."
+  },
+  {
+    "id": "CU-FP-021",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar frito»?",
+    "options": [
+      "estar agotado o en problemas",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar frito» suele significar estar agotado o en problemas."
+  },
+  {
+    "id": "CU-FP-022",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar frito»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar agotado o en problemas.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar agotado o en problemas."
+  },
+  {
+    "id": "CU-FP-023",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «buscarse un lío»?",
+    "options": [
+      "meterse en un problema",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «buscarse un lío» suele significar meterse en un problema."
+  },
+  {
+    "id": "CU-FP-024",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «buscarse un lío»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de meterse en un problema.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar meterse en un problema."
+  },
+  {
+    "id": "CU-FP-025",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «tirar un cabo»?",
+    "options": [
+      "ayudar a alguien",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «tirar un cabo» suele significar ayudar a alguien."
+  },
+  {
+    "id": "CU-FP-026",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «tirar un cabo»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de ayudar a alguien.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar ayudar a alguien."
+  },
+  {
+    "id": "CU-FP-027",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar hecho un mango»?",
+    "options": [
+      "verse muy atractivo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar hecho un mango» suele significar verse muy atractivo."
+  },
+  {
+    "id": "CU-FP-028",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar hecho un mango»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de verse muy atractivo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar verse muy atractivo."
+  },
+  {
+    "id": "CU-FP-029",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «ponerse para las cosas»?",
+    "options": [
+      "tomar algo en serio y actuar",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «ponerse para las cosas» suele significar tomar algo en serio y actuar."
+  },
+  {
+    "id": "CU-FP-030",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «ponerse para las cosas»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de tomar algo en serio y actuar.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar tomar algo en serio y actuar."
+  },
+  {
+    "id": "CU-FP-031",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «dar una muela»?",
+    "options": [
+      "hablar mucho para convencer o entretener",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «dar una muela» suele significar hablar mucho para convencer o entretener."
+  },
+  {
+    "id": "CU-FP-032",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «dar una muela»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de hablar mucho para convencer o entretener.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar hablar mucho para convencer o entretener."
+  },
+  {
+    "id": "CU-FP-033",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «comerse el cable»?",
+    "options": [
+      "pasar por una situación económica difícil",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «comerse el cable» suele significar pasar por una situación económica difícil."
+  },
+  {
+    "id": "CU-FP-034",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «comerse el cable»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de pasar por una situación económica difícil.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar pasar por una situación económica difícil."
+  },
+  {
+    "id": "CU-FP-035",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar arriba de la bola»?",
+    "options": [
+      "estar bien informado o actualizado",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar arriba de la bola» suele significar estar bien informado o actualizado."
+  },
+  {
+    "id": "CU-FP-036",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar arriba de la bola»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar bien informado o actualizado.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar bien informado o actualizado."
+  },
+  {
+    "id": "CU-FP-037",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «bajar un cambio»?",
+    "options": [
+      "calmarse o reducir la intensidad",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «bajar un cambio» suele significar calmarse o reducir la intensidad."
+  },
+  {
+    "id": "CU-FP-038",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «bajar un cambio»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de calmarse o reducir la intensidad.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar calmarse o reducir la intensidad."
+  },
+  {
+    "id": "CU-FP-039",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar al cantío de un gallo»?",
+    "options": [
+      "estar muy cerca",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar al cantío de un gallo» suele significar estar muy cerca."
+  },
+  {
+    "id": "CU-FP-040",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar al cantío de un gallo»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar muy cerca.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar muy cerca."
+  },
+  {
+    "id": "CU-FP-041",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «irse de rosca»?",
+    "options": [
+      "excederse o pasarse de la raya",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «irse de rosca» suele significar excederse o pasarse de la raya."
+  },
+  {
+    "id": "CU-FP-042",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «irse de rosca»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de excederse o pasarse de la raya.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar excederse o pasarse de la raya."
+  },
+  {
+    "id": "CU-FP-043",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «tener tremendo piquete»?",
+    "options": [
+      "tener mucho estilo o presencia",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «tener tremendo piquete» suele significar tener mucho estilo o presencia."
+  },
+  {
+    "id": "CU-FP-044",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «tener tremendo piquete»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de tener mucho estilo o presencia.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar tener mucho estilo o presencia."
+  },
+  {
+    "id": "CU-FP-045",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en la concreta»?",
+    "options": [
+      "estar enfocado en la realidad o en lo importante",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en la concreta» suele significar estar enfocado en la realidad o en lo importante."
+  },
+  {
+    "id": "CU-FP-046",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en la concreta»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar enfocado en la realidad o en lo importante.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar enfocado en la realidad o en lo importante."
+  },
+  {
+    "id": "CU-FP-047",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «ser un punto»?",
+    "options": [
+      "ser una persona confiable o destacada",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «ser un punto» suele significar ser una persona confiable o destacada."
+  },
+  {
+    "id": "CU-FP-048",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «ser un punto»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de ser una persona confiable o destacada.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar ser una persona confiable o destacada."
+  },
+  {
+    "id": "CU-FP-049",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "easy",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «no es fácil»?",
+    "options": [
+      "señalar que algo es complicado o sorprendente",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «no es fácil» suele significar señalar que algo es complicado o sorprendente."
+  },
+  {
+    "id": "CU-FP-050",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «no es fácil»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de señalar que algo es complicado o sorprendente.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar señalar que algo es complicado o sorprendente."
+  },
+  {
+    "id": "CU-FP-051",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «eso está de madre»?",
+    "options": [
+      "algo extremo, impresionante o problemático según contexto",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «eso está de madre» suele significar algo extremo, impresionante o problemático según contexto."
+  },
+  {
+    "id": "CU-FP-052",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «eso está de madre»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de algo extremo, impresionante o problemático según contexto.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar algo extremo, impresionante o problemático según contexto."
+  },
+  {
+    "id": "CU-FP-053",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en baja»?",
+    "options": [
+      "estar desanimado o pasando un mal momento",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en baja» suele significar estar desanimado o pasando un mal momento."
+  },
+  {
+    "id": "CU-FP-054",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en baja»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar desanimado o pasando un mal momento.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar desanimado o pasando un mal momento."
+  },
+  {
+    "id": "CU-FP-055",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «subir la parada»?",
+    "options": [
+      "aumentar la dificultad o la exigencia",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «subir la parada» suele significar aumentar la dificultad o la exigencia."
+  },
+  {
+    "id": "CU-FP-056",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «subir la parada»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de aumentar la dificultad o la exigencia.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar aumentar la dificultad o la exigencia."
+  },
+  {
+    "id": "CU-FP-057",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «darle cuero»?",
+    "options": [
+      "criticar, molestar o insistir mucho",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «darle cuero» suele significar criticar, molestar o insistir mucho."
+  },
+  {
+    "id": "CU-FP-058",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «darle cuero»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de criticar, molestar o insistir mucho.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar criticar, molestar o insistir mucho."
+  },
+  {
+    "id": "CU-FP-059",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en la jugada»?",
+    "options": [
+      "estar atento e involucrado",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en la jugada» suele significar estar atento e involucrado."
+  },
+  {
+    "id": "CU-FP-060",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en la jugada»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar atento e involucrado.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar atento e involucrado."
+  },
+  {
+    "id": "CU-FP-061",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «qué clase de»?",
+    "options": [
+      "forma enfática de destacar algo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «qué clase de» suele significar forma enfática de destacar algo."
+  },
+  {
+    "id": "CU-FP-062",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «qué clase de»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de forma enfática de destacar algo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar forma enfática de destacar algo."
+  },
+  {
+    "id": "CU-FP-063",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «quedarse embarcado»?",
+    "options": [
+      "quedarse esperando o sin solución",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «quedarse embarcado» suele significar quedarse esperando o sin solución."
+  },
+  {
+    "id": "CU-FP-064",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «quedarse embarcado»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de quedarse esperando o sin solución.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar quedarse esperando o sin solución."
+  },
+  {
+    "id": "CU-FP-065",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «hacer la historia»?",
+    "options": [
+      "resolver algo de forma informal o improvisada",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «hacer la historia» suele significar resolver algo de forma informal o improvisada."
+  },
+  {
+    "id": "CU-FP-066",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «hacer la historia»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de resolver algo de forma informal o improvisada.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar resolver algo de forma informal o improvisada."
+  },
+  {
+    "id": "CU-FP-067",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en el aire»?",
+    "options": [
+      "no tener algo claro o seguro",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en el aire» suele significar no tener algo claro o seguro."
+  },
+  {
+    "id": "CU-FP-068",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en el aire»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de no tener algo claro o seguro.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar no tener algo claro o seguro."
+  },
+  {
+    "id": "CU-FP-069",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «ser un paquete»?",
+    "options": [
+      "ser poco hábil o decepcionante en algo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «ser un paquete» suele significar ser poco hábil o decepcionante en algo."
+  },
+  {
+    "id": "CU-FP-070",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «ser un paquete»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de ser poco hábil o decepcionante en algo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar ser poco hábil o decepcionante en algo."
+  },
+  {
+    "id": "CU-FP-071",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «andar a la viva»?",
+    "options": [
+      "estar alerta y aprovechar oportunidades",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «andar a la viva» suele significar estar alerta y aprovechar oportunidades."
+  },
+  {
+    "id": "CU-FP-072",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «andar a la viva»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar alerta y aprovechar oportunidades.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar alerta y aprovechar oportunidades."
+  },
+  {
+    "id": "CU-FP-073",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «caer atrás»?",
+    "options": [
+      "insistir o perseguir un objetivo o persona",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «caer atrás» suele significar insistir o perseguir un objetivo o persona."
+  },
+  {
+    "id": "CU-FP-074",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «caer atrás»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de insistir o perseguir un objetivo o persona.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar insistir o perseguir un objetivo o persona."
+  },
+  {
+    "id": "CU-FP-075",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar en talla contigo»?",
+    "options": [
+      "estar bromeando contigo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar en talla contigo» suele significar estar bromeando contigo."
+  },
+  {
+    "id": "CU-FP-076",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar en talla contigo»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de estar bromeando contigo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar estar bromeando contigo."
+  },
+  {
+    "id": "CU-FP-077",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «se formó»?",
+    "options": [
+      "comenzó un problema, fiesta o situación intensa",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «se formó» suele significar comenzó un problema, fiesta o situación intensa."
+  },
+  {
+    "id": "CU-FP-078",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «se formó»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de comenzó un problema, fiesta o situación intensa.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar comenzó un problema, fiesta o situación intensa."
+  },
+  {
+    "id": "CU-FP-079",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «tremenda descarga»?",
+    "options": [
+      "una conversación, improvisación musical o momento intenso",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «tremenda descarga» suele significar una conversación, improvisación musical o momento intenso."
+  },
+  {
+    "id": "CU-FP-080",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «tremenda descarga»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de una conversación, improvisación musical o momento intenso.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar una conversación, improvisación musical o momento intenso."
+  },
+  {
+    "id": "CU-FP-081",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar jamaliche»?",
+    "options": [
+      "tener mucha hambre",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar jamaliche» suele significar tener mucha hambre."
+  },
+  {
+    "id": "CU-FP-082",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar jamaliche»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de tener mucha hambre.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar tener mucha hambre."
+  },
+  {
+    "id": "CU-FP-083",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «resolver»?",
+    "options": [
+      "encontrar una solución práctica, a veces improvisada",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «resolver» suele significar encontrar una solución práctica, a veces improvisada."
+  },
+  {
+    "id": "CU-FP-084",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «resolver»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de encontrar una solución práctica, a veces improvisada.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar encontrar una solución práctica, a veces improvisada."
+  },
+  {
+    "id": "CU-FP-085",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «inventar»?",
+    "options": [
+      "improvisar un plan o buscar una alternativa",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «inventar» suele significar improvisar un plan o buscar una alternativa."
+  },
+  {
+    "id": "CU-FP-086",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «inventar»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de improvisar un plan o buscar una alternativa.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar improvisar un plan o buscar una alternativa."
+  },
+  {
+    "id": "CU-FP-087",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «dar botella»?",
+    "options": [
+      "llevar gratuitamente a alguien en un vehículo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «dar botella» suele significar llevar gratuitamente a alguien en un vehículo."
+  },
+  {
+    "id": "CU-FP-088",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «dar botella»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de llevar gratuitamente a alguien en un vehículo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar llevar gratuitamente a alguien en un vehículo."
+  },
+  {
+    "id": "CU-FP-089",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «coger botella»?",
+    "options": [
+      "viajar aprovechando que alguien te lleva",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «coger botella» suele significar viajar aprovechando que alguien te lleva."
+  },
+  {
+    "id": "CU-FP-090",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «coger botella»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de viajar aprovechando que alguien te lleva.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar viajar aprovechando que alguien te lleva."
+  },
+  {
+    "id": "CU-FP-091",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar cuadrado»?",
+    "options": [
+      "tener un acuerdo o plan organizado",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar cuadrado» suele significar tener un acuerdo o plan organizado."
+  },
+  {
+    "id": "CU-FP-092",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar cuadrado»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de tener un acuerdo o plan organizado.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar tener un acuerdo o plan organizado."
+  },
+  {
+    "id": "CU-FP-093",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «cuadrar algo»?",
+    "options": [
+      "organizar o acordar algo",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «cuadrar algo» suele significar organizar o acordar algo."
+  },
+  {
+    "id": "CU-FP-094",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «cuadrar algo»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de organizar o acordar algo.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar organizar o acordar algo."
+  },
+  {
+    "id": "CU-FP-095",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «irse por encima del nivel»?",
+    "options": [
+      "superar expectativas o exagerar mucho",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «irse por encima del nivel» suele significar superar expectativas o exagerar mucho."
+  },
+  {
+    "id": "CU-FP-096",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «irse por encima del nivel»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de superar expectativas o exagerar mucho.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar superar expectativas o exagerar mucho."
+  },
+  {
+    "id": "CU-FP-097",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «estar pasado»?",
+    "options": [
+      "ser excesivo, sorprendente o muy bueno según contexto",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «estar pasado» suele significar ser excesivo, sorprendente o muy bueno según contexto."
+  },
+  {
+    "id": "CU-FP-098",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «estar pasado»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de ser excesivo, sorprendente o muy bueno según contexto.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar ser excesivo, sorprendente o muy bueno según contexto."
+  },
+  {
+    "id": "CU-FP-099",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "meaning",
+    "question": "¿Qué significa la expresión cubana «meter mano»?",
+    "options": [
+      "empezar a trabajar o actuar con energía",
+      "estar hablando de manera formal",
+      "referirse únicamente a comida",
+      "describir un lugar geográfico"
+    ],
+    "correctAnswer": 0,
+    "explanation": "En el habla popular cubana, «meter mano» suele significar empezar a trabajar o actuar con energía."
+  },
+  {
+    "id": "CU-FP-100",
+    "country": "CU",
+    "category": "frases_populares",
+    "difficulty": "medium",
+    "type": "usage",
+    "question": "¿En qué situación encaja mejor decir «meter mano»?",
+    "options": [
+      "Cuando alguien quiere expresar que se trata de empezar a trabajar o actuar con energía.",
+      "Cuando se habla de una fecha histórica.",
+      "Cuando se describe una receta.",
+      "Cuando se explica una regla matemática."
+    ],
+    "correctAnswer": 0,
+    "explanation": "La expresión se usa normalmente para comunicar empezar a trabajar o actuar con energía."
+  }
+]

@@ -11,9 +11,21 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
 };
 
+const hasValidFirebaseConfig = Boolean(
+  firebaseConfig.apiKey?.startsWith("AIza") &&
+  firebaseConfig.authDomain &&
+  firebaseConfig.projectId &&
+  firebaseConfig.appId
+);
+
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
-export const auth = getAuth(app);
+// Firebase Auth depends on browser APIs and must not be initialized while
+// Next.js prerenders client components on the server.
+export const auth =
+  typeof window === "undefined" || !hasValidFirebaseConfig
+    ? null
+    : getAuth(app);
 export const db = getFirestore(app);
 
 export default app;

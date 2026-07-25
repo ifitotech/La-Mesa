@@ -1,17 +1,27 @@
-type Props = {
+import { ReactNode } from "react";
+
+type DashboardCardProps = {
   title: string;
   description: string;
+  icon?: ReactNode;
 };
 
 export default function DashboardCard({
   title,
   description,
-}: Props) {
+  icon,
+}: DashboardCardProps) {
   return (
-    <div className="rounded-xl border bg-white p-6 shadow-sm transition hover:shadow-lg">
-      <h3 className="text-xl font-bold">{title}</h3>
+    <div className="group cursor-pointer rounded-3xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:bg-slate-800">
+      <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white transition-colors group-hover:bg-blue-500">
+        {icon}
+      </div>
 
-      <p className="mt-3 text-gray-600">
+      <h3 className="text-xl font-semibold text-white">
+        {title}
+      </h3>
+
+      <p className="mt-2 text-sm leading-6 text-slate-400">
         {description}
       </p>
     </div>

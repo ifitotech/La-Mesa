@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "CU-VF-001",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La Habana es la capital de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-002",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El Pico Turquino es el punto más alto de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-003",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El río Cauto es el río más largo de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-004",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La palma real es el árbol nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-005",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La mariposa es la flor nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-006",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El tocororo es el ave nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-007",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Cuba forma parte de las Antillas Mayores.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-008",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Varadero se encuentra en Matanzas.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-009",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Baracoa fue la primera villa fundada por los españoles en Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-010",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Trinidad es conocida por su arquitectura colonial.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-011",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El son es un género fundamental de la música cubana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-012",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El danzón surgió en Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-013",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La rumba cubana tiene fuertes raíces africanas.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-014",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "José Martí es reconocido como Héroe Nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-015",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Antonio Maceo fue conocido como el Titán de Bronce.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-016",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Carlos Manuel de Céspedes inició la Guerra de los Diez Años.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-017",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El 10 de octubre de 1868 comenzó la Guerra de los Diez Años.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-018",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El Malecón es un paseo marítimo de La Habana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-019",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La Ciénaga de Zapata está en Matanzas.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-020",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Pinar del Río es famoso por su producción de tabaco.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-021",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La guayabera es una prenda tradicional asociada a Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-022",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Moros y cristianos combina arroz y frijoles negros.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-023",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La yuca con mojo suele llevar ajo y cítricos.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-024",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El lechón asado es habitual en celebraciones cubanas.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-025",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Los tostones se preparan con plátano verde.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-026",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La Universidad de La Habana fue fundada en el siglo XVIII.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-027",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Cienfuegos es conocida como la Perla del Sur.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-028",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Matanzas ha sido llamada la Atenas de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-029",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La Isla de la Juventud pertenece al archipiélago cubano.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-030",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La Sierra Maestra se ubica en el oriente de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-031",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El Capitolio de La Habana es un edificio monumental.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-032",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La Plaza de la Revolución está en La Habana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-033",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Elpidio Valdés es un personaje animado cubano.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-034",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Vampiros en La Habana es una película animada cubana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-035",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El béisbol ha sido uno de los deportes más populares en Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-036",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El boxeo cubano ha obtenido numerosos títulos olímpicos.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-037",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Cuba ha destacado internacionalmente en voleibol.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-038",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Javier Sotomayor fue un destacado saltador de altura.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-039",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Ana Fidelia Quirot fue corredora de 800 metros.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-040",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Teófilo Stevenson fue campeón olímpico de boxeo.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-041",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Benny Moré fue conocido como el Bárbaro del Ritmo.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-042",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Celia Cruz fue una cantante cubana de fama internacional.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-043",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Compay Segundo integró Buena Vista Social Club.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-044",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Silvio Rodríguez es una figura de la Nueva Trova.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-045",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Pablo Milanés fue una figura de la Nueva Trova.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-046",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Chucho Valdés es pianista y compositor cubano.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-047",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Ernesto Lecuona fue compositor cubano.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-048",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Ignacio Piñeiro fundó el Septeto Nacional.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-049",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Los Van Van es una agrupación cubana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-050",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Irakere fue una agrupación cubana influyente.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La afirmación es verdadera."
+  },
+  {
+    "id": "CU-VF-051",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La capital de Cuba es Santiago de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-052",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El Pico Turquino está en Matanzas.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-053",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El río Cauto desemboca en el océano Pacífico.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-054",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El cocodrilo es el ave nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-055",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "La rosa es la flor nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-056",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "El pino es el árbol nacional de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-057",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Cuba pertenece a las Antillas Menores.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-058",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Varadero está en Pinar del Río.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-059",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Baracoa está en el occidente de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-060",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "easy",
+    "type": "true_false",
+    "question": "Trinidad fue fundada en el siglo XX.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-061",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El son cubano nació en Europa.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-062",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El danzón es un deporte.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-063",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La rumba cubana no tiene influencia africana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-064",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "José Martí fue pelotero profesional.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-065",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Antonio Maceo fue conocido como el Rey del Mambo.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-066",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Carlos Manuel de Céspedes fue cantante de ópera.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-067",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La Guerra de los Diez Años comenzó en 1959.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-068",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El Malecón está en Santiago de Chile.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-069",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La Ciénaga de Zapata está en Holguín.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-070",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Pinar del Río es famosa por sus minas de carbón.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-071",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La guayabera es un instrumento musical.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-072",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Moros y cristianos se prepara con pasta y queso.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-073",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La yuca con mojo es siempre un postre dulce.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-074",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El lechón asado es un tipo de bebida.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-075",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Los tostones se preparan con manzana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-076",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La Universidad de La Habana fue fundada en el siglo XXI.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-077",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Cienfuegos es conocida como la Perla del Norte.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-078",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Matanzas es la capital de Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-079",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La Isla de la Juventud es un país independiente.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-080",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La Sierra Maestra está en Europa.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-081",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El Capitolio de La Habana es un estadio de béisbol.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-082",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "La Plaza de la Revolución se encuentra en Madrid.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-083",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Elpidio Valdés es un personaje estadounidense.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-084",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Vampiros en La Habana es un documental de astronomía.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-085",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El béisbol nunca ha sido popular en Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-086",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Cuba no ha ganado medallas olímpicas en boxeo.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-087",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "El voleibol no tiene tradición competitiva en Cuba.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-088",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Javier Sotomayor fue nadador.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-089",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Ana Fidelia Quirot fue ajedrecista.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-090",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Teófilo Stevenson fue ciclista.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-091",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Benny Moré fue conocido como el Príncipe de las Mareas.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-092",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Celia Cruz nació en Argentina.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-093",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Compay Segundo fue corredor olímpico.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-094",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Silvio Rodríguez es conocido principalmente como escultor.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-095",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Pablo Milanés fue futbolista profesional.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-096",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Chucho Valdés es un lanzador de béisbol.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-097",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Ernesto Lecuona fue explorador polar.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-098",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Ignacio Piñeiro fundó Los Beatles.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-099",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Los Van Van es una orquesta sinfónica alemana.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  },
+  {
+    "id": "CU-VF-100",
+    "country": "CU",
+    "category": "verdadero_falso",
+    "difficulty": "medium",
+    "type": "true_false",
+    "question": "Irakere fue un equipo de baloncesto.",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correctAnswer": 1,
+    "explanation": "La afirmación es falsa."
+  }
+]
