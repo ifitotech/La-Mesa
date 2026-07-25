@@ -1,0 +1,91 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    match /users/{uid} {
+      allow read: if signedIn();
+      allow create, update, delete: if isOwner(uid);
+
+      match /notifications/{notificationId} {
+        allow read, write: if isOwner(uid);
+      }
+    }
+
+    match /rooms/{roomId} {
+      allow read, create, update, delete: if signedIn();
+
+      match /chat/{messageId} {
+        allow read, create: if signedIn();
+        allow update, delete: if signedIn()
+          && resource.data.uid == request.auth.uid;
+      }
+    }
+
+    match /games/{gameId} {
+      allow read, create, update: if signedIn();
+    }
+
+    match /matches/{matchId} {
+      allow read, create: if signedIn();
+    }
+
+    match /friendRequests/{requestId} {
+      allow create: if signedIn()
+        && request.resource.data.from == request.auth.uid;
+      allow read, update, delete: if signedIn()
+        && (resource.data.from == request.auth.uid
+          || resource.data.to == request.auth.uid);
+    }
+
+    match /friends/{friendshipId} {
+      allow create: if signedIn()
+        && request.auth.uid in request.resource.data.users;
+      allow read, update, delete: if signedIn()
+        && request.auth.uid in resource.data.users;
+    }
+
+    match /store/{itemId} {
+      allow read: if true;
+    }
+
+    match /questions/{questionId} {
+      allow read: if true;
+    }
+
+    match /achievements/{achievementId} {
+      allow read: if true;
+    }
+
+    match /dailyMissions/{missionId} {
+      allow read: if true;
+    }
+
+    match /config/{documentId} {
+      allow read: if true;
+    }
+
+    match /analytics/{eventId} {
+      allow create: if signedIn();
+    }
+
+    match /reports/{reportId} {
+      allow create: if signedIn();
+    }
+
+    match /invites/{inviteId} {
+      allow read, create, update, delete: if signedIn();
+    }
+
+    match /queue/{entryId} {
+      allow read, create, update, delete: if signedIn();
+    }
+  }
+}

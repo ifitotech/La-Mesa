@@ -26,7 +26,13 @@ export default function AppLayout({
         <div className={`flex flex-1 flex-col ${shouldLockViewport ? "min-h-0" : "min-h-screen"}`}>
           <Topbar />
 
-          <main className={`flex-1 overflow-x-hidden overflow-y-auto px-4 pb-24 pt-5 overscroll-contain sm:px-6 md:py-7 xl:px-8 xl:pb-8 ${shouldLockViewport ? "min-h-0 touch-pan-y" : ""}`}>
+          <main
+            className={`flex-1 overflow-x-hidden px-4 pb-24 pt-5 sm:px-6 md:py-7 xl:px-8 xl:pb-8 ${
+              shouldLockViewport
+                ? "min-h-0 overflow-y-auto overscroll-contain touch-pan-y"
+                : ""
+            }`}
+          >
             {children}
           </main>
           <MobileNavigation />

@@ -108,6 +108,15 @@ body {
     linear-gradient(135deg, #03070c, #08121d 50%, #03070c);
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  overflow: visible;
+}
+
 * {
   box-sizing: border-box;
   border-color: var(--border);

@@ -10,12 +10,14 @@ import {
   updateDoc,
   where,
   getDoc,
+  runTransaction,
 } from "firebase/firestore";
 
 import { db } from "@/firebase/config";
 import { createDominoGame } from "@/services/game";
 import {
   getGameDefinition,
+  isGameAvailableOnline,
   type GameId,
 } from "@/lib/game-catalog";
 
@@ -72,6 +74,10 @@ export async function createRoom(
   hostUid: string,
   game: GameId = "trivia"
 ): Promise<string> {
+  if (!isGameAvailableOnline(game)) {
+    throw new Error("Este juego todavía no está disponible en partidas online.");
+  }
+
   const code = await createUniqueCode();
   const definition = getGameDefinition(game);
 
@@ -170,7 +176,8 @@ export async function leaveRoom(
 }
 
 export async function startRoom(
-  roomId: string
+  roomId: string,
+  uid: string,
 ) {
   const snap = await getDoc(
     doc(db, COLLECTION, roomId)
@@ -181,6 +188,10 @@ export async function startRoom(
   }
 
   const room = snap.data() as Room;
+
+  if (room.host !== uid) {
+    throw new Error("Solo el anfitrión puede iniciar la partida.");
+  }
 
   if (room.players.length < getGameDefinition(room.game).minPlayers) {
     throw new Error("No hay suficientes jugadores para iniciar este juego.");
@@ -209,7 +220,32 @@ export async function submitTriviaScore(
   uid: string,
   score: number
 ) {
-  await updateDoc(doc(db, COLLECTION, roomId), {
-    [`scores.${uid}`]: score,
+  const roomRef = doc(db, COLLECTION, roomId);
+
+  await runTransaction(db, async (transaction) => {
+    const snapshot = await transaction.get(roomRef);
+
+    if (!snapshot.exists()) {
+      throw new Error("Sala no encontrada.");
+    }
+
+    const room = snapshot.data() as Room;
+
+    if (!room.players.includes(uid)) {
+      throw new Error("No perteneces a esta sala.");
+    }
+
+    const scores = {
+      ...(room.scores ?? {}),
+      [uid]: Math.max(0, Math.round(score)),
+    };
+    const finished = room.players.every((playerId) => scores[playerId] !== undefined);
+
+    transaction.update(roomRef, {
+      scores,
+      ...(finished
+        ? { status: "finished", finishedAt: serverTimestamp() }
+        : {}),
+    });
   });
 }

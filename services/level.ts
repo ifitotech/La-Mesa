@@ -51,7 +51,11 @@ export function getLevelInfo(level: number): LevelInfo {
 }
 
 export function getLevelForXP(xp: number): number {
-  const knownLevel = [...LEVELS].reverse().find((item) => xp >= item.requiredXP);
-  if (knownLevel) return knownLevel.level;
+  if (xp >= 1400) return 7;
+  if (xp >= 1000) return 6;
+  if (xp >= 700) return 5;
+  if (xp >= 450) return 4;
+  if (xp >= 250) return 3;
+  if (xp >= 100) return 2;
   return 1;
 }

@@ -178,6 +178,10 @@ export function isGameEnabledForCountry(gameId: GameId, countryCode: string) {
   return countryCode !== "US" || (gameId !== "cards" && gameId !== "parchis");
 }
 
+export function isGameAvailableOnline(gameId: GameId) {
+  return gameId === "trivia";
+}
+
 const englishGameCopy: Record<GameId, { name: string; description: string }> = {
   trivia: { name: "Local Trivia", description: "Culture, music, food, and traditions from your selected country." },
   bible: { name: "Bible Quiz", description: "Questions to learn, share, and enjoy with family." },

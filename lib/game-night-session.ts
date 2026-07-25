@@ -35,6 +35,10 @@ export function saveGameNightSession(session: GameNightSession) {
   window.localStorage.setItem(gameNightSessionKey, JSON.stringify(session));
 }
 
+export function clearGameNightSession() {
+  window.localStorage.removeItem(gameNightSessionKey);
+}
+
 export function recordGameNightRound(session: GameNightSession, game: string): GameNightSession {
   const round: GameNightRound = {
     id: typeof crypto !== "undefined" ? crypto.randomUUID() : `${Date.now()}-${game}`,

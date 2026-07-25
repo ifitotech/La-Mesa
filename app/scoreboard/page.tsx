@@ -15,21 +15,23 @@ export default function ScoreboardPage() {
   const [mode, setMode] = useState<GameNightMode>("individual");
   const [name, setName] = useState("");
   const [hydrated, setHydrated] = useState(false);
+  const [sessionActive, setSessionActive] = useState(false);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
       const session = getGameNightSession();
       setPlayers(session?.participants ?? []);
       setMode(session?.mode ?? "individual");
+      setSessionActive(Boolean(session));
       setHydrated(true);
     }, 0);
     return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    if (!hydrated) return;
+    if (!hydrated || !sessionActive) return;
     saveGameNightSession({ mode, participants: players, triviaSeconds: getGameNightSession()?.triviaSeconds });
-  }, [hydrated, mode, players]);
+  }, [hydrated, mode, players, sessionActive]);
 
   const ranking = [...players].sort((a, b) => b.score - a.score);
 
@@ -37,6 +39,7 @@ export default function ScoreboardPage() {
     event.preventDefault();
     const cleanName = name.trim();
     if (!cleanName || mode === "solo") return;
+    setSessionActive(true);
     setPlayers((current) => [...current, { id: crypto.randomUUID(), name: cleanName, score: 0 }]);
     setName("");
   }

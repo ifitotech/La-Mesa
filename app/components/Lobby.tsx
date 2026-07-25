@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import Avatar from "./Avatar";
+import RoomChat from "./RoomChat";
 import TriviaGame from "./TriviaGame";
 
 import { doc, onSnapshot } from "firebase/firestore";
@@ -24,19 +25,26 @@ type Props = {
 };
 
 export default function Lobby({ roomId }: Props) {
-  const { user } = useAuthContext();
+  const { user, loading: loadingAuth } = useAuthContext();
 
   const [room, setRoom] = useState<Room | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [copied, setCopied] = useState(false);
   const [triviaFinished, setTriviaFinished] = useState(false);
   const [triviaScore, setTriviaScore] = useState<number | null>(null);
+  const [error, setError] = useState("");
+  const [starting, setStarting] = useState(false);
 
   useEffect(() => {
+    if (!user) return;
+
     const unsubscribe = onSnapshot(
       doc(db, "rooms", roomId),
       async (snapshot) => {
-        if (!snapshot.exists()) return;
+        if (!snapshot.exists()) {
+          setError("Esta sala ya no existe o fue cerrada.");
+          return;
+        }
 
         const data = snapshot.data() as Room;
 
@@ -51,11 +59,12 @@ export default function Lobby({ roomId }: Props) {
             (player): player is Player => player !== null
           )
         );
-      }
+      },
+      () => setError("No pudimos abrir esta sala. Revisa tu conexión y permisos."),
     );
 
     return unsubscribe;
-  }, [roomId]);
+  }, [roomId, user]);
 
   async function copyCode() {
     if (!room) return;
@@ -83,8 +92,73 @@ export default function Lobby({ roomId }: Props) {
     setTriviaFinished(true);
   }
 
+  async function handleStart() {
+    if (!user) return;
+
+    try {
+      setStarting(true);
+      setError("");
+      await startRoom(roomId, user.uid);
+    } catch (cause) {
+      setError(
+        cause instanceof Error
+          ? cause.message
+          : "No se pudo iniciar la partida.",
+      );
+    } finally {
+      setStarting(false);
+    }
+  }
+
+  if (loadingAuth) {
+    return <div className="mesa-panel rounded-3xl p-6">Comprobando tu sesión...</div>;
+  }
+
+  if (!user) {
+    return (
+      <div className="mesa-panel rounded-3xl p-8 text-center">
+        <h1 className="text-2xl font-black">Inicia sesión para entrar a la sala</h1>
+        <Link
+          href={`/auth/login?next=/lobby/${roomId}`}
+          className="mt-5 inline-flex rounded-xl bg-violet-600 px-5 py-3 font-black"
+        >
+          Iniciar sesión
+        </Link>
+      </div>
+    );
+  }
+
+  if (error && !room) {
+    return (
+      <div className="mesa-panel rounded-3xl p-8 text-center">
+        <h1 className="text-2xl font-black">No pudimos abrir la sala</h1>
+        <p role="status" className="mt-3 text-rose-200">{error}</p>
+        <Link href="/online" className="mt-5 inline-flex rounded-xl bg-violet-600 px-5 py-3 font-black">
+          Volver a juegos online
+        </Link>
+      </div>
+    );
+  }
+
   const game = getGameDefinition(room.game);
   const currentPlayer = players.find((player) => player.uid === user?.uid);
+
+  if (room.status === "finished") {
+    return (
+      <section className="mesa-panel-gold rounded-3xl p-8 text-center">
+        <h1 className="text-3xl font-black">La partida terminó</h1>
+        <p className="mt-3 text-slate-400">
+          Ya están listos los resultados de todos los participantes.
+        </p>
+        <Link
+          href={`/results/${roomId}`}
+          className="mt-6 inline-flex rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-5 py-3 font-black"
+        >
+          Ver resultados
+        </Link>
+      </section>
+    );
+  }
 
   if (room.game === "trivia" && room.status === "playing") {
     return (
@@ -206,15 +280,29 @@ export default function Lobby({ roomId }: Props) {
 
       </div>
 
-      {user?.uid === room.host &&
+      {error && <p role="status" className="mt-4 text-center text-sm text-rose-300">{error}</p>}
+
+      {user.uid === room.host &&
         room.status === "waiting" && (
           <button
-            onClick={() => startRoom(roomId)}
+            onClick={() => void handleStart()}
+            disabled={starting}
             className="mt-8 w-full rounded-xl bg-gradient-to-r from-emerald-500 to-green-700 py-4 text-lg font-bold hover:from-emerald-400 hover:to-green-600"
           >
-            ▶ Iniciar partida
+            {starting ? "Iniciando..." : "▶ Iniciar partida"}
           </button>
         )}
+
+      {currentPlayer && (
+        <div className="mt-8">
+          <RoomChat
+            roomId={roomId}
+            uid={user.uid}
+            name={currentPlayer.displayName}
+            avatar={currentPlayer.avatar}
+          />
+        </div>
+      )}
 
     </div>
   );

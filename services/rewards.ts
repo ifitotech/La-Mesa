@@ -79,15 +79,22 @@ export async function claimMatchReward(
 
   return runTransaction(db, async (transaction) => {
     const user = await transaction.get(userRef);
+    if (!user.exists()) return null;
+
     const claimedRooms = (user.data()?.claimedRooms ?? []) as string[];
 
     if (claimedRooms.includes(roomId)) return null;
+    const nextXP = Number(user.data().xp ?? 0) + reward.xp;
 
     transaction.update(userRef, {
       xp: increment(reward.xp),
       coins: increment(reward.coins),
       gems: increment(reward.gems),
       gamesPlayed: increment(1),
+      ...(position === 1
+        ? { wins: increment(1), trophies: increment(1) }
+        : { losses: increment(1) }),
+      level: getLevelForXP(nextXP),
       claimedRooms: arrayUnion(roomId),
     });
 

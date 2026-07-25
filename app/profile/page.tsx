@@ -1,14 +1,17 @@
 "use client";
 
 import { updateProfile } from "firebase/auth";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import Avatar from "@/app/components/Avatar";
 import AvatarPicker from "@/app/components/AvatarPicker";
 import CountryPicker from "@/app/components/CountryPicker";
+import FriendsList from "@/app/components/FriendsList";
 import PlayerCard from "@/app/components/PlayerCard";
 import ProfileStats from "@/app/components/ProfileStats";
+import UserSearch from "@/app/components/UserSearch";
 
 import { useAuthContext } from "@/contexts/AuthContext";
 import {
@@ -16,6 +19,7 @@ import {
   subscribeToPlayer,
   updatePlayerProfile,
 } from "@/services/player";
+import FriendRequests from "@/services/FriendRequests";
 
 export default function ProfilePage() {
   const { user, loading } = useAuthContext();
@@ -80,11 +84,30 @@ export default function ProfilePage() {
     );
   }
 
+  if (!user) {
+    return (
+      <AppLayout>
+        <section className="mesa-panel-gold mx-auto max-w-xl rounded-3xl p-8 text-center">
+          <h1 className="text-3xl font-black">Tu perfil te espera</h1>
+          <p className="mt-3 text-slate-300">
+            Inicia sesión para ver tus estadísticas, amigos, premios y avatares.
+          </p>
+          <Link
+            href="/auth/login?next=/profile"
+            className="mt-6 inline-flex rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-3 font-black"
+          >
+            Iniciar sesión
+          </Link>
+        </section>
+      </AppLayout>
+    );
+  }
+
   if (!player) {
     return (
       <AppLayout>
         <div className="flex items-center justify-center py-20">
-          Perfil no encontrado.
+          No pudimos cargar tu perfil. Inténtalo de nuevo en unos segundos.
         </div>
       </AppLayout>
     );
@@ -142,6 +165,9 @@ export default function ProfilePage() {
 
             <AvatarPicker
               selected={selectedAvatar}
+              ownedAvatars={Object.entries(player.inventory ?? {})
+                .filter(([, owned]) => owned)
+                .map(([avatar]) => avatar)}
               onSelect={setSelectedAvatar}
             />
 
@@ -166,6 +192,18 @@ export default function ProfilePage() {
           losses={player.losses ?? 0}
           trophies={player.trophies ?? 0}
         />
+
+        <section className="grid gap-6 lg:grid-cols-2">
+          <div className="mesa-panel rounded-3xl p-6">
+            <UserSearch />
+          </div>
+          <div className="space-y-6">
+            <div className="mesa-panel rounded-3xl p-6">
+              <FriendsList />
+            </div>
+            <FriendRequests />
+          </div>
+        </section>
       </div>
     </AppLayout>
   );

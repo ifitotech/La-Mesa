@@ -34,6 +34,12 @@ export default function ResultsPage() {
   const ranking = useMemo(() => [...players].sort((a, b) => (room?.scores?.[b.uid] ?? 0) - (room?.scores?.[a.uid] ?? 0)), [players, room?.scores]);
   const myPosition = ranking.findIndex((player) => player.uid === user?.uid) + 1;
   const myScore = user ? room?.scores?.[user.uid] ?? 0 : 0;
+  const alreadyClaimed = Boolean(
+    user &&
+      players
+        .find((player) => player.uid === user.uid)
+        ?.claimedRooms?.includes(roomId),
+  );
 
   async function handleClaim() {
     if (!user || !myPosition) return;
@@ -75,7 +81,7 @@ export default function ResultsPage() {
       {user && myPosition > 0 && <section className="mesa-panel rounded-3xl p-6 text-center">
         <Sparkles className="mx-auto text-violet-300" size={30} />
         <h2 className="mt-3 text-2xl font-black">Tu recompensa está lista</h2>
-        {reward ? <div className="mt-4 flex justify-center gap-5 text-lg font-black"><span className="flex items-center gap-2 text-blue-200">+{reward.xp} XP</span><span className="flex items-center gap-2 text-amber-200"><Coins size={18} /> +{reward.coins}</span><span className="flex items-center gap-2 text-fuchsia-200"><Gem size={18} /> +{reward.gems}</span></div> : <button onClick={handleClaim} disabled={claiming} className="mt-5 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-3 font-black disabled:opacity-50">{claiming ? "Guardando..." : "Reclamar recompensa"}</button>}
+        {reward ? <div className="mt-4 flex justify-center gap-5 text-lg font-black"><span className="flex items-center gap-2 text-blue-200">+{reward.xp} XP</span><span className="flex items-center gap-2 text-amber-200"><Coins size={18} /> +{reward.coins}</span><span className="flex items-center gap-2 text-fuchsia-200"><Gem size={18} /> +{reward.gems}</span></div> : alreadyClaimed ? <p className="mt-4 font-bold text-emerald-200">Recompensa guardada en tu perfil.</p> : <button onClick={handleClaim} disabled={claiming} className="mt-5 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-3 font-black disabled:opacity-50">{claiming ? "Guardando..." : "Reclamar recompensa"}</button>}
       </section>}
 
       <EndOfMatchAd placement="game-night-results" />

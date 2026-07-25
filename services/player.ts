@@ -26,6 +26,8 @@ export type Player = {
   wins?: number;
   losses?: number;
   trophies?: number;
+  inventory?: Record<string, boolean>;
+  claimedRooms?: string[];
 };
 
 export async function getPlayer(uid: string): Promise<Player | null> {

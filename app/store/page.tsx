@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
 import { useAuthContext } from "@/contexts/AuthContext";
+import { subscribeToPlayer } from "@/services/player";
 import { buyItem, getStoreItems, StoreItem } from "@/services/store";
 
 export default function StorePage() {
@@ -14,6 +15,7 @@ export default function StorePage() {
   const [buying, setBuying] = useState<string | null>(null);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(true);
+  const [ownedItems, setOwnedItems] = useState<string[]>([]);
 
   useEffect(() => {
     let active = true;
@@ -37,6 +39,20 @@ export default function StorePage() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!user) return;
+
+    return subscribeToPlayer(user.uid, (player) => {
+      setOwnedItems(
+        Object.entries(player?.inventory ?? {})
+          .filter(([, owned]) => owned)
+          .map(([itemId]) => itemId),
+      );
+    });
+  }, [user]);
+
+  const visibleOwnedItems = user ? ownedItems : [];
+
   async function handleBuy(item: StoreItem) {
     if (!user) {
       setMessage("Inicia sesión para comprar artículos.");
@@ -47,8 +63,12 @@ export default function StorePage() {
       setBuying(item.id);
       await buyItem(user.uid, item);
       setMessage(`Compraste ${item.name}.`);
-    } catch {
-      setMessage("No se pudo completar la compra. Revisa tus monedas e inténtalo otra vez.");
+    } catch (cause) {
+      setMessage(
+        cause instanceof Error
+          ? cause.message
+          : "No se pudo completar la compra. Inténtalo otra vez.",
+      );
     } finally {
       setBuying(null);
     }
@@ -119,11 +139,15 @@ export default function StorePage() {
                 </p>
                 <button
                   onClick={() => handleBuy(item)}
-                  disabled={buying === item.id}
+                  disabled={buying === item.id || visibleOwnedItems.includes(item.id)}
                   className="mesa-action mt-5 flex w-full items-center justify-center gap-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <Coins size={17} />
-                  {buying === item.id ? "Comprando..." : `${item.price} monedas`}
+                  {visibleOwnedItems.includes(item.id)
+                    ? "En tu colección"
+                    : buying === item.id
+                      ? "Comprando..."
+                      : `${item.price} monedas`}
                 </button>
               </article>
             ))}

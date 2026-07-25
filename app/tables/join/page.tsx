@@ -16,7 +16,11 @@ export default function JoinTablePage() {
   const [loading, setLoading] = useState(false);
 
   async function joinTable() {
-    if (!user || !code.trim()) return;
+    if (!code.trim()) return;
+    if (!user) {
+      router.push(`/auth/login?next=${encodeURIComponent("/tables/join")}`);
+      return;
+    }
     try {
       setLoading(true); setError("");
       const roomId = await joinRoomByCode(code.trim(), user.uid);
