@@ -12,6 +12,7 @@ import {
   loginWithGoogle,
   requestPasswordReset,
 } from "@/services/auth";
+import { getSafeInternalPath } from "@/lib/safe-navigation";
 
 type FormData = { email: string; password: string };
 
@@ -24,8 +25,9 @@ export default function LoginPage() {
 
   function continueAfterLogin() {
     const next = new URLSearchParams(window.location.search).get("next");
-    if (next?.startsWith("/")) {
-      window.localStorage.setItem("la-mesa-after-auth", next);
+    const destination = getSafeInternalPath(next, "");
+    if (destination) {
+      window.localStorage.setItem("la-mesa-after-auth", destination);
     }
     router.push("/onboarding");
   }

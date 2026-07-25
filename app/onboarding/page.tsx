@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useAuthContext } from "@/contexts/AuthContext";
 import { countryProfiles } from "@/lib/country-profile";
 import { getPlayer, updateCountry } from "@/services/player";
+import { getSafeInternalPath } from "@/lib/safe-navigation";
 
 export default function OnboardingPage() {
   const { user, loading } = useAuthContext();
@@ -17,7 +18,7 @@ export default function OnboardingPage() {
   function nextDestination() {
     const next = window.localStorage.getItem("la-mesa-after-auth");
     window.localStorage.removeItem("la-mesa-after-auth");
-    return next?.startsWith("/") ? next : "/dashboard";
+    return getSafeInternalPath(next);
   }
 
   useEffect(() => {
