@@ -14,11 +14,34 @@ export default function BingoPage() {
   const [called, setCalled] = useState<number[]>([]);
   const [marked, setMarked] = useState<Set<number>>(() => new Set([12]));
   const [winner, setWinner] = useState(false);
+  const [spanishVoice, setSpanishVoice] = useState<SpeechSynthesisVoice | null>(null);
   const lastNumber = called.at(-1);
 
   useEffect(() => {
     const timer = window.setTimeout(() => setCard(createBingoCard()), 0);
     return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!("speechSynthesis" in window)) return;
+    const chooseVoice = () => {
+      const voices = window.speechSynthesis.getVoices();
+      const spanish = voices.filter((voice) => voice.lang.toLowerCase().startsWith("es"));
+      const preferredNames = ["paulina", "mónica", "monica", "google", "microsoft", "helena", "jorge"];
+      const voice = spanish.sort((a, b) => {
+        const score = (item: SpeechSynthesisVoice) => {
+          const name = item.name.toLowerCase();
+          return (preferredNames.some((preferred) => name.includes(preferred)) ? 10 : 0)
+            + (item.lang.toLowerCase().includes("mx") ? 4 : 0)
+            + (item.localService ? 1 : 0);
+        };
+        return score(b) - score(a);
+      })[0] ?? null;
+      setSpanishVoice(voice);
+    };
+    chooseVoice();
+    window.speechSynthesis.addEventListener("voiceschanged", chooseVoice);
+    return () => window.speechSynthesis.removeEventListener("voiceschanged", chooseVoice);
   }, []);
 
   function callNumber() {
@@ -40,7 +63,13 @@ export default function BingoPage() {
 
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(new SpeechSynthesisUtterance(`Número ${number}`));
+      const announcement = new SpeechSynthesisUtterance(`El número es... ${number}`);
+      announcement.lang = spanishVoice?.lang ?? "es-MX";
+      announcement.voice = spanishVoice;
+      announcement.rate = 0.88;
+      announcement.pitch = 1.03;
+      announcement.volume = 1;
+      window.speechSynthesis.speak(announcement);
     }
   }
 
