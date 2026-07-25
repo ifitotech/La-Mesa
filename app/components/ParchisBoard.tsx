@@ -1,74 +1,94 @@
 "use client";
 
-import { PARCHIS_GOAL, PARCHIS_TRACK_SIZE, ParchisState, boardCell } from "@/lib/parchis-engine";
+import { PARCHIS_GOAL, PARCHIS_SAFE_CELLS, PARCHIS_TRACK_SIZE, ParchisState, boardCell } from "@/lib/parchis-engine";
 
-type Props = {
-  game: ParchisState;
-  legalMoves: number[];
-  onMove(pieceIndex: number): void;
-};
+type Props = { game: ParchisState; legalMoves: number[]; onMove(pieceIndex: number): void };
+type Point = { x: number; y: number };
 
-const colors = ["#ef4444", "#22c55e", "#eab308", "#3b82f6"];
+const playerColors = ["#ef4444", "#22c55e", "#eab308", "#3b82f6"];
+const safeCells = new Set([...PARCHIS_SAFE_CELLS].map((cell) => cell + 1));
+const route = new Map<number, Point>();
+
+for (let offset = 0; offset < 8; offset += 1) route.set(48 + offset, { x: 8, y: offset });
+for (let offset = 0; offset < 8; offset += 1) route.set(46 - offset, { x: 10, y: offset });
+route.set(47, { x: 9, y: 0 });
+for (let offset = 0; offset < 8; offset += 1) route.set(38 - offset, { x: 11 + offset, y: 8 });
+for (let offset = 0; offset < 8; offset += 1) route.set(22 + offset, { x: 11 + offset, y: 10 });
+route.set(30, { x: 18, y: 9 });
+for (let offset = 0; offset < 8; offset += 1) route.set(21 - offset, { x: 10, y: 11 + offset });
+for (let offset = 0; offset < 8; offset += 1) route.set(5 + offset, { x: 8, y: 11 + offset });
+route.set(13, { x: 9, y: 18 });
+[4, 3, 2, 1, 68, 67, 66, 65].forEach((cell, offset) => route.set(cell, { x: 7 - offset, y: 10 }));
+for (let offset = 0; offset < 8; offset += 1) route.set(56 + offset, { x: 7 - offset, y: 8 });
+route.set(64, { x: 0, y: 9 });
+
 const homeCenters = [
-  { x: 29, y: 27 },
-  { x: 71, y: 27 },
-  { x: 71, y: 72 },
-  { x: 29, y: 72 },
-];
-const homeOffsets = [
-  { x: -4, y: -4 }, { x: 4, y: -4 }, { x: -4, y: 4 }, { x: 4, y: 4 },
+  [{ x: 3, y: 3 }, { x: 5, y: 3 }, { x: 3, y: 5 }, { x: 5, y: 5 }],
+  [{ x: 13, y: 3 }, { x: 15, y: 3 }, { x: 13, y: 5 }, { x: 15, y: 5 }],
+  [{ x: 13, y: 13 }, { x: 15, y: 13 }, { x: 13, y: 15 }, { x: 15, y: 15 }],
+  [{ x: 3, y: 13 }, { x: 5, y: 13 }, { x: 3, y: 15 }, { x: 5, y: 15 }],
 ];
 
-function trackPoint(cell: number) {
-  const segment = PARCHIS_TRACK_SIZE / 4;
-  const side = Math.floor(cell / segment);
-  const progress = (cell % segment) / (segment - 1);
-  if (side === 0) return { x: 28 + progress * 44, y: 18 };
-  if (side === 1) return { x: 82, y: 18 + progress * 64 };
-  if (side === 2) return { x: 72 - progress * 44, y: 82 };
-  return { x: 18, y: 82 - progress * 64 };
+function finishPoint(playerIndex: number, steps: number): Point {
+  const progress = Math.min(7, Math.max(1, steps - PARCHIS_TRACK_SIZE));
+  if (playerIndex === 0) return { x: 9, y: progress };
+  if (playerIndex === 1) return { x: 18 - progress, y: 9 };
+  if (playerIndex === 2) return { x: 9, y: 18 - progress };
+  return { x: progress, y: 9 };
 }
 
-function goalPoint(playerIndex: number, steps: number) {
-  const center = { x: 50, y: 50 };
-  const start = trackPoint((playerIndex * (PARCHIS_TRACK_SIZE / 4)) % PARCHIS_TRACK_SIZE);
-  const progress = Math.min(1, Math.max(0, (steps - PARCHIS_TRACK_SIZE + 1) / (PARCHIS_GOAL - PARCHIS_TRACK_SIZE + 1)));
-  return {
-    x: start.x + (center.x - start.x) * progress,
-    y: start.y + (center.y - start.y) * progress,
-  };
+function cellStyle(point: Point) {
+  return { gridColumn: point.x + 1, gridRow: point.y + 1 };
 }
 
 export default function ParchisBoard({ game, legalMoves, onMove }: Props) {
   return (
-    <div className="relative mx-auto aspect-[16/9] w-full max-w-4xl">
-      {game.players.flatMap((player, playerIndex) =>
-        player.pieces.map((piece, pieceIndex) => {
-          const cell = boardCell(player, piece);
-          const point = piece.steps < 0
-            ? {
-                x: homeCenters[playerIndex].x + homeOffsets[pieceIndex].x,
-                y: homeCenters[playerIndex].y + homeOffsets[pieceIndex].y,
-              }
-            : piece.steps >= PARCHIS_TRACK_SIZE
-              ? goalPoint(playerIndex, piece.steps)
-              : trackPoint(cell ?? 0);
-          const movable = game.players[game.turn]?.id === player.id && legalMoves.includes(pieceIndex);
-          return (
-            <button
-              key={piece.id}
-              onClick={() => onMove(pieceIndex)}
-              disabled={!movable}
-              aria-label={`Mover ficha ${pieceIndex + 1} de ${player.name}`}
-              title={`${player.name} · ${piece.steps < 0 ? "Casa" : piece.steps === PARCHIS_GOAL ? "Meta" : `Casilla ${piece.steps}`}`}
-              className={`absolute z-10 flex h-8 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[3px] border-white/90 text-[10px] font-black text-white shadow-[0_5px_12px_rgba(0,0,0,.48)] transition-all duration-500 sm:h-10 sm:w-10 ${movable ? "animate-pulse ring-4 ring-amber-200/65 hover:scale-110" : ""}`}
-              style={{ left: `${point.x}%`, top: `${point.y}%`, backgroundColor: colors[playerIndex] }}
-            >
-              {pieceIndex + 1}
-            </button>
-          );
-        }),
-      )}
+    <div className="mx-auto aspect-square w-full max-w-[44rem] rounded-[1.6rem] border-[8px] border-[#6c4422] bg-[#eadfbf] p-1 shadow-[inset_0_0_0_2px_#d5a84d,0_24px_55px_rgba(0,0,0,.5)]">
+      <div className="relative grid h-full w-full grid-cols-[repeat(19,minmax(0,1fr))] grid-rows-[repeat(19,minmax(0,1fr))] overflow-hidden rounded-xl">
+        <div className="col-span-8 row-span-8 bg-rose-500 p-[14%]"><div className="h-full rounded-3xl bg-rose-700/35 shadow-inner" /></div>
+        <div className="col-start-12 col-span-8 row-span-8 bg-emerald-500 p-[14%]"><div className="h-full rounded-3xl bg-emerald-700/35 shadow-inner" /></div>
+        <div className="col-start-12 col-span-8 row-start-12 row-span-8 bg-amber-400 p-[14%]"><div className="h-full rounded-3xl bg-amber-600/35 shadow-inner" /></div>
+        <div className="col-span-8 row-start-12 row-span-8 bg-blue-500 p-[14%]"><div className="h-full rounded-3xl bg-blue-700/35 shadow-inner" /></div>
+
+        {[...route.entries()].map(([number, point]) => (
+          <span key={number} style={cellStyle(point)} className={`z-[1] flex items-center justify-center border border-stone-500/55 bg-[#fffdf4] text-[6px] font-bold text-stone-500 sm:text-[9px] ${safeCells.has(number) ? "bg-stone-300 text-amber-700" : ""}`}>
+            {safeCells.has(number) ? "★" : number}
+          </span>
+        ))}
+
+        {Array.from({ length: 7 }, (_, index) => index + 1).flatMap((step) => [
+          <span key={`r-${step}`} style={cellStyle({ x: 9, y: step })} className="border border-rose-700/35 bg-rose-500" />,
+          <span key={`g-${step}`} style={cellStyle({ x: 18 - step, y: 9 })} className="border border-emerald-700/35 bg-emerald-500" />,
+          <span key={`y-${step}`} style={cellStyle({ x: 9, y: 18 - step })} className="border border-amber-600/35 bg-amber-400" />,
+          <span key={`b-${step}`} style={cellStyle({ x: step, y: 9 })} className="border border-blue-700/35 bg-blue-500" />,
+        ])}
+
+        <div className="col-start-9 col-span-3 row-start-9 row-span-3 z-[2] bg-[conic-gradient(#22c55e_0_25%,#eab308_0_50%,#3b82f6_0_75%,#ef4444_0)] shadow-inner" />
+
+        {game.players.flatMap((player, playerIndex) =>
+          player.pieces.map((piece, pieceIndex) => {
+            const cell = boardCell(player, piece);
+            const point = piece.steps < 0
+              ? homeCenters[playerIndex][pieceIndex]
+              : piece.steps >= PARCHIS_TRACK_SIZE
+                ? finishPoint(playerIndex, piece.steps)
+                : route.get((cell ?? 0) + 1) ?? homeCenters[playerIndex][pieceIndex];
+            const movable = game.players[game.turn]?.id === player.id && legalMoves.includes(pieceIndex);
+            return (
+              <button
+                key={piece.id}
+                onClick={() => onMove(pieceIndex)}
+                disabled={!movable}
+                aria-label={`Mover ficha ${pieceIndex + 1} de ${player.name}`}
+                style={{ ...cellStyle(point), backgroundColor: playerColors[playerIndex] }}
+                className={`z-10 m-auto flex h-[74%] w-[74%] items-center justify-center rounded-full border-2 border-white/90 text-[8px] font-black text-white shadow-[0_3px_7px_rgba(0,0,0,.5)] transition-all duration-500 sm:text-xs ${movable ? "animate-pulse ring-2 ring-amber-200 hover:scale-125" : ""}`}
+              >
+                {piece.steps === PARCHIS_GOAL ? "★" : pieceIndex + 1}
+              </button>
+            );
+          }),
+        )}
+      </div>
     </div>
   );
 }
