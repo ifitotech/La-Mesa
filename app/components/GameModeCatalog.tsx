@@ -84,7 +84,7 @@ export default function GameModeCatalog({ mode }: Props) {
           return (
             <article
               key={game.id}
-              className="mesa-panel group flex overflow-hidden rounded-2xl transition hover:border-blue-300/50"
+              className="mesa-panel group flex overflow-hidden rounded-2xl transition duration-300 hover:-translate-y-1 hover:border-amber-200/45 hover:shadow-[0_24px_55px_rgba(0,0,0,.42)]"
             >
               <GameArtwork gameId={game.id} english={isEnglish} />
               <div className="min-w-0 flex-1 p-4">
@@ -117,7 +117,7 @@ export default function GameModeCatalog({ mode }: Props) {
                           : "Próximamente"}
                   </span>
                 </div>
-                <div className="mt-3 flex items-center justify-between border-t border-slate-700/70 pt-3 text-xs text-slate-400">
+                <div className="mt-3 flex items-center justify-between border-t border-amber-100/10 pt-3 text-xs text-slate-400">
                   <span className="flex items-center gap-1">
                     <Users size={13} /> {game.minPlayers}-{game.maxPlayers}
                   </span>
@@ -129,7 +129,7 @@ export default function GameModeCatalog({ mode }: Props) {
                           : router.push(`/play/${game.id}`)
                       }
                       disabled={creatingGame !== null}
-                      className="inline-flex items-center gap-1 rounded-lg bg-blue-600 px-3 py-2 text-xs font-black text-white transition hover:bg-blue-500 disabled:opacity-50"
+                      className="mesa-action inline-flex items-center gap-1 rounded-lg px-3 py-2 text-xs font-black disabled:opacity-50"
                     >
                       {online && isCreating
                         ? isEnglish
