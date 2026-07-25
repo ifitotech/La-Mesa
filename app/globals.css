@@ -366,6 +366,88 @@ button:disabled:hover {
       background-size: auto 100%;
     }
   }
+
+  .domino-table-scene,
+  .parchis-table-scene,
+  .family-table-scene {
+    position: relative;
+    isolation: isolate;
+    min-height: 46rem;
+    overflow: hidden;
+    border: 1px solid rgb(232 198 111 / 38%);
+    background-position: center top;
+    background-size: cover;
+    box-shadow: inset 0 1px rgb(255 248 220 / 15%), 0 30px 80px rgb(0 0 0 / 48%);
+  }
+
+  .domino-table-scene {
+    background-image: url("/game-domino-table-v1.png");
+  }
+
+  .parchis-table-scene {
+    background-image: url("/game-parchis-table-v1.png");
+  }
+
+  .family-table-scene {
+    background-image: url("/game-family-table-v1.png");
+  }
+
+  .domino-table-scene::before,
+  .parchis-table-scene::before,
+  .family-table-scene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, transparent 0 16%, rgb(0 9 10 / 18%) 38%, rgb(0 7 8 / 70%) 100%);
+    pointer-events: none;
+  }
+
+  .domino-table-scene > *,
+  .parchis-table-scene > *,
+  .family-table-scene > * {
+    position: relative;
+  }
+
+  [data-route="/play/bingo"] main > div > div:last-child {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 9rem 1rem 1rem;
+    background: url("/game-family-table-v1.png") center top / cover;
+    box-shadow: 0 30px 80px rgb(0 0 0 / 45%);
+  }
+
+  [data-route="/play/heads-up"] main section:last-of-type,
+  [data-route="/play/charades"] main section:last-of-type,
+  [data-route="/play/challenges"] main section:last-of-type,
+  [data-route="/play/couples"] main section:last-of-type {
+    min-height: 42rem;
+    padding-top: 10rem;
+    background-image:
+      linear-gradient(180deg, transparent 0 16%, rgb(0 9 12 / 12%) 35%, rgb(0 8 12 / 72%) 100%),
+      url("/game-family-table-v1.png");
+    background-position: center top;
+    background-size: cover;
+  }
+
+  @media (max-width: 640px) {
+    .domino-table-scene,
+    .parchis-table-scene,
+    .family-table-scene {
+      background-position: 50% top;
+      background-size: auto 100%;
+    }
+
+    [data-route="/play/heads-up"] main section:last-of-type,
+    [data-route="/play/charades"] main section:last-of-type,
+    [data-route="/play/challenges"] main section:last-of-type,
+    [data-route="/play/couples"] main section:last-of-type {
+      background-position: 50% top;
+      background-size: auto 100%;
+    }
+  }
 }
 
 input,

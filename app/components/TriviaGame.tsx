@@ -78,7 +78,7 @@ export default function TriviaGame({
   }
 
   return (
-    <div className="mesa-premium-surface mx-auto max-w-4xl rounded-[2rem] p-4 sm:p-6 md:p-8">
+    <div className="family-table-scene mx-auto max-w-4xl rounded-[2rem] p-4 pt-36 sm:p-6 sm:pt-40 md:p-8 md:pt-44">
       <div className="mb-6 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <span className="flex h-11 w-11 items-center justify-center rounded-full border border-amber-200/35 bg-black/25 text-amber-200 shadow-inner">

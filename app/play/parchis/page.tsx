@@ -100,7 +100,7 @@ export default function ParchisPage() {
           <p className="mt-2 text-sm text-slate-300">Saca con cinco, captura rivales y lleva tus cuatro fichas a la meta exacta.</p>
         </section>
 
-        <section className="mesa-premium-surface rounded-[2rem] p-4 md:p-7">
+        <section className="parchis-table-scene rounded-[2rem] p-4 pt-44 md:p-7 md:pt-56">
           <div className="grid gap-3 sm:grid-cols-2">
             {game.players.map((player, playerIndex) => (
               <article key={player.id} className={`rounded-2xl border p-4 ${colors[playerIndex].panel} ${active.id === player.id && !winner ? "ring-2 ring-amber-200/60" : ""}`}>

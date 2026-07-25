@@ -76,7 +76,7 @@ export default function MemoryPage() {
           <p className="mt-2 text-slate-300">Encuentra una pareja para sumar un punto y conservar tu turno.</p>
         </section>
 
-        <section className="mesa-premium-surface rounded-[2rem] p-4 md:p-7">
+        <section className="family-table-scene rounded-[2rem] p-4 pt-36 md:p-7 md:pt-44">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="flex items-center gap-2 text-xs font-black uppercase tracking-[.18em] text-amber-200/70"><UsersRound size={15} /> Turno</p>
