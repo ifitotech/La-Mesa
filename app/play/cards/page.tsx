@@ -90,7 +90,7 @@ export default function BlackjackPage() {
           <p className="mt-2 text-slate-300">Acércate a 21 sin pasarte. El crupier debe pedir hasta llegar a 17.</p>
         </section>
 
-        <section className="mesa-premium-surface rounded-[2rem] p-5 text-center md:p-8">
+        <section className="blackjack-table-scene rounded-[2rem] p-5 text-center md:p-8">
           <div className="flex items-center justify-between text-xs font-black uppercase tracking-[.16em] text-amber-100/70"><span>Crupier · {finished ? blackjackHandValue(dealer) : "?"}</span><span className="flex items-center gap-2"><Trophy size={15} /> {wins} victorias</span></div>
           <div className="mt-4 flex min-h-44 -space-x-3 justify-center">{dealer.map((card, index) => <Card key={card.id} card={card} hidden={!finished && index === 1} />)}</div>
           <div className="my-6 flex items-center gap-3"><span className="h-px flex-1 bg-amber-100/15" /><ShieldCheck className="text-amber-300" /><span className="h-px flex-1 bg-amber-100/15" /></div>

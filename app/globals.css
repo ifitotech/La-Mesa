@@ -331,6 +331,41 @@ button:disabled:hover {
       radial-gradient(circle at 50% 0%, rgb(194 146 52 / 18%), transparent 42%),
       linear-gradient(155deg, rgb(30 40 27 / 97%), rgb(8 16 10 / 99%));
   }
+
+  .blackjack-table-scene {
+    position: relative;
+    isolation: isolate;
+    min-height: 46rem;
+    overflow: hidden;
+    border: 1px solid rgb(232 198 111 / 38%);
+    background-image: url("/game-blackjack-table-v1.png");
+    background-position: center top;
+    background-size: cover;
+    box-shadow: inset 0 1px rgb(255 248 220 / 15%), 0 30px 80px rgb(0 0 0 / 50%);
+  }
+
+  .blackjack-table-scene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(180deg, rgb(0 8 10 / 8%) 0 16%, rgb(0 17 20 / 28%) 45%, rgb(0 8 10 / 62%) 100%),
+      radial-gradient(circle at center, transparent 30%, rgb(0 0 0 / 24%) 100%);
+    pointer-events: none;
+  }
+
+  .blackjack-table-scene > * {
+    position: relative;
+  }
+
+  @media (max-width: 640px) {
+    .blackjack-table-scene {
+      min-height: 48rem;
+      background-position: 50% top;
+      background-size: auto 100%;
+    }
+  }
 }
 
 input,
