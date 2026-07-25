@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, CircleDot, RotateCcw, Volume2 } from "lucide-react";
+import { ArrowLeft, CircleDot, RotateCcw, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
@@ -14,6 +14,7 @@ export default function BingoPage() {
   const [called, setCalled] = useState<number[]>([]);
   const [marked, setMarked] = useState<Set<number>>(() => new Set([12]));
   const [winner, setWinner] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(true);
   const [spanishVoice, setSpanishVoice] = useState<SpeechSynthesisVoice | null>(null);
   const lastNumber = called.at(-1);
 
@@ -61,9 +62,9 @@ export default function BingoPage() {
       });
     }
 
-    if ("speechSynthesis" in window) {
+    if (soundEnabled && "speechSynthesis" in window) {
       window.speechSynthesis.cancel();
-      const announcement = new SpeechSynthesisUtterance(`El número es... ${number}`);
+      const announcement = new SpeechSynthesisUtterance(`Número... ${number}`);
       announcement.lang = spanishVoice?.lang ?? "es-MX";
       announcement.voice = spanishVoice;
       announcement.rate = 0.88;
@@ -86,6 +87,13 @@ export default function BingoPage() {
     setWinner(false);
   }
 
+  function toggleSound() {
+    setSoundEnabled((value) => {
+      if (value && "speechSynthesis" in window) window.speechSynthesis.cancel();
+      return !value;
+    });
+  }
+
   if (!card) return <AppLayout immersive lockViewport><div className="grid h-dvh place-items-center text-slate-300">Preparando tu tarjeta…</div></AppLayout>;
 
   return (
@@ -104,7 +112,12 @@ export default function BingoPage() {
               <span>HAN SALIDO · {called.length}/75</span>
               <p>{called.length ? called.slice(-12).reverse().join(" · ") : "Todavía ninguno"}</p>
             </div>
-            <button onClick={reset} className="bingo-reset-button"><RotateCcw size={17} /> Nueva ronda</button>
+            <div className="bingo-top-actions">
+              <button onClick={toggleSound} className={`bingo-audio-button ${soundEnabled ? "is-on" : ""}`} aria-label={soundEnabled ? "Silenciar números" : "Activar audio"}>
+                {soundEnabled ? <Volume2 size={18} /> : <VolumeX size={18} />}
+              </button>
+              <button onClick={reset} className="bingo-reset-button"><RotateCcw size={17} /> Nueva ronda</button>
+            </div>
           </aside>
 
           <section className="bingo-card-panel">

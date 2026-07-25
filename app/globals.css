@@ -1396,6 +1396,33 @@ button:disabled:hover {
   min-width: 8rem;
 }
 
+.bingo-top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .45rem;
+}
+
+.bingo-audio-button {
+  display: grid;
+  width: 2.7rem;
+  height: 2.7rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgb(112 223 255 / 25%);
+  border-radius: .8rem;
+  background: rgb(5 21 34 / 70%);
+  color: #7895a3;
+  box-shadow: inset 0 1px rgb(255 255 255 / 8%);
+}
+
+.bingo-audio-button.is-on {
+  border-color: rgb(102 237 204 / 45%);
+  background: linear-gradient(145deg, #1b7f69, #0a493e);
+  color: #dcfff7;
+  box-shadow: inset 0 1px rgb(255 255 255 / 16%), 0 0 15px rgb(56 226 180 / 18%);
+}
+
 .bingo-card-panel {
   grid-template-rows: minmax(0, 1fr) auto;
   gap: clamp(.9rem, 1.8vh, 1.2rem);
@@ -1459,6 +1486,8 @@ button:disabled:hover {
     overflow: hidden;
     font-size: 0;
   }
+  .bingo-top-actions { gap: .3rem; }
+  .bingo-audio-button { width: 2.7rem; height: 2.7rem; }
   .bingo-card-panel .bingo-card-grid {
     width: auto;
     min-width: 0;
