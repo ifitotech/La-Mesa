@@ -292,6 +292,45 @@ button:disabled:hover {
     background: linear-gradient(145deg, #fffdf4, #ded1b0);
     color: #171006;
   }
+
+  [data-route="/play/heads-up"] main section:last-of-type,
+  [data-route="/play/charades"] main section:last-of-type,
+  [data-route="/play/challenges"] main section:last-of-type,
+  [data-route="/play/couples"] main section:last-of-type {
+    border-color: rgb(232 198 111 / 28%);
+    background:
+      radial-gradient(circle at 50% 5%, rgb(44 138 92 / 30%), transparent 45%),
+      linear-gradient(155deg, rgb(14 48 34 / 97%), rgb(5 17 12 / 99%));
+    box-shadow:
+      inset 0 1px rgb(255 248 220 / 10%),
+      inset 0 0 65px rgb(0 0 0 / 20%),
+      0 26px 60px rgb(0 0 0 / 40%);
+  }
+
+  [data-route="/play/heads-up"] main section:last-of-type h2,
+  [data-route="/play/charades"] main section:last-of-type h2,
+  [data-route="/play/challenges"] main section:last-of-type h2,
+  [data-route="/play/couples"] main section:last-of-type h2 {
+    color: #fffdf5;
+    text-shadow: 0 3px 24px rgb(0 0 0 / 35%);
+  }
+
+  [data-route="/play/heads-up"] main section:last-of-type button:last-child,
+  [data-route="/play/charades"] main section:last-of-type button:last-child,
+  [data-route="/play/challenges"] main section:last-of-type button:first-child,
+  [data-route="/play/couples"] main section:last-of-type button:first-child {
+    border: 1px solid rgb(255 226 154 / 42%);
+    background: linear-gradient(180deg, #f0d17b, #b67d28);
+    color: #171006;
+    box-shadow: inset 0 1px rgb(255 255 255 / 42%), 0 10px 24px rgb(75 43 8 / 28%);
+  }
+
+  [data-route="/play/bible"] main section:last-of-type {
+    border-color: rgb(232 198 111 / 28%);
+    background:
+      radial-gradient(circle at 50% 0%, rgb(194 146 52 / 18%), transparent 42%),
+      linear-gradient(155deg, rgb(30 40 27 / 97%), rgb(8 16 10 / 99%));
+  }
 }
 
 input,
