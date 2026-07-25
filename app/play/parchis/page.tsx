@@ -1,27 +1,151 @@
 "use client";
 
+import { ArrowLeft, Dice5, Home, RotateCcw, ShieldCheck, Trophy } from "lucide-react";
 import Link from "next/link";
-import { ArrowLeft, Dice5, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
-import { GameNightSession, getGameNightSession, saveGameNightSession } from "@/lib/game-night-session";
+import {
+  PARCHIS_GOAL,
+  ParchisState,
+  createParchisGame,
+  legalParchisMoves,
+  moveParchisPiece,
+  passParchisTurn,
+} from "@/lib/parchis-engine";
+import { getGameNightSession } from "@/lib/game-night-session";
 
-const colors = ["bg-red-500", "bg-emerald-500", "bg-amber-400", "bg-blue-500"];
+const colors = [
+  { panel: "border-rose-300/40 bg-rose-500/15", token: "bg-rose-500", text: "text-rose-200" },
+  { panel: "border-emerald-300/40 bg-emerald-500/15", token: "bg-emerald-500", text: "text-emerald-200" },
+  { panel: "border-amber-300/40 bg-amber-400/15", token: "bg-amber-400", text: "text-amber-200" },
+  { panel: "border-blue-300/40 bg-blue-500/15", token: "bg-blue-500", text: "text-blue-200" },
+];
 
 export default function ParchisPage() {
-  const [session, setSession] = useState<GameNightSession | null>(null);
-  const [recipientId, setRecipientId] = useState("");
+  const [game, setGame] = useState<ParchisState | null>(null);
   const [roll, setRoll] = useState<number | null>(null);
-  const [turn, setTurn] = useState(0);
-  const [positions, setPositions] = useState([0, 0, 0, 0]);
-  const [winner, setWinner] = useState<string | null>(null);
-  useEffect(() => { const timer = window.setTimeout(() => { const saved = getGameNightSession(); setSession(saved); setRecipientId(saved?.participants[0]?.id ?? ""); }, 0); return () => window.clearTimeout(timer); }, []);
-  const players = session?.participants.length ? session.participants : [{ id: "solo", name: "Jugador", score: 0 }];
-  const active = players[turn % players.length];
-  function rollDice() { const value = Math.floor(Math.random() * 6) + 1; const token = turn % 4; setRoll(value); setPositions((current) => current.map((position, index) => index === token ? Math.min(28, position + value) : position)); if (positions[token] + value >= 28) setWinner(active.name); }
-  function nextTurn() { setTurn((value) => value + 1); setRoll(null); }
-  function awardPoint() { if (!session || !recipientId) return; const next = { ...session, participants: session.participants.map((player) => player.id === recipientId ? { ...player, score: player.score + 1 } : player) }; saveGameNightSession(next); setSession(next); }
-  function reset() { setRoll(null); setTurn(0); setPositions([0, 0, 0, 0]); setWinner(null); }
-  return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5"><Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link><section className="mesa-panel-gold rounded-3xl p-6 text-center"><p className="text-xs font-black uppercase tracking-[.22em] text-amber-300">Beta Test · Game Night local</p><h1 className="mt-2 text-3xl font-black">Parchís</h1><p className="mt-3 text-slate-300">Tira el dado, avanza tu ficha y lleva los puntos de la noche.</p></section><section className="mesa-panel rounded-3xl p-5 text-center"><div className="mx-auto grid aspect-square max-w-md grid-cols-4 gap-2 rounded-3xl border-8 border-[#5c3517] bg-[#e6dfca] p-3 shadow-xl">{positions.map((position, index) => <div key={index} className={`relative rounded-2xl ${colors[index]} p-2 text-left text-xs font-black text-white`}><span>{players[index]?.name ?? `Ficha ${index + 1}`}</span><span className="absolute bottom-3 left-1/2 h-9 w-9 -translate-x-1/2 rounded-full border-4 border-white bg-white/40" /><span className="absolute bottom-2 right-2 rounded-lg bg-black/25 px-2 py-1">{position}/28</span></div>)}</div>{winner ? <div className="mt-5 rounded-2xl bg-amber-400/15 p-4 text-lg font-black text-amber-200">¡{winner} llegó a la meta! 🏆</div> : <><p className="mt-5 text-lg font-black">Turno de {active.name}</p><p className="mt-1 text-sm text-slate-400">{roll ? `Sacaste ${roll}. Avanza y pasa el turno.` : "Tira el dado para comenzar."}</p></>}{session && session.participants.length > 1 && <label className="mx-auto mt-5 block max-w-sm text-left"><span className="text-sm font-black text-amber-200">Punto para</span><select value={recipientId} onChange={(event) => setRecipientId(event.target.value)} className="mt-2 w-full rounded-xl border border-slate-600 bg-slate-950 p-3">{session.participants.map((player) => <option key={player.id} value={player.id}>{player.name} · {player.score} pts</option>)}</select></label>}<div className="mt-6 flex flex-wrap justify-center gap-3"><button onClick={rollDice} disabled={roll !== null || winner !== null} className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 px-5 py-3 font-black text-slate-950 disabled:opacity-40"><Dice5 size={19} /> Tirar dado</button>{roll && !winner && <><button onClick={() => { awardPoint(); nextTurn(); }} className="rounded-xl bg-emerald-600 px-5 py-3 font-black">+ Punto y siguiente</button><button onClick={nextTurn} className="rounded-xl border border-slate-600 px-5 py-3 font-black">Pasar turno</button></>}<button onClick={reset} className="inline-flex items-center gap-2 rounded-xl border border-slate-600 px-4 py-3 font-bold"><RotateCcw size={17} /> Nueva ronda</button></div></section></div></AppLayout>;
+  const [message, setMessage] = useState("Tira el dado para comenzar.");
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const session = getGameNightSession();
+      const names = session?.participants.map((participant) => participant.name) ?? ["Jugador 1", "Jugador 2"];
+      setGame(createParchisGame(names.length > 1 ? names : [...names, "La Mesa"]));
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  function reset() {
+    if (!game) return;
+    setGame(createParchisGame(game.players.map((player) => player.name)));
+    setRoll(null);
+    setMessage("Nueva partida lista.");
+  }
+
+  function rollDice() {
+    if (!game || game.winner || roll !== null) return;
+    const value = Math.floor(Math.random() * 6) + 1;
+    const next = structuredClone(game);
+    const legal = legalParchisMoves(next, value);
+    if (!legal.length) {
+      passParchisTurn(next);
+      setGame(next);
+      setRoll(null);
+      setMessage(`Salió ${value}. No había movimientos válidos; pasa el turno.`);
+      return;
+    }
+    setRoll(value);
+    setMessage(`Salió ${value}. Elige una ficha válida.`);
+  }
+
+  function move(pieceIndex: number) {
+    if (!game || roll === null) return;
+    const next = structuredClone(game);
+    const result = moveParchisPiece(next, pieceIndex, roll);
+    if (!result) {
+      setMessage("Esa ficha no puede moverse con este dado.");
+      return;
+    }
+    setGame(next);
+    setRoll(null);
+    setMessage(
+      result.won
+        ? `¡${next.players.find((player) => player.id === next.winner)?.name} ganó la partida!`
+        : result.captured.length
+          ? "¡Captura! La ficha rival vuelve a casa y conservas el turno."
+          : result.reachedGoal
+            ? "¡Ficha en la meta! Conservas el turno."
+            : result.extraTurn
+              ? "Sacaste seis. Vuelve a tirar."
+              : "Movimiento completado. Siguiente turno.",
+    );
+  }
+
+  if (!game) {
+    return <AppLayout lockViewport><div className="mesa-panel mx-auto max-w-3xl rounded-3xl p-10 text-center text-slate-400">Preparando el tablero...</div></AppLayout>;
+  }
+
+  const active = game.players[game.turn];
+  const legal = roll === null ? [] : legalParchisMoves(game, roll);
+  const winner = game.players.find((player) => player.id === game.winner);
+
+  return (
+    <AppLayout lockViewport>
+      <div className="mx-auto max-w-5xl space-y-5">
+        <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>
+        <section className="mesa-panel-gold rounded-3xl p-5 text-center md:p-7">
+          <p className="text-xs font-black uppercase tracking-[.22em] text-amber-300">Reglas clásicas · 2 a 4 jugadores</p>
+          <h1 className="mt-2 text-3xl font-black">Parchís</h1>
+          <p className="mt-2 text-sm text-slate-300">Saca con cinco, captura rivales y lleva tus cuatro fichas a la meta exacta.</p>
+        </section>
+
+        <section className="mesa-premium-surface rounded-[2rem] p-4 md:p-7">
+          <div className="grid gap-3 sm:grid-cols-2">
+            {game.players.map((player, playerIndex) => (
+              <article key={player.id} className={`rounded-2xl border p-4 ${colors[playerIndex].panel} ${active.id === player.id && !winner ? "ring-2 ring-amber-200/60" : ""}`}>
+                <div className="flex items-center justify-between gap-3">
+                  <h2 className={`font-black ${colors[playerIndex].text}`}>{player.name}</h2>
+                  <span className="text-xs font-bold text-slate-300">{player.pieces.filter((piece) => piece.steps === PARCHIS_GOAL).length}/4 en meta</span>
+                </div>
+                <div className="mt-4 grid grid-cols-4 gap-2">
+                  {player.pieces.map((piece, pieceIndex) => {
+                    const movable = active.id === player.id && legal.includes(pieceIndex);
+                    return (
+                      <button
+                        key={piece.id}
+                        onClick={() => move(pieceIndex)}
+                        disabled={!movable}
+                        aria-label={`Ficha ${pieceIndex + 1} de ${player.name}`}
+                        className={`relative flex aspect-square items-center justify-center rounded-full border-4 border-white/75 shadow-lg ${colors[playerIndex].token} ${movable ? "animate-pulse ring-4 ring-amber-200/50 hover:scale-105" : "disabled:opacity-65"}`}
+                      >
+                        {piece.steps === -1 ? <Home size={17} /> : piece.steps === PARCHIS_GOAL ? <Trophy size={17} /> : <span className="text-xs font-black">{piece.steps}</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-5 rounded-2xl border border-amber-100/15 bg-black/25 p-5 text-center">
+            {winner ? (
+              <p className="flex items-center justify-center gap-2 text-xl font-black text-amber-200"><Trophy /> ¡{winner.name} ganó!</p>
+            ) : (
+              <>
+                <p className="text-xs font-black uppercase tracking-[.2em] text-amber-200/70">Turno actual</p>
+                <p className="mt-2 text-2xl font-black">{active.name}</p>
+              </>
+            )}
+            <p className="mt-2 text-sm text-slate-300">{message}</p>
+            <div className="mt-5 flex flex-wrap justify-center gap-3">
+              <button onClick={rollDice} disabled={roll !== null || Boolean(winner)} className="mesa-action inline-flex items-center gap-2 disabled:opacity-40"><Dice5 size={19} /> {roll === null ? "Tirar dado" : `Dado: ${roll}`}</button>
+              <button onClick={reset} className="inline-flex items-center gap-2 rounded-xl border border-amber-100/20 bg-black/20 px-4 py-3 font-bold"><RotateCcw size={17} /> Nueva partida</button>
+            </div>
+            <p className="mt-4 flex items-center justify-center gap-2 text-xs text-emerald-100/55"><ShieldCheck size={14} /> Las casillas seguras no permiten capturas.</p>
+          </div>
+        </section>
+      </div>
+    </AppLayout>
+  );
 }

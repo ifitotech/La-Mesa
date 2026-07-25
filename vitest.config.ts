@@ -6,7 +6,8 @@ export default defineConfig({
     environment: "node",
     include: [
       "server/**/*.test.ts",
-      "server/**/__tests__/**/*.test.ts"
+      "server/**/__tests__/**/*.test.ts",
+      "lib/**/*.test.ts"
     ],
     coverage: {
       reporter: [
