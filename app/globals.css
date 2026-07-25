@@ -2151,6 +2151,7 @@ button:disabled:hover {
 }
 
 .bingo-topbar h1 {
+  display: flex;
   grid-column: 3;
   gap: .45rem;
   color: #fff7dd;
@@ -2165,6 +2166,9 @@ button:disabled:hover {
   font-size: .7em;
   box-shadow: inset 0 1px #fff4bd, 0 3px 8px rgb(0 0 0 / 38%);
 }
+
+.bingo-topbar > a { grid-column: 1; }
+.bingo-topbar > button { grid-column: 5; }
 
 .bingo-nav-item {
   display: flex;
@@ -2327,9 +2331,7 @@ button:disabled:hover {
 .bingo-player-seat small, .bingo-local-seat small { color: #e8c878; font-size: .62rem; }
 
 .bingo-local-seat {
-  bottom: .35rem;
-  left: 50%;
-  transform: translateX(-50%);
+  display: none;
 }
 
 .bingo-local-avatar {
@@ -2343,6 +2345,7 @@ button:disabled:hover {
   .bingo-nav-item { display: none; }
   .bingo-topbar { grid-template-columns: auto 1fr auto; }
   .bingo-topbar h1 { grid-column: 2; font-size: .82rem; }
+  .bingo-topbar > button { grid-column: 3; }
   .bingo-host { top: -.25rem; transform: translateX(-50%) scale(.72); transform-origin: top; }
   .bingo-casino-stage::before { inset: 5.7rem .35rem 4rem; border-width: .55rem; border-radius: 2rem; }
   .bingo-casino-stage .bingo-game-grid {
@@ -2368,6 +2371,208 @@ button:disabled:hover {
   .bingo-casino-stage .bingo-game-grid { inset-block: 4.8rem 3.2rem; }
   .bingo-casino-stage::before { inset-block: 4.4rem 2.7rem; }
   .bingo-player-seat { top: 45%; }
+}
+
+/* Segunda pasada: proporciones específicas de Bingo, sin paneles superpuestos. */
+.bingo-machine {
+  position: absolute;
+  top: .45rem;
+  left: 50%;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 10px 14px rgb(0 0 0 / 45%));
+  transform: translateX(-50%);
+}
+
+.bingo-machine-globe {
+  position: relative;
+  width: clamp(5rem, 10vh, 7rem);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 3px solid rgb(207 238 247 / 78%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 33% 25%, rgb(255 255 255 / 38%), transparent 17%),
+    radial-gradient(circle, rgb(47 195 224 / 35%), rgb(2 39 57 / 88%) 68%);
+  box-shadow: inset 0 0 18px rgb(104 226 255 / 48%), 0 0 0 5px #a86c29, 0 0 0 8px #4d250d;
+}
+
+.bingo-machine-globe::after {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  border: 1px dashed rgb(208 244 255 / 44%);
+  border-radius: 50%;
+  animation: bingo-ambient-spin 9s linear infinite;
+}
+
+.bingo-machine-globe i {
+  --angle: calc(var(--ball-index) * 60deg);
+  position: absolute;
+  top: calc(50% + sin(var(--angle)) * 28%);
+  left: calc(50% + cos(var(--angle)) * 28%);
+  z-index: 2;
+  display: grid;
+  width: 1.25rem;
+  aspect-ratio: 1;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #fff3a1, #dc8e1e);
+  color: #302008;
+  font-size: .48rem;
+  font-style: normal;
+  font-weight: 950;
+  box-shadow: inset 0 2px 3px #fff9cc, 0 2px 4px #0008;
+  animation: bingo-machine-ball 2.8s calc(var(--ball-index) * -.23s) ease-in-out infinite alternate;
+}
+
+.bingo-machine-base {
+  display: grid;
+  min-width: clamp(7rem, 13vw, 10rem);
+  margin-left: -.35rem;
+  padding: .55rem .9rem .55rem 1.25rem;
+  border: 2px solid #c48736;
+  border-radius: 0 1rem 1rem 0;
+  background: linear-gradient(145deg, #0a7891, #063a50);
+  box-shadow: inset 0 1px rgb(255 255 255 / 25%), 0 6px 12px rgb(0 0 0 / 38%);
+}
+.bingo-machine-base strong { color: #fff4c7; font-size: .75rem; letter-spacing: .14em; }
+.bingo-machine-base span { color: #8eeaff; font-size: .48rem; font-weight: 900; letter-spacing: .18em; }
+
+.bingo-casino-stage::before {
+  inset: clamp(5.2rem, 15vh, 8.2rem) clamp(1.2rem, 6vw, 6rem) clamp(3.4rem, 7vh, 5rem);
+  border-radius: 3rem;
+}
+
+.bingo-casino-stage .bingo-game-grid {
+  inset: clamp(5.9rem, 17vh, 9rem) clamp(2rem, 10vw, 11rem) clamp(4.5rem, 10vh, 6.5rem);
+  grid-template-columns: minmax(10rem, .55fr) minmax(24rem, 1.8fr);
+  grid-template-rows: minmax(0, 1fr);
+  gap: clamp(.75rem, 1.7vw, 1.35rem);
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  transform: none;
+}
+
+.bingo-casino-stage .bingo-caller-panel {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  justify-items: center;
+  padding: clamp(.6rem, 1.4vw, 1rem);
+  border-radius: 1.4rem;
+}
+
+.bingo-casino-stage .bingo-caller-panel .bingo-last-ball {
+  width: clamp(5rem, 12vh, 7rem);
+}
+
+.bingo-casino-stage .bingo-caller-panel .bingo-history {
+  width: 100%;
+  padding-top: .6rem;
+  border-top: 1px solid rgb(255 255 255 / 12%);
+  text-align: center;
+}
+
+.bingo-casino-stage .bingo-caller-panel .bingo-history-balls {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bingo-casino-stage .bingo-caller-panel .bingo-top-actions {
+  width: 100%;
+  justify-content: center;
+}
+
+.bingo-casino-stage .bingo-card-panel {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(.6rem, 1.3vw, 1rem);
+  border-radius: 1.4rem;
+}
+
+.bingo-casino-stage .bingo-card-panel .bingo-card-grid {
+  width: auto;
+  height: 100%;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin-inline: auto;
+  aspect-ratio: 5 / 3.65;
+}
+
+.bingo-casino-stage .bingo-card-panel .bingo-letter {
+  font-size: clamp(1rem, 3vh, 1.75rem);
+}
+
+.bingo-casino-stage .bingo-card-panel .bingo-space {
+  font-size: clamp(1rem, 3.8vh, 2rem);
+}
+
+.bingo-casino-stage .bingo-card-panel .bingo-call-button {
+  width: min(100%, 38rem);
+}
+
+.bingo-player-seat { top: 54%; }
+.bingo-seat-left { left: clamp(.4rem, 2.6vw, 2.5rem); }
+.bingo-seat-right { right: clamp(.4rem, 2.6vw, 2.5rem); }
+.bingo-player-seat span { color: #ffe093; font-weight: 950; }
+
+@keyframes bingo-machine-ball {
+  from { margin: -.22rem .15rem .1rem -.15rem; transform: translate(-50%, -50%) rotate(-8deg); }
+  to { margin: .2rem -.18rem -.1rem .18rem; transform: translate(-50%, -50%) rotate(8deg); }
+}
+
+@media (max-width: 1050px) {
+  .bingo-player-seat { display: none; }
+  .bingo-casino-stage::before { inset-inline: .55rem; }
+  .bingo-casino-stage .bingo-game-grid { inset-inline: 1.1rem; }
+}
+
+@media (max-width: 760px), (max-height: 620px) {
+  .bingo-machine { top: .2rem; transform: translateX(-50%) scale(.72); transform-origin: top; }
+  .bingo-casino-stage::before { inset: 4.4rem .25rem 3.1rem; border-radius: 1.6rem; }
+  .bingo-casino-stage .bingo-game-grid {
+    inset: 4.75rem .55rem 3.45rem;
+    grid-template-columns: minmax(7.2rem, .48fr) minmax(18rem, 1.8fr);
+    grid-template-rows: minmax(0, 1fr);
+    gap: .4rem;
+    padding: .3rem;
+  }
+  .bingo-casino-stage .bingo-caller-panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    min-height: 0;
+    padding: .4rem;
+  }
+  .bingo-casino-stage .bingo-caller-panel .bingo-last-ball { grid-row: auto; width: clamp(4rem, 14vh, 5.2rem); }
+  .bingo-casino-stage .bingo-caller-panel .bingo-history { grid-column: auto; overflow: hidden; }
+  .bingo-casino-stage .bingo-caller-panel .bingo-reset-button { min-width: 0; }
+  .bingo-casino-stage .bingo-card-panel { padding: .4rem; gap: .5rem; }
+  .bingo-casino-stage .bingo-card-panel .bingo-card-grid { height: 100%; }
+}
+
+@media (max-width: 560px) and (orientation: portrait) {
+  .bingo-machine { transform: translateX(-50%) scale(.62); }
+  .bingo-casino-stage::before { inset: 3.9rem .2rem 3rem; }
+  .bingo-casino-stage .bingo-game-grid {
+    inset: 4.15rem .45rem 3.25rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  .bingo-casino-stage .bingo-caller-panel {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-rows: 1fr;
+    padding: .3rem;
+  }
+  .bingo-casino-stage .bingo-caller-panel .bingo-history { grid-column: auto; padding: 0; border: 0; }
+  .bingo-casino-stage .bingo-caller-panel .bingo-history-balls { flex-wrap: nowrap; }
+  .bingo-casino-stage .bingo-caller-panel .bingo-reset-button { width: 2.5rem; height: 2.5rem; }
+  .bingo-casino-stage .bingo-card-panel .bingo-card-grid { aspect-ratio: 5 / 5.2; }
 }
 
 input,

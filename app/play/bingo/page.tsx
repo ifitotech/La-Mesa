@@ -108,13 +108,14 @@ export default function BingoPage() {
         </header>
 
         <div className="bingo-casino-stage">
-          <div className="bingo-host">
-            <div className="bingo-host-head"><span /><i /></div>
-            <div className="bingo-host-body"><strong>LA MESA</strong></div>
-            <div className="bingo-host-hands"><i /><i /></div>
+          <div className="bingo-machine" aria-hidden="true">
+            <div className="bingo-machine-globe">
+              {[7, 18, 31, 46, 62, 74].map((number, index) => <i key={number} style={{ "--ball-index": index } as React.CSSProperties}>{number}</i>)}
+            </div>
+            <div className="bingo-machine-base"><strong>LA MESA</strong><span>BINGO CLUB</span></div>
           </div>
-          <div className="bingo-player-seat bingo-seat-left"><span>🎩</span><strong>Rosy</strong><small>2 cartones</small></div>
-          <div className="bingo-player-seat bingo-seat-right"><span>👩🏽</span><strong>Jas</strong><small>1 cartón</small></div>
+          <div className="bingo-player-seat bingo-seat-left"><span>R</span><strong>Rosy</strong><small>2 cartones</small></div>
+          <div className="bingo-player-seat bingo-seat-right"><span>J</span><strong>Jas</strong><small>1 cartón</small></div>
 
           <div className="bingo-game-grid">
           <aside className="bingo-caller-panel">
