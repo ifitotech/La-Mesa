@@ -19,12 +19,8 @@ export const cubaTriviaQuestions: TriviaQuestion[] = Object.values(cubaTriviaByC
 
 export function getCubaTriviaQuestions(category?: TriviaCategory, limit?: number): TriviaQuestion[] {
   const source = category ? cubaTriviaByCategory[category] : cubaTriviaQuestions;
-  const shuffled = [...source];
-  for (let i = shuffled.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return typeof limit === "number" ? shuffled.slice(0, Math.max(0, limit)) : shuffled;
+  const ordered = [...source].sort((a, b) => a.id.localeCompare(b.id));
+  return typeof limit === "number" ? ordered.slice(0, Math.max(0, limit)) : ordered;
 }
 
 export function isCorrectAnswer(question: TriviaQuestion, selectedAnswer: number): boolean {

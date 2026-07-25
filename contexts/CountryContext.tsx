@@ -9,11 +9,13 @@ import { subscribeToPlayer, updateCountry } from "@/services/player";
 type CountryContextValue = {
   country: CountryProfile;
   changeCountry: (code: string) => Promise<void>;
+  isEnglish: boolean;
 };
 
 const CountryContext = createContext<CountryContextValue>({
   country: getCountryProfile(),
   changeCountry: async () => {},
+  isEnglish: false,
 });
 
 export function CountryProvider({ children }: { children: React.ReactNode }) {
@@ -52,7 +54,7 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
     });
   }, [user]);
 
-  return <CountryContext.Provider value={{ country, changeCountry }}>{children}</CountryContext.Provider>;
+  return <CountryContext.Provider value={{ country, changeCountry, isEnglish: country.language === "en" }}>{children}</CountryContext.Provider>;
 }
 
 export function useCountry() {

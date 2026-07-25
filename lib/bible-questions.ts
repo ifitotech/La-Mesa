@@ -42,4 +42,4 @@ const englishQuestions: BibleQuestion[] = [
   { id: "b-en-18", question: "Which apostle was a tax collector before following Jesus?", options: ["Matthew", "John", "Bartholomew", "Judas"], answer: 0 },
 ];
 
-export function getBibleQuestions(language: "es" | "en", amount = 10) { return [...(language === "en" ? englishQuestions : spanishQuestions)].sort(() => Math.random() - 0.5).slice(0, amount); }
+export function getBibleQuestions(language: "es" | "en", amount = 10) { return [...(language === "en" ? englishQuestions : spanishQuestions)].sort((a, b) => a.id.localeCompare(b.id)).slice(0, amount); }

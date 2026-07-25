@@ -171,3 +171,19 @@ export function getGameDefinition(gameId: GameId): GameDefinition {
 
   return game;
 }
+
+const englishGameCopy: Record<GameId, { name: string; description: string }> = {
+  trivia: { name: "Local Trivia", description: "Culture, music, food, and traditions from your selected country." },
+  bible: { name: "Bible Quiz", description: "Questions to learn, share, and enjoy with family." },
+  domino: { name: "Dominoes", description: "The table classic, ready for games with friends." },
+  "heads-up": { name: "Heads Up", description: "Clues, laughs, and local words for everyone." },
+  bingo: { name: "Bingo", description: "A family favorite to play together." },
+  parchis: { name: "Parcheesi", description: "Racing, strategy, and rematches for your next game night." },
+  cards: { name: "Cards", description: "A collection of card games for every gathering." },
+  couples: { name: "Between Us", description: "Questions for couples: memories, laughter, connection, and shared plans." },
+  memory: { name: "Memory", description: "Find the matching cards before the round is over." },
+  charades: { name: "Charades", description: "Act, guess, and laugh together with the whole family." },
+  challenges: { name: "Challenges", description: "Quick cards to break the ice and energize game night." },
+};
+
+export function getGameCopy(game: GameDefinition, english: boolean) { return english ? englishGameCopy[game.id] : { name: game.name, description: game.description }; }

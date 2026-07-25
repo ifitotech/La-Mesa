@@ -268,6 +268,10 @@ const generalQuestions: LocalizedTriviaQuestion[] = [
 
 export const RANDOM_CATEGORY = "random";
 
+function stableQuestionOrder(questions: LocalizedTriviaQuestion[]) {
+  return [...questions].sort((a, b) => a.id.localeCompare(b.id));
+}
+
 export function getTriviaCategories(country: string) {
   if (country === "CU") {
     return [RANDOM_CATEGORY, ...Object.values(cubaCategoryLabels)];
@@ -290,12 +294,12 @@ export function getLocalizedTrivia(
   if (country === "CU") {
     return getCubanTrivia(category).slice(0, amount);
   }
-  if (country === "US") return usTriviaQuestions.filter((question) => category === RANDOM_CATEGORY || question.category === category).sort(() => Math.random() - 0.5).slice(0, amount);
+  if (country === "US") return stableQuestionOrder(usTriviaQuestions.filter((question) => category === RANDOM_CATEGORY || question.category === category)).slice(0, amount);
 
   const localized = countryQuestions[country] ?? [];
   const questions = [...localized, ...generalQuestions]
     .filter((question) => category === RANDOM_CATEGORY || question.category === category)
-    .sort(() => Math.random() - 0.5);
+    .sort((a, b) => a.id.localeCompare(b.id));
 
   return questions.slice(0, Math.min(amount, questions.length));
 }

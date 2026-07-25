@@ -13,11 +13,12 @@ import { logoutUser } from "@/services/auth";
 import { subscribeActiveUsers } from "@/services/presence";
 
 const titles: Record<string, string> = { "/dashboard": "Inicio", "/games": "Juegos", "/lobby": "Partidas online", "/game-night": "Game Night", "/online": "Juegos Online", "/profile": "Perfil", "/scoreboard": "Marcador", "/store": "Tienda" };
+const englishTitles: Record<string, string> = { "/dashboard": "Home", "/games": "Games", "/lobby": "Online matches", "/game-night": "Game Night", "/online": "Online Games", "/profile": "Profile", "/scoreboard": "Scores", "/store": "Store" };
 
 export default function Topbar() {
   const { user } = useAuth(); const router = useRouter(); const pathname = usePathname();
-  const title = titles[pathname] ?? "La Mesa";
-  const { country, changeCountry } = useCountry();
+  const { country, changeCountry, isEnglish } = useCountry();
+  const title = (isEnglish ? englishTitles : titles)[pathname] ?? "La Mesa";
   const [activeUsers, setActiveUsers] = useState(0); const [notificationsOpen, setNotificationsOpen] = useState(false); const [countryOpen, setCountryOpen] = useState(false);
   useEffect(() => { if (!user) return; return subscribeActiveUsers(setActiveUsers); }, [user]);
   async function handleLogout() { try { await logoutUser(); router.push("/auth/login"); } catch (error) { console.error(error); } }
