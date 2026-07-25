@@ -16,7 +16,7 @@ import {
 } from "@/lib/parchis-engine";
 import { getGameNightSession } from "@/lib/game-night-session";
 
-const playerColors = ["red", "green", "yellow", "blue"];
+const playerColors = ["blue", "yellow", "green", "red"];
 
 export default function ParchisPage() {
   const [game, setGame] = useState<ParchisState | null>(null);
