@@ -1398,7 +1398,7 @@ button:disabled:hover {
 
 .bingo-card-panel {
   grid-template-rows: minmax(0, 1fr) auto;
-  gap: clamp(.45rem, 1vh, .7rem);
+  gap: clamp(.9rem, 1.8vh, 1.2rem);
 }
 
 .bingo-card-panel .bingo-card-grid {
@@ -1430,6 +1430,7 @@ button:disabled:hover {
 .bingo-card-panel .bingo-call-button {
   width: min(100%, 28rem);
   margin: 0 auto;
+  box-shadow: inset 0 2px rgb(255 255 255 / 24%), 0 5px 0 #034c2b, 0 -10px 24px rgb(4 17 14 / 26%);
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
