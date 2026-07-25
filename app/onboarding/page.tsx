@@ -14,11 +14,17 @@ export default function OnboardingPage() {
   const [country, setCountry] = useState("CU");
   const [saving, setSaving] = useState(false);
 
+  function nextDestination() {
+    const next = window.localStorage.getItem("la-mesa-after-auth");
+    window.localStorage.removeItem("la-mesa-after-auth");
+    return next?.startsWith("/") ? next : "/dashboard";
+  }
+
   useEffect(() => {
     if (loading) return;
     if (!user) return;
     void getPlayer(user.uid).then((player) => {
-      if (player?.onboardingCompleted) router.replace("/dashboard");
+      if (player?.onboardingCompleted) router.replace(nextDestination());
       if (player?.country) setCountry(player.country);
     });
   }, [loading, router, user]);
@@ -31,7 +37,7 @@ export default function OnboardingPage() {
       } else {
         window.localStorage.setItem("la-mesa-country", country);
       }
-      router.replace("/dashboard");
+      router.replace(nextDestination());
     } finally { setSaving(false); }
   }
 

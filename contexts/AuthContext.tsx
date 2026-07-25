@@ -38,10 +38,18 @@ export function AuthProvider({
       return () => window.clearTimeout(timer);
     }
 
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-      setLoading(false);
-    });
+    const unsubscribe = onAuthStateChanged(
+      auth,
+      (currentUser) => {
+        setUser(currentUser);
+        setLoading(false);
+      },
+      (error) => {
+        console.warn("Firebase Auth no está disponible; se usará el modo invitado.", error);
+        setUser(null);
+        setLoading(false);
+      }
+    );
 
     return unsubscribe;
   }, []);
