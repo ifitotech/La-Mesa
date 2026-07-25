@@ -1812,6 +1812,167 @@ button:disabled:hover {
   .parchis-roll-button { grid-column: 1 / 3; min-height: 2.7rem; }
 }
 
+/* Lenguaje visual compartido de Bingo/Parchís para el catálogo completo. */
+[data-route="/play/challenges"] main > div,
+[data-route="/play/charades"] main > div,
+[data-route="/play/couples"] main > div,
+[data-route="/play/heads-up"] main > div,
+[data-route="/play/memory"] main > div,
+[data-route="/play/domino"] main > div,
+[data-route="/play/trivia"] main > div,
+[data-route="/play/bible"] main > div {
+  display: grid;
+  width: 100%;
+  max-width: 68rem;
+  height: 100dvh;
+  margin: 0 auto;
+  overflow: hidden;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: clamp(.35rem, .8vh, .65rem);
+  padding: max(.35rem, env(safe-area-inset-top)) clamp(.4rem, 1.2vw, .8rem) max(.4rem, env(safe-area-inset-bottom));
+  background:
+    radial-gradient(circle at 15% 8%, rgb(45 222 168 / 15%), transparent 30%),
+    radial-gradient(circle at 88% 88%, rgb(80 92 255 / 15%), transparent 34%),
+    linear-gradient(145deg, #081a1c, #030811 62%, #110817);
+}
+
+[data-route="/play/challenges"] main > div > a,
+[data-route="/play/charades"] main > div > a,
+[data-route="/play/couples"] main > div > a,
+[data-route="/play/heads-up"] main > div > a,
+[data-route="/play/memory"] main > div > a,
+[data-route="/play/domino"] main > div > a,
+[data-route="/play/trivia"] main > div > a,
+[data-route="/play/bible"] main > div > a {
+  position: absolute;
+  top: max(.5rem, env(safe-area-inset-top));
+  left: .65rem;
+  z-index: 30;
+  display: grid;
+  width: 2.3rem;
+  height: 2.3rem;
+  overflow: hidden;
+  place-items: center;
+  border: 1px solid rgb(120 234 210 / 28%);
+  border-radius: 50%;
+  background: rgb(2 14 18 / 82%);
+  color: #8aead4;
+  font-size: 0;
+}
+
+[data-route="/play/challenges"] main > div > section,
+[data-route="/play/charades"] main > div > section,
+[data-route="/play/couples"] main > div > section,
+[data-route="/play/heads-up"] main > div > section,
+[data-route="/play/memory"] main > div > section,
+[data-route="/play/domino"] main > div > section,
+[data-route="/play/trivia"] main > div > section,
+[data-route="/play/bible"] main > div > section {
+  min-height: 0;
+  border: 1px solid rgb(117 230 204 / 17%);
+  border-radius: clamp(1rem, 2vw, 1.6rem);
+  background:
+    radial-gradient(circle at top, rgb(65 229 180 / 9%), transparent 52%),
+    linear-gradient(145deg, rgb(15 49 48 / 88%), rgb(4 13 22 / 96%));
+  box-shadow: inset 0 1px rgb(255 255 255 / 10%), 0 16px 38px rgb(0 0 0 / 38%);
+  backdrop-filter: blur(16px);
+}
+
+[data-route="/play/challenges"] main > div > section:first-of-type,
+[data-route="/play/charades"] main > div > section:first-of-type,
+[data-route="/play/couples"] main > div > section:first-of-type,
+[data-route="/play/heads-up"] main > div > section:first-of-type,
+[data-route="/play/memory"] main > div > section:first-of-type,
+[data-route="/play/domino"] main > div > section:first-of-type,
+[data-route="/play/trivia"] main > div > section:first-of-type,
+[data-route="/play/bible"] main > div > section:first-of-type {
+  padding: clamp(.45rem, 1vh, .75rem) 3.2rem;
+}
+
+[data-route="/play/challenges"] main > div > section:first-of-type h1,
+[data-route="/play/charades"] main > div > section:first-of-type h1,
+[data-route="/play/couples"] main > div > section:first-of-type h1,
+[data-route="/play/heads-up"] main > div > section:first-of-type h1,
+[data-route="/play/memory"] main > div > section:first-of-type h1,
+[data-route="/play/domino"] main > div > section:first-of-type h1,
+[data-route="/play/trivia"] main > div > section:first-of-type h1,
+[data-route="/play/bible"] main > div > section:first-of-type h1 {
+  margin-top: 0;
+  font-size: clamp(1.1rem, 3vh, 1.75rem);
+  color: #f5d77f;
+}
+
+[data-route="/play/challenges"] main > div > section:last-of-type,
+[data-route="/play/charades"] main > div > section:last-of-type,
+[data-route="/play/couples"] main > div > section:last-of-type,
+[data-route="/play/heads-up"] main > div > section:last-of-type,
+[data-route="/play/trivia"] main > div > section:last-of-type,
+[data-route="/play/bible"] main > div > section:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: clamp(.7rem, 2vh, 1.4rem);
+}
+
+[data-route="/play/challenges"] main > div > section:last-of-type h2,
+[data-route="/play/charades"] main > div > section:last-of-type h2,
+[data-route="/play/couples"] main > div > section:last-of-type h2,
+[data-route="/play/heads-up"] main > div > section:last-of-type h2 {
+  font-size: clamp(1.65rem, 6vh, 3.8rem);
+  text-shadow: 0 5px 18px rgb(0 0 0 / 42%), 0 0 24px rgb(91 235 196 / 12%);
+}
+
+[data-route="/play/challenges"] main button,
+[data-route="/play/charades"] main button,
+[data-route="/play/couples"] main button,
+[data-route="/play/heads-up"] main button,
+[data-route="/play/memory"] main button,
+[data-route="/play/domino"] main button,
+[data-route="/play/trivia"] main button,
+[data-route="/play/bible"] main button {
+  box-shadow: inset 0 1px rgb(255 255 255 / 15%), 0 4px 0 rgb(1 32 27 / 72%), 0 10px 18px rgb(0 0 0 / 24%);
+}
+
+[data-route="/play/memory"] main > div,
+[data-route="/play/domino"] main > div {
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+[data-route="/play/memory"] .family-table-scene,
+[data-route="/play/domino"] .domino-table-scene {
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  padding: clamp(.55rem, 1.2vh, 1rem);
+  background-image:
+    radial-gradient(circle at center, rgb(38 186 142 / 12%), transparent 55%),
+    linear-gradient(145deg, #113f38, #061a1b 62%, #080d19);
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+  [data-route="/play/challenges"] main > div,
+  [data-route="/play/charades"] main > div,
+  [data-route="/play/couples"] main > div,
+  [data-route="/play/heads-up"] main > div,
+  [data-route="/play/memory"] main > div,
+  [data-route="/play/domino"] main > div,
+  [data-route="/play/trivia"] main > div,
+  [data-route="/play/bible"] main > div {
+    gap: .3rem;
+    padding-inline: .3rem;
+  }
+
+  [data-route="/play/challenges"] main > div > section:first-of-type > p:last-of-type,
+  [data-route="/play/charades"] main > div > section:first-of-type > p:last-of-type,
+  [data-route="/play/couples"] main > div > section:first-of-type > p:last-of-type,
+  [data-route="/play/heads-up"] main > div > section:first-of-type > p:last-of-type,
+  [data-route="/play/memory"] main > div > section:first-of-type > p:last-of-type,
+  [data-route="/play/domino"] main > div > section:first-of-type p:last-of-type {
+    display: none;
+  }
+}
+
 input,
 select,
 textarea {

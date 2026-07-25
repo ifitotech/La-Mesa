@@ -20,19 +20,20 @@ export default function AppLayout({
   lockViewport = false,
 }: AppLayoutProps) {
   const pathname = usePathname();
+  const shouldImmerse = immersive || pathname.startsWith("/play/");
   const shouldLockViewport = lockViewport || pathname.startsWith("/play/");
   return (
     <div data-route={pathname} className={`${shouldLockViewport ? "h-dvh overflow-hidden overscroll-none" : "min-h-screen"} bg-transparent text-white`}>
       <NetworkStatus />
       <div className={`flex ${shouldLockViewport ? "h-full min-h-0" : ""}`}>
-        {!immersive && <Sidebar />}
+        {!shouldImmerse && <Sidebar />}
 
         <div className={`flex flex-1 flex-col ${shouldLockViewport ? "min-h-0" : "min-h-screen"}`}>
-          {!immersive && <Topbar />}
+          {!shouldImmerse && <Topbar />}
 
           <main
             className={`flex-1 overflow-x-hidden ${
-              immersive ? "p-0" : "px-4 pb-24 pt-5 sm:px-6 md:py-7 xl:px-8 xl:pb-8"
+              shouldImmerse ? "p-0" : "px-4 pb-24 pt-5 sm:px-6 md:py-7 xl:px-8 xl:pb-8"
             } ${
               shouldLockViewport
                 ? "min-h-0 overflow-y-auto overscroll-contain touch-pan-y"
@@ -41,7 +42,7 @@ export default function AppLayout({
           >
             {children}
           </main>
-          {!immersive && <MobileNavigation />}
+          {!shouldImmerse && <MobileNavigation />}
         </div>
       </div>
     </div>
