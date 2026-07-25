@@ -1057,7 +1057,7 @@ button:disabled:hover {
   width: 100%;
   height: 100dvh;
   overflow: hidden;
-  padding: clamp(.55rem, 1.5vh, 1rem);
+  padding: max(.25rem, env(safe-area-inset-top)) .4rem .35rem;
   background:
     radial-gradient(circle at 18% 12%, rgb(38 213 156 / 20%), transparent 34%),
     radial-gradient(circle at 84% 86%, rgb(41 124 255 / 18%), transparent 34%),
@@ -1077,8 +1077,8 @@ button:disabled:hover {
 
 .bingo-topbar {
   display: grid;
-  height: clamp(2.8rem, 7vh, 4rem);
-  grid-template-columns: 2.75rem 1fr 2.75rem;
+  height: clamp(2.35rem, 5.2vh, 3rem);
+  grid-template-columns: 2.35rem 1fr 2.35rem;
   align-items: center;
 }
 
@@ -1088,7 +1088,7 @@ button:disabled:hover {
   justify-content: center;
   gap: .55rem;
   color: #f6d77f;
-  font-size: clamp(1rem, 2.6vh, 1.5rem);
+  font-size: clamp(.9rem, 2.2vh, 1.2rem);
   font-weight: 950;
   letter-spacing: .15em;
   text-shadow: 0 0 22px rgb(77 230 181 / 24%);
@@ -1097,8 +1097,8 @@ button:disabled:hover {
 .bingo-topbar a,
 .bingo-topbar button {
   display: grid;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.15rem;
+  height: 2.15rem;
   place-items: center;
   border: 1px solid rgb(244 211 126 / 28%);
   border-radius: 50%;
@@ -1108,7 +1108,7 @@ button:disabled:hover {
 
 .bingo-game-grid {
   display: grid;
-  height: calc(100dvh - clamp(3.9rem, 9vh, 5rem));
+  height: calc(100dvh - max(.6rem, env(safe-area-inset-top)) - clamp(2.75rem, 6.2vh, 3.4rem));
   max-width: 66rem;
   margin: 0 auto;
   grid-template-columns: minmax(0, 1fr) minmax(14rem, 19rem);
@@ -1221,25 +1221,57 @@ button:disabled:hover {
 }
 
 .bingo-last-ball {
+  position: relative;
+  isolation: isolate;
   display: flex;
   width: clamp(5.4rem, 16vh, 8rem);
   aspect-ratio: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px solid #f8df91;
+  border: 2px solid rgb(139 246 255 / 72%);
   border-radius: 50%;
-  background: radial-gradient(circle at 32% 22%, #eafffa 0 8%, #64efc0 23%, #1eaa82 57%, #075345 100%);
-  color: #031b16;
-  box-shadow: inset 0 9px 13px rgb(255 255 255 / 38%), inset 0 -11px 15px rgb(0 44 38 / 38%), 0 10px 0 #073e37, 0 22px 30px rgb(0 0 0 / 48%), 0 0 30px rgb(74 239 190 / 20%);
+  background:
+    radial-gradient(circle at 32% 20%, rgb(255 255 255 / 95%) 0 5%, rgb(126 240 255 / 70%) 11%, transparent 28%),
+    radial-gradient(circle at 50% 55%, #1b6683, #0a314e 58%, #06182c 100%);
+  color: #f3fdff;
+  box-shadow:
+    inset 0 0 0 4px rgb(255 255 255 / 7%),
+    inset 0 8px 18px rgb(126 237 255 / 22%),
+    inset 0 -13px 20px rgb(1 10 31 / 48%),
+    0 5px 0 #04152a,
+    0 14px 25px rgb(0 0 0 / 48%),
+    0 0 28px rgb(50 207 255 / 28%);
+}
+
+.bingo-last-ball::before,
+.bingo-last-ball::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bingo-last-ball::before {
+  inset: -7px;
+  border: 2px solid rgb(91 224 255 / 34%);
+  border-right-color: #7ff4ff;
+  animation: bingo-number-orbit 3.2s linear infinite;
+}
+
+.bingo-last-ball::after {
+  inset: 12%;
+  border: 1px solid rgb(255 255 255 / 14%);
+  box-shadow: 0 0 16px rgb(94 230 255 / 24%);
 }
 
 .bingo-last-ball.is-drawn {
   animation: bingo-ball-draw .72s cubic-bezier(.16,.86,.25,1.18) both;
 }
 
-.bingo-last-ball span { font-size: .58rem; font-weight: 950; letter-spacing: .14em; }
-.bingo-last-ball strong { font-size: clamp(2rem, 7vh, 4rem); line-height: 1; }
+.bingo-last-ball span { color: #9cecff; font-size: .54rem; font-weight: 950; letter-spacing: .17em; text-shadow: 0 0 8px rgb(80 220 255 / 48%); }
+.bingo-last-ball strong { font-size: clamp(2rem, 7vh, 4rem); line-height: 1; text-shadow: 0 0 14px rgb(120 236 255 / 42%), 0 3px 5px rgb(0 0 0 / 50%); }
 .bingo-progress { color: #9fb2a8; font-size: .78rem; font-weight: 800; }
 
 .bingo-call-button,
@@ -1275,10 +1307,14 @@ button:disabled:hover {
 }
 
 @keyframes bingo-ball-draw {
-  0% { opacity: 0; transform: translateY(-55px) rotate(-50deg) scale(.45); }
-  58% { opacity: 1; transform: translateY(6px) rotate(12deg) scale(1.12); }
-  78% { transform: translateY(-4px) rotate(-4deg) scale(.97); }
+  0% { opacity: 0; transform: translateY(-38px) rotateY(-120deg) scale(.45); filter: blur(5px); }
+  58% { opacity: 1; transform: translateY(5px) rotateY(12deg) scale(1.1); filter: blur(0); }
+  78% { transform: translateY(-3px) rotateY(-4deg) scale(.98); }
   100% { transform: translateY(0) rotate(0) scale(1); }
+}
+
+@keyframes bingo-number-orbit {
+  to { transform: rotate(360deg); }
 }
 
 @keyframes bingo-celebrate {
@@ -1331,7 +1367,7 @@ button:disabled:hover {
   align-items: center;
   justify-content: initial;
   gap: clamp(.65rem, 2vw, 1.25rem);
-  padding: clamp(.45rem, 1vh, .7rem) clamp(.75rem, 2vw, 1.25rem);
+  padding: clamp(.3rem, .65vh, .5rem) clamp(.65rem, 1.7vw, 1rem);
 }
 
 .bingo-caller-panel .bingo-last-ball {
