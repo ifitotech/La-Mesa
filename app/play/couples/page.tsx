@@ -30,7 +30,7 @@ export default function CouplesPage() {
     setCurrent((value) => value + 1);
   }
 
-  return <AppLayout><div className="mx-auto max-w-3xl space-y-5">
+  return <AppLayout lockViewport><div className="mx-auto max-w-3xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>
     <section className="mesa-panel-gold rounded-3xl p-6 md:p-8">
       <p className="text-xs font-bold uppercase tracking-[.24em] text-rose-300">Para dos personas · Sin internet</p>

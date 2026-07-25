@@ -97,13 +97,13 @@ export default function SoloDominoPage() {
     setMessage(text.stockEmpty);
   }
 
-  if (!game) return <AppLayout><div className="mesa-panel rounded-3xl p-10 text-center text-slate-400">{text.loading}</div></AppLayout>;
+  if (!game) return <AppLayout lockViewport><div className="mesa-panel rounded-3xl p-10 text-center text-slate-400">{text.loading}</div></AppLayout>;
 
   const player = game.players[0];
   const leftEnd = game.board[0]?.left;
   const rightEnd = game.board.at(-1)?.right;
 
-  return <AppLayout><div className="mx-auto max-w-5xl space-y-5">
+  return <AppLayout lockViewport><div className="mx-auto max-w-5xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> {text.back}</Link>
     <section className="mesa-panel-gold rounded-3xl p-5 md:p-7">
       <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center"><div><p className="text-xs font-bold uppercase tracking-[.24em] text-amber-300">{text.mode}</p><h1 className="mt-1 text-3xl font-black">{text.title}</h1><p className="mt-1 text-sm text-slate-400">{text.description}</p></div><button onClick={restart} className="mesa-action flex items-center gap-2"><RotateCcw size={17} /> {text.newGame}</button></div>

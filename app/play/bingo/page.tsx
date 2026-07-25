@@ -50,7 +50,7 @@ export default function BingoPage() {
     setWinner(false);
   }
 
-  return <AppLayout><div className="mx-auto max-w-4xl space-y-5">
+  return <AppLayout lockViewport><div className="mx-auto max-w-4xl space-y-5">
     <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> Juegos</Link>
     <section className="mesa-panel-gold rounded-3xl p-6 text-center"><p className="text-xs font-bold uppercase tracking-[.24em] text-emerald-300">Game Night presencial · Sin internet</p><h1 className="mt-2 flex justify-center gap-3 text-3xl font-black"><CircleDot className="text-emerald-300" /> Bingo</h1><p className="mt-3 text-slate-300">Una persona canta los números y cada jugador puede usar su propio dispositivo o una tarjeta diferente.</p></section>
     <div className="flex flex-wrap justify-center gap-3"><button onClick={() => setMode("host")} className={`rounded-xl px-5 py-3 font-black ${mode === "host" ? "bg-emerald-600 text-white" : "border border-slate-600 text-slate-300"}`}><Volume2 className="mr-2 inline" size={18} /> Anfitrión</button><button onClick={() => setMode("player")} className={`rounded-xl px-5 py-3 font-black ${mode === "player" ? "bg-violet-600 text-white" : "border border-slate-600 text-slate-300"}`}><UserRound className="mr-2 inline" size={18} /> Jugador</button><button onClick={() => setMode("both")} className={`rounded-xl px-5 py-3 font-black ${mode === "both" ? "bg-amber-500 text-slate-950" : "border border-slate-600 text-slate-300"}`}>Ambos</button></div>

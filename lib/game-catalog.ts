@@ -172,6 +172,12 @@ export function getGameDefinition(gameId: GameId): GameDefinition {
   return game;
 }
 
+// The United States catalog is curated separately. Do not add games here
+// unless its dedicated catalog has been approved.
+export function isGameEnabledForCountry(gameId: GameId, countryCode: string) {
+  return countryCode !== "US" || gameId !== "cards";
+}
+
 const englishGameCopy: Record<GameId, { name: string; description: string }> = {
   trivia: { name: "Local Trivia", description: "Culture, music, food, and traditions from your selected country." },
   bible: { name: "Bible Quiz", description: "Questions to learn, share, and enjoy with family." },
