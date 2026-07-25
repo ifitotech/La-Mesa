@@ -1076,14 +1076,20 @@ button:disabled:hover {
 }
 
 .bingo-topbar {
+  position: absolute;
+  top: max(.25rem, env(safe-area-inset-top));
+  right: .55rem;
+  left: .55rem;
+  z-index: 20;
   display: grid;
-  height: clamp(2.35rem, 5.2vh, 3rem);
+  height: 2.15rem;
   grid-template-columns: 2.35rem 1fr 2.35rem;
   align-items: center;
+  pointer-events: none;
 }
 
 .bingo-topbar h1 {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: .55rem;
@@ -1104,11 +1110,15 @@ button:disabled:hover {
   border-radius: 50%;
   background: rgb(0 0 0 / 28%);
   color: #f6d77f;
+  pointer-events: auto;
 }
+
+.bingo-topbar a { grid-column: 1; }
+.bingo-topbar button { grid-column: 3; }
 
 .bingo-game-grid {
   display: grid;
-  height: calc(100dvh - max(.6rem, env(safe-area-inset-top)) - clamp(2.75rem, 6.2vh, 3.4rem));
+  height: calc(100dvh - max(.6rem, env(safe-area-inset-top)) - .45rem);
   max-width: 66rem;
   margin: 0 auto;
   grid-template-columns: minmax(0, 1fr) minmax(14rem, 19rem);
@@ -1367,7 +1377,7 @@ button:disabled:hover {
   align-items: center;
   justify-content: initial;
   gap: clamp(.65rem, 2vw, 1.25rem);
-  padding: clamp(.3rem, .65vh, .5rem) clamp(.65rem, 1.7vw, 1rem);
+  padding: clamp(.3rem, .65vh, .5rem) clamp(3.15rem, 7vw, 4rem);
 }
 
 .bingo-caller-panel .bingo-last-ball {
@@ -1430,7 +1440,7 @@ button:disabled:hover {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
     grid-template-rows: 1fr;
-    padding: .4rem .55rem;
+    padding: .4rem 3.05rem;
   }
   .bingo-caller-panel .bingo-last-ball {
     grid-row: auto;
