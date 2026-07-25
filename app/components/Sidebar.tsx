@@ -39,7 +39,7 @@ export default function Sidebar() {
 
   return (
     <aside className="mesa-panel hidden w-[290px] shrink-0 border-y-0 border-l-0 xl:flex xl:min-h-screen xl:flex-col">
-      <div className="border-b border-slate-700/70 px-7 py-8">
+      <div className="border-b border-amber-100/10 px-7 py-8">
         <Link href="/dashboard" className="flex items-center gap-3">
           <Image
             src="/la-mesa-logo-v2.png"
@@ -47,7 +47,7 @@ export default function Sidebar() {
             width={72}
             height={72}
             priority
-            className="h-[72px] w-[72px] rounded-2xl border border-amber-200/50 object-cover shadow-lg shadow-amber-500/20"
+            className="h-[72px] w-[72px] rounded-2xl border border-amber-200/50 object-cover shadow-[0_10px_32px_rgba(211,164,67,.2)]"
           />
           <div>
             <p className="text-3xl font-black tracking-tight text-amber-50">LA MESA</p>
@@ -59,7 +59,7 @@ export default function Sidebar() {
         </p>
       </div>
 
-      <Link href="/profile" className="mx-5 mt-5 rounded-2xl border border-slate-700/70 bg-slate-950/45 p-4 transition hover:border-blue-300/50">
+      <Link href="/profile" className="mx-5 mt-5 rounded-2xl border border-amber-100/15 bg-black/20 p-4 transition hover:border-amber-200/45">
         <div className="flex items-center gap-3">
           <Avatar avatar={activePlayer?.avatar} photoURL={activePlayer?.photoURL} name={activePlayer?.displayName ?? "Jugador"} size="sm" />
           <div className="min-w-0">
@@ -68,7 +68,7 @@ export default function Sidebar() {
           </div>
         </div>
         <div className="mt-4 h-2 overflow-hidden rounded-full bg-slate-800">
-          <div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-400" style={{ width: `${Math.min(100, Math.max(8, ((activePlayer?.xp ?? 0) % 100) + 8))}%` }} />
+          <div className="h-full rounded-full bg-gradient-to-r from-amber-600 via-yellow-200 to-amber-500" style={{ width: `${Math.min(100, Math.max(8, ((activePlayer?.xp ?? 0) % 100) + 8))}%` }} />
         </div>
       </Link>
 
@@ -78,7 +78,7 @@ export default function Sidebar() {
           const active = pathname === item.href.split("?")[0];
 
           return (
-            <Link key={item.label} href={item.href} className={`group flex items-center gap-3 rounded-2xl border px-3 py-3 transition ${active ? "border-violet-400/50 bg-violet-500/12" : "border-transparent hover:border-slate-700 hover:bg-slate-800/70"}`}>
+            <Link key={item.label} href={item.href} className={`group flex items-center gap-3 rounded-2xl border px-3 py-3 transition ${active ? "border-amber-200/35 bg-amber-200/8 shadow-inner shadow-amber-100/5" : "border-transparent hover:border-emerald-200/15 hover:bg-emerald-950/40"}`}>
               <span className={`flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br ${item.color} text-white shadow-lg`}><Icon size={21} /></span>
               <span className="min-w-0 flex-1">
                 <span className="block font-bold uppercase tracking-wide">{item.label}</span>
@@ -90,10 +90,10 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <div className="flex justify-around border-t border-slate-700/70 px-4 py-4 text-slate-400">
-        <Link href="/dashboard" aria-label="Inicio" className="rounded-lg p-2 hover:bg-slate-800 hover:text-violet-300"><Home size={20} /></Link>
-        <Link href="/games" aria-label="Juegos" className="rounded-lg p-2 hover:bg-slate-800 hover:text-violet-300"><Gamepad2 size={20} /></Link>
-        <Link href="/profile" aria-label="Perfil" className="rounded-lg p-2 hover:bg-slate-800 hover:text-violet-300"><UserRound size={20} /></Link>
+      <div className="flex justify-around border-t border-amber-100/10 px-4 py-4 text-slate-400">
+        <Link href="/dashboard" aria-label="Inicio" className="rounded-lg p-2 hover:bg-emerald-950 hover:text-amber-200"><Home size={20} /></Link>
+        <Link href="/games" aria-label="Juegos" className="rounded-lg p-2 hover:bg-emerald-950 hover:text-amber-200"><Gamepad2 size={20} /></Link>
+        <Link href="/profile" aria-label="Perfil" className="rounded-lg p-2 hover:bg-emerald-950 hover:text-amber-200"><UserRound size={20} /></Link>
       </div>
     </aside>
   );

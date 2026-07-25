@@ -5,17 +5,17 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #050b12;
-  --foreground: #f8fafc;
+  --background: #050907;
+  --foreground: #fffdf5;
 
-  --card: #0d1824;
-  --card-foreground: #f8fafc;
+  --card: #0d1712;
+  --card-foreground: #fffdf5;
 
   --popover: #0f172a;
   --popover-foreground: #f8fafc;
 
-  --primary: #7c3aed;
-  --primary-foreground: #ffffff;
+  --primary: #d7ad54;
+  --primary-foreground: #171006;
 
   --secondary: #142334;
   --secondary-foreground: #f8fafc;
@@ -28,9 +28,9 @@
 
   --destructive: #dc2626;
 
-  --border: #26384b;
-  --input: #142334;
-  --ring: #8b5cf6;
+  --border: #294338;
+  --input: #101d17;
+  --ring: #e8c66f;
 
   --chart-1: #22c55e;
   --chart-2: #3b82f6;
@@ -101,11 +101,12 @@ body {
   min-height: 100%;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background-image:
-    radial-gradient(circle at 15% 10%, rgb(59 130 246 / 12%), transparent 28rem),
-    radial-gradient(circle at 90% 80%, rgb(124 58 237 / 10%), transparent 32rem),
-    linear-gradient(135deg, #03070c, #08121d 50%, #03070c);
+    radial-gradient(circle at 15% 8%, rgb(194 146 52 / 14%), transparent 26rem),
+    radial-gradient(circle at 85% 76%, rgb(24 118 78 / 15%), transparent 34rem),
+    linear-gradient(135deg, #030705, #07110c 48%, #040806);
+  background-attachment: fixed;
 }
 
 html {
@@ -157,24 +158,64 @@ button:disabled:hover {
 
 @layer components {
   .mesa-panel {
-    @apply border border-blue-200/15 bg-slate-950/65 shadow-2xl shadow-black/25 backdrop-blur-xl;
-    background-image: linear-gradient(145deg, rgb(16 35 61 / 92%), rgb(4 12 26 / 98%));
-    box-shadow: inset 0 1px rgb(255 255 255 / 7%), 0 18px 45px rgb(0 0 0 / 28%);
+    @apply border bg-slate-950/65 shadow-2xl shadow-black/25 backdrop-blur-xl;
+    border-color: rgb(219 183 100 / 18%);
+    background-image:
+      linear-gradient(145deg, rgb(18 38 29 / 94%), rgb(5 13 9 / 98%)),
+      radial-gradient(circle at top right, rgb(230 190 98 / 8%), transparent 40%);
+    box-shadow: inset 0 1px rgb(255 248 220 / 8%), 0 18px 48px rgb(0 0 0 / 34%);
   }
 
   .mesa-panel-gold {
-    @apply border border-amber-200/25 bg-slate-950/65 shadow-2xl shadow-black/25 backdrop-blur-xl;
-    background-image: linear-gradient(145deg, rgb(20 35 52 / 85%), rgb(6 13 22 / 96%));
-    box-shadow: inset 0 1px rgb(255 255 255 / 8%), 0 0 0 1px rgb(130 95 40 / 25%), 0 24px 48px rgb(0 0 0 / 32%);
+    @apply border bg-slate-950/65 shadow-2xl shadow-black/25 backdrop-blur-xl;
+    border-color: rgb(232 198 111 / 32%);
+    background-image:
+      radial-gradient(circle at 12% 0%, rgb(217 170 74 / 14%), transparent 30%),
+      linear-gradient(145deg, rgb(20 38 29 / 94%), rgb(6 15 10 / 98%));
+    box-shadow: inset 0 1px rgb(255 248 220 / 10%), 0 0 0 1px rgb(119 82 25 / 22%), 0 24px 58px rgb(0 0 0 / 38%);
   }
 
   .mesa-action {
-    @apply rounded-xl border border-blue-300/30 bg-gradient-to-b from-blue-600 to-blue-800 px-4 py-3 font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:border-blue-100/70 hover:from-blue-500 hover:to-blue-700;
+    @apply rounded-xl border border-amber-200/35 px-4 py-3 font-bold text-[#171006] shadow-lg transition hover:border-amber-100/80 hover:brightness-110;
+    background: linear-gradient(180deg, #f2d37d, #b98228);
+    box-shadow: inset 0 1px rgb(255 255 255 / 45%), 0 10px 26px rgb(107 66 10 / 32%);
   }
 
   .mesa-game-button {
-    @apply rounded-2xl border border-blue-200/25 bg-gradient-to-br from-blue-600 via-blue-700 to-[#07214d] p-4 text-left text-white shadow-xl shadow-blue-950/50 transition hover:-translate-y-1 hover:border-blue-100/70 hover:brightness-110;
-    box-shadow: inset 0 1px rgb(255 255 255 / 13%), 0 14px 28px rgb(0 0 0 / 32%);
+    @apply rounded-2xl border border-amber-200/25 p-4 text-left text-white shadow-xl transition hover:-translate-y-1 hover:border-amber-100/65 hover:brightness-110;
+    background: linear-gradient(145deg, #174c35, #0b2d20 60%, #071b13);
+    box-shadow: inset 0 1px rgb(255 255 255 / 12%), 0 14px 30px rgb(0 0 0 / 38%);
+  }
+
+  .mesa-premium-surface {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border: 1px solid rgb(232 198 111 / 28%);
+    background:
+      radial-gradient(circle at 50% -15%, rgb(48 137 94 / 34%), transparent 48%),
+      linear-gradient(160deg, #123d2b, #09251a 62%, #06150f);
+    box-shadow:
+      inset 0 1px rgb(255 248 220 / 12%),
+      inset 0 0 70px rgb(0 0 0 / 26%),
+      0 28px 70px rgb(0 0 0 / 42%);
+  }
+
+  .mesa-premium-surface::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.24;
+    background-image:
+      repeating-linear-gradient(45deg, transparent 0 3px, rgb(255 255 255 / 1.6%) 3px 4px),
+      radial-gradient(circle at center, transparent 30%, rgb(0 0 0 / 45%) 100%);
+    pointer-events: none;
+  }
+
+  .mesa-gold-text {
+    color: #f1d684;
+    text-shadow: 0 2px 16px rgb(206 154 51 / 18%);
   }
 }
 

@@ -93,21 +93,21 @@ export default function Topbar() {
   }
 
   return (
-    <header className="sticky top-0 z-40 flex min-h-16 items-center justify-between gap-3 border-b border-blue-200/10 bg-[#07111fe8] px-4 py-3 backdrop-blur-xl sm:px-6 xl:min-h-20 xl:px-8">
+    <header className="sticky top-0 z-40 flex min-h-16 items-center justify-between gap-3 border-b border-amber-100/10 bg-[#06100beF] px-4 py-3 shadow-lg shadow-black/10 backdrop-blur-xl sm:px-6 xl:min-h-20 xl:px-8">
       <div className="flex min-w-0 items-center gap-3">
         <Link href="/dashboard" className="flex shrink-0 items-center gap-2">
-          <Image src="/la-mesa-logo-v2.png" alt="La Mesa" width={42} height={42} priority className="h-10 w-10 rounded-xl border border-blue-200/40 object-cover shadow-lg shadow-blue-950/70" />
+          <Image src="/la-mesa-logo-v2.png" alt="La Mesa" width={42} height={42} priority className="h-10 w-10 rounded-xl border border-amber-200/40 object-cover shadow-lg shadow-black/70" />
           <span className="hidden text-lg font-black tracking-tight text-slate-100 sm:inline">LA MESA</span>
         </Link>
         <div className="min-w-0 border-l border-slate-700/70 pl-3">
-          <p className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-[.16em] text-blue-300 xl:hidden"><Sparkles size={11} /> {title}</p>
-          <p className="hidden text-xs font-bold uppercase tracking-[.2em] text-violet-300 xl:flex"><Sparkles size={14} /> La Mesa</p>
+          <p className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-[.16em] text-amber-200 xl:hidden"><Sparkles size={11} /> {title}</p>
+          <p className="hidden text-xs font-bold uppercase tracking-[.2em] text-amber-300 xl:flex"><Sparkles size={14} /> La Mesa</p>
           <h1 className="hidden text-xl font-black xl:mt-1 xl:block">{title}</h1>
         </div>
       </div>
 
       <form onSubmit={handleSearch} role="search" className="hidden max-w-md flex-1 xl:block">
-        <label className="flex items-center gap-3 rounded-xl border border-slate-700/80 bg-slate-950/55 px-4 py-3 text-slate-400 focus-within:border-blue-400">
+        <label className="flex items-center gap-3 rounded-xl border border-amber-100/15 bg-black/25 px-4 py-3 text-slate-400 focus-within:border-amber-300/70">
           <Search size={17} />
           <input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder={isEnglish ? "Find a game or section..." : "Buscar juego o sección..."} aria-label={isEnglish ? "Search La Mesa" : "Buscar en La Mesa"} className="w-full border-0 bg-transparent p-0 text-sm outline-none" />
         </label>
