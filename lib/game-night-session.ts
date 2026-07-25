@@ -6,10 +6,17 @@ export type GameNightParticipant = {
   score: number;
 };
 
+export type GameNightRound = {
+  id: string;
+  game: string;
+  completedAt: string;
+};
+
 export type GameNightSession = {
   mode: GameNightMode;
   participants: GameNightParticipant[];
   triviaSeconds?: number;
+  history?: GameNightRound[];
 };
 
 export const gameNightSessionKey = "la-mesa-game-night-session";
@@ -26,4 +33,13 @@ export function getGameNightSession(): GameNightSession | null {
 
 export function saveGameNightSession(session: GameNightSession) {
   window.localStorage.setItem(gameNightSessionKey, JSON.stringify(session));
+}
+
+export function recordGameNightRound(session: GameNightSession, game: string): GameNightSession {
+  const round: GameNightRound = {
+    id: typeof crypto !== "undefined" ? crypto.randomUUID() : `${Date.now()}-${game}`,
+    game,
+    completedAt: new Date().toISOString(),
+  };
+  return { ...session, history: [...(session.history ?? []), round].slice(-12) };
 }

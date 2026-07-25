@@ -7,6 +7,7 @@ import {
 } from "firebase/firestore";
 
 import { db } from "@/firebase/config";
+import { getLevelForXP } from "@/services/level";
 
 export async function rewardPlayer(
   uid: string,
@@ -90,6 +91,33 @@ export async function claimMatchReward(
       claimedRooms: arrayUnion(roomId),
     });
 
+    return reward;
+  });
+}
+
+export async function claimTournamentReward(
+  tournamentId: string,
+  uid: string,
+  won: boolean
+): Promise<MatchReward | null> {
+  const userRef = doc(db, "users", uid);
+  const reward = won ? { xp: 80, coins: 60, gems: 0 } : { xp: 20, coins: 10, gems: 0 };
+
+  return runTransaction(db, async (transaction) => {
+    const user = await transaction.get(userRef);
+    if (!user.exists()) return null;
+    const claimed = (user.data().claimedTournaments ?? []) as string[];
+    if (claimed.includes(tournamentId)) return null;
+    const nextXP = Number(user.data().xp ?? 0) + reward.xp;
+
+    transaction.update(userRef, {
+      xp: increment(reward.xp),
+      coins: increment(reward.coins),
+      gamesPlayed: increment(1),
+      ...(won ? { wins: increment(1) } : { losses: increment(1) }),
+      level: getLevelForXP(nextXP),
+      claimedTournaments: arrayUnion(tournamentId),
+    });
     return reward;
   });
 }

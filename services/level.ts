@@ -49,3 +49,9 @@ export function getLevelInfo(level: number): LevelInfo {
     }
   );
 }
+
+export function getLevelForXP(xp: number): number {
+  const knownLevel = [...LEVELS].reverse().find((item) => xp >= item.requiredXP);
+  if (knownLevel) return knownLevel.level;
+  return 1;
+}
