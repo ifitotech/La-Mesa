@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, CircleCheck, Layers, RotateCcw, Trophy } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, Layers, RotateCcw, Trophy } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import AppLayout from "@/app/components/AppLayout";
@@ -126,20 +126,43 @@ export default function SoloDominoPage() {
   const opponent = game.players[1];
   const leftEnd = game.board[0]?.left;
   const rightEnd = game.board.at(-1)?.right;
+  const playerPoints = player.hand.reduce((total, tile) => total + tile.left + tile.right, 0);
+  const opponentPoints = opponent.hand.reduce((total, tile) => total + tile.left + tile.right, 0);
+  const isPlayerTurn = game.status === "playing" && game.currentTurn === practicePlayer;
 
-  return <AppLayout lockViewport><div className="mx-auto max-w-5xl space-y-5">
-    <Link href="/games" className="flex w-fit items-center gap-2 text-sm font-bold text-slate-400 hover:text-white"><ArrowLeft size={17} /> {text.back}</Link>
-    <section className="mesa-panel-gold rounded-3xl p-5 md:p-7">
-      <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center"><div><p className="text-xs font-bold uppercase tracking-[.24em] text-amber-300">{text.mode}</p><h1 className="mt-1 text-3xl font-black">{text.title}</h1><p className="mt-1 text-sm text-slate-400">{text.description}</p></div><button onClick={restart} className="mesa-action flex items-center gap-2"><RotateCcw size={17} /> {text.newGame}</button></div>
-      <div className="mt-5 flex flex-wrap items-center gap-2"><span className="mr-1 text-xs font-black uppercase tracking-[.18em] text-slate-400">{text.set}</span><button onClick={() => selectSet(6)} className={`rounded-xl px-4 py-2 text-sm font-black transition ${maxPip === 6 ? "bg-blue-600 text-white" : "border border-slate-600 bg-slate-950/50 text-slate-300"}`}>{text.doubleSix}</button><button onClick={() => selectSet(9)} className={`rounded-xl px-4 py-2 text-sm font-black transition ${maxPip === 9 ? "bg-blue-600 text-white" : "border border-slate-600 bg-slate-950/50 text-slate-300"}`}>{text.doubleNine}</button></div>
-    </section>
-    <section className="domino-table-scene game-3d-stage rounded-[2rem] p-4 pt-36 md:p-7 md:pt-44">
-      <div className="mb-5 flex justify-center -space-x-3" aria-label={`${opponent.hand.length} fichas de La Mesa`}>{opponent.hand.map((tile) => <span key={tile.id} className="h-14 w-8 rounded-md border-2 border-amber-100/35 bg-[radial-gradient(circle,#164f39,#071d15)] shadow-[0_8px_18px_rgba(0,0,0,.45)]" />)}</div>
-      <div className="mb-4 grid grid-cols-2 gap-3 text-center"><div className="rounded-xl border border-amber-200/20 bg-slate-950/55 p-3"><p className="text-xs font-bold uppercase text-slate-400">{text.left}</p><p className="mt-1 text-2xl font-black text-amber-200">{leftEnd ?? "–"}</p></div><div className="rounded-xl border border-amber-200/20 bg-slate-950/55 p-3"><p className="text-xs font-bold uppercase text-slate-400">{text.right}</p><p className="mt-1 text-2xl font-black text-amber-200">{rightEnd ?? "–"}</p></div></div>
-      <div className="flex min-h-[280px] flex-wrap content-center justify-center gap-1 rounded-[2rem] border border-amber-100/10 bg-black/5 p-4 shadow-inner shadow-black/20">{game.board.length === 0 ? <p className="text-sm font-bold uppercase tracking-[.18em] text-emerald-100/60">{text.ready}</p> : game.board.map((tile) => <DominoTile key={tile.id} tile={tile} />)}</div>
-      <div className="mt-5 rounded-2xl border border-slate-700 bg-slate-950/65 p-4"><p className="text-sm text-slate-300">{game.status === "finished" && game.winner ? <span className="flex items-center gap-2 font-black text-amber-200"><Trophy size={18} /> {message}</span> : message}</p><div className="mt-4 grid gap-3 sm:grid-cols-[1fr_auto]"><div className="flex rounded-xl border border-slate-700 p-1"><button onClick={() => setSide("left")} className={`flex-1 rounded-lg px-4 py-2 text-sm font-black ${side === "left" ? "bg-blue-600 text-white" : "text-slate-400"}`}>{text.placeLeft}</button><button onClick={() => setSide("right")} className={`flex-1 rounded-lg px-4 py-2 text-sm font-black ${side === "right" ? "bg-blue-600 text-white" : "text-slate-400"}`}>{text.placeRight}</button></div><button onClick={draw} disabled={game.status !== "playing"} className="mesa-action flex items-center justify-center gap-2 disabled:opacity-40"><Layers size={17} /> {text.draw} ({game.stock.length})</button></div></div>
-      <p className="mt-6 text-center text-sm font-bold text-slate-400">{text.tiles} · {player.hand.length} {text.remaining}</p><div className="mt-3 flex flex-wrap justify-center gap-2">{player.hand.map((tile) => <DominoTile key={tile.id} tile={tile} onClick={() => play(tile)} />)}</div>
-      {game.status === "finished" && <div className="mt-5 flex items-center justify-center gap-2 rounded-2xl bg-emerald-500/15 p-4 font-black text-emerald-200"><CircleCheck size={20} /> {game.winner ? text.complete : text.blocked}</div>}
-    </section>
-  </div></AppLayout>;
+  return <AppLayout immersive lockViewport>
+    <div className="domino-premium-screen">
+      <header className="domino-premium-hud">
+        <Link href="/games" aria-label={text.back}><ArrowLeft size={20} /></Link>
+        <h1>LA MESA <b>{text.title}</b></h1>
+        <div className="domino-hud-actions">
+          <button onClick={() => selectSet(6)} className={maxPip === 6 ? "active" : ""}>6</button>
+          <button onClick={() => selectSet(9)} className={maxPip === 9 ? "active" : ""}>9</button>
+          <button onClick={restart} aria-label={text.newGame}><RotateCcw size={18} /></button>
+        </div>
+      </header>
+
+      <main className="domino-premium-table">
+        <section className="domino-premium-opponent">
+          <div className="domino-premium-profile"><span>LM</span><div><strong>La Mesa</strong><small>{opponent.hand.length} fichas · {opponentPoints} pts</small></div></div>
+          <div className="domino-premium-hidden">{opponent.hand.map((tile) => <i key={tile.id} />)}</div>
+        </section>
+
+        <section className="domino-premium-chain">
+          <button onClick={() => setSide("left")} className={side === "left" ? "active" : ""} aria-label={text.placeLeft}><ChevronLeft /><strong>{leftEnd ?? "—"}</strong></button>
+          <div>{game.board.length ? game.board.map((tile) => <DominoTile key={tile.id} tile={tile} orientation="horizontal" />) : <span>{text.ready}</span>}</div>
+          <button onClick={() => setSide("right")} className={side === "right" ? "active" : ""} aria-label={text.placeRight}><strong>{rightEnd ?? "—"}</strong><ChevronRight /></button>
+        </section>
+
+        <section className="domino-premium-player">
+          <div className="domino-premium-status">{game.status === "finished" && <Trophy size={17} />}<span>{message}</span></div>
+          <div className="domino-premium-hand">{player.hand.map((tile) => <DominoTile key={tile.id} tile={tile} onClick={() => play(tile)} />)}</div>
+          <div className="domino-premium-bottom">
+            <div className="domino-premium-profile"><span>TÚ</span><div><strong>{isPlayerTurn ? (isEnglish ? "Your turn" : "Tu turno") : (isEnglish ? "Waiting" : "Esperando")}</strong><small>{player.hand.length} fichas · {playerPoints} pts</small></div></div>
+            <button onClick={draw} disabled={!isPlayerTurn}><Layers size={19} /> {text.draw}<b>{game.stock.length}</b></button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </AppLayout>;
 }

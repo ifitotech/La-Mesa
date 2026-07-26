@@ -2902,6 +2902,394 @@ button:disabled:hover {
   .bingo-premium-dock { min-height: 3.4rem; }
 }
 
+/* Escenas 3D premium por familia de juego. */
+.parchis-screen {
+  background:
+    linear-gradient(180deg, rgb(1 6 12 / 10%), rgb(0 4 9 / 38%)),
+    url("/game-scenes/parchis-lounge-3d.png") center / cover no-repeat !important;
+}
+.parchis-screen::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 50% 48%, transparent 28%, rgb(0 3 8 / 42%) 92%);
+  pointer-events: none;
+}
+.parchis-screen > * { position: relative; z-index: 2; }
+.parchis-board-stage {
+  border-color: rgb(226 194 111 / 52%) !important;
+  background: rgb(3 12 22 / 14%) !important;
+  box-shadow: 0 20px 45px rgb(0 0 0 / 48%), inset 0 1px rgb(255 255 255 / 12%) !important;
+  backdrop-filter: blur(2px);
+}
+.parchis-controls,
+.parchis-player-strip {
+  border-color: rgb(231 199 119 / 25%) !important;
+  background: linear-gradient(180deg, rgb(7 19 28 / 93%), rgb(2 9 15 / 96%)) !important;
+  box-shadow: 0 14px 30px rgb(0 0 0 / 38%) !important;
+}
+.parchis-roll-button {
+  border: 1px solid rgb(109 243 211 / 48%) !important;
+  background: linear-gradient(145deg, #22cda8, #087264) !important;
+  box-shadow: inset 0 2px rgb(255 255 255 / 24%), 0 8px 18px rgb(0 0 0 / 34%) !important;
+}
+
+.casino-game-shell {
+  background:
+    radial-gradient(ellipse at 50% 52%, transparent 35%, rgb(0 3 8 / 38%)),
+    url("/game-scenes/card-club-3d.png") center / cover no-repeat !important;
+}
+.casino-blackjack-table {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.casino-hud,
+.casino-controls {
+  border-color: rgb(231 200 125 / 26%) !important;
+  background: linear-gradient(180deg, rgb(5 16 25 / 94%), rgb(1 8 14 / 96%)) !important;
+  backdrop-filter: blur(18px);
+}
+.casino-card {
+  box-shadow: 0 4px 0 #a99670, 0 13px 24px rgb(0 0 0 / 48%) !important;
+}
+.casino-seat {
+  filter: drop-shadow(0 10px 12px rgb(0 0 0 / 46%));
+}
+
+[data-route="/play/domino"] main > div {
+  position: relative;
+  max-width: none;
+  background:
+    linear-gradient(180deg, rgb(0 4 2 / 10%), rgb(0 8 5 / 38%)),
+    url("/game-scenes/domino-club-3d.png") center / cover no-repeat !important;
+}
+[data-route="/play/domino"] main > div::before,
+[data-route="/play/memory"] main > div::before,
+[data-route="/play/challenges"] main > div::before,
+[data-route="/play/charades"] main > div::before,
+[data-route="/play/couples"] main > div::before,
+[data-route="/play/heads-up"] main > div::before,
+[data-route="/play/trivia"] main > div::before,
+[data-route="/play/bible"] main > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at center, transparent 32%, rgb(0 3 7 / 44%) 100%);
+  pointer-events: none;
+}
+[data-route="/play/domino"] main > div > *,
+[data-route="/play/memory"] main > div > *,
+[data-route="/play/challenges"] main > div > *,
+[data-route="/play/charades"] main > div > *,
+[data-route="/play/couples"] main > div > *,
+[data-route="/play/heads-up"] main > div > *,
+[data-route="/play/trivia"] main > div > *,
+[data-route="/play/bible"] main > div > * {
+  position: relative;
+  z-index: 2;
+}
+[data-route="/play/domino"] .domino-table-scene {
+  padding-top: clamp(5.3rem, 14vh, 8rem) !important;
+  border-color: rgb(239 218 163 / 30%) !important;
+  background: rgb(0 20 11 / 12%) !important;
+  box-shadow: inset 0 0 55px rgb(0 20 10 / 28%), 0 18px 40px rgb(0 0 0 / 34%) !important;
+  backdrop-filter: blur(1.5px);
+}
+[data-route="/play/domino"] main > div > section:first-of-type {
+  border-color: rgb(235 205 137 / 26%) !important;
+  background: linear-gradient(180deg, rgb(7 24 20 / 91%), rgb(2 13 11 / 93%)) !important;
+  backdrop-filter: blur(18px);
+}
+[data-route="/play/domino"] .domino-table-scene > div {
+  border-color: rgb(239 218 163 / 18%) !important;
+}
+[data-route="/play/domino"] .game-3d-card {
+  box-shadow: 0 3px 0 #988a70, 0 10px 18px rgb(0 0 0 / 48%) !important;
+}
+
+[data-route="/play/memory"] main > div {
+  max-width: none;
+  background:
+    linear-gradient(180deg, rgb(1 5 12 / 15%), rgb(0 3 8 / 44%)),
+    url("/game-scenes/card-club-3d.png") center / cover no-repeat !important;
+}
+[data-route="/play/memory"] .family-table-scene {
+  padding-top: clamp(5rem, 13vh, 7.5rem) !important;
+  border-color: rgb(230 198 119 / 30%) !important;
+  background: rgb(1 15 24 / 18%) !important;
+  box-shadow: 0 18px 40px rgb(0 0 0 / 38%) !important;
+  backdrop-filter: blur(2px);
+}
+[data-route="/play/memory"] main > div > section:first-of-type {
+  background: linear-gradient(180deg, rgb(5 18 28 / 92%), rgb(2 9 16 / 94%)) !important;
+  backdrop-filter: blur(18px);
+}
+
+[data-route="/play/challenges"] main > div,
+[data-route="/play/charades"] main > div,
+[data-route="/play/couples"] main > div,
+[data-route="/play/heads-up"] main > div,
+[data-route="/play/trivia"] main > div,
+[data-route="/play/bible"] main > div {
+  max-width: none;
+  padding-inline: clamp(.6rem, 15vw, 16rem) !important;
+  background:
+    linear-gradient(180deg, rgb(1 5 10 / 12%), rgb(0 4 8 / 40%)),
+    url("/game-scenes/social-studio-3d.png") center / cover no-repeat !important;
+}
+[data-route="/play/challenges"] main > div > section,
+[data-route="/play/charades"] main > div > section,
+[data-route="/play/couples"] main > div > section,
+[data-route="/play/heads-up"] main > div > section,
+[data-route="/play/trivia"] main > div > section,
+[data-route="/play/bible"] main > div > section {
+  border-color: rgb(235 205 138 / 30%) !important;
+  background: linear-gradient(145deg, rgb(5 24 31 / 84%), rgb(2 10 17 / 91%)) !important;
+  box-shadow: inset 0 1px rgb(255 255 255 / 12%), 0 20px 45px rgb(0 0 0 / 42%) !important;
+  backdrop-filter: blur(18px);
+}
+[data-route="/play/challenges"] main button,
+[data-route="/play/charades"] main button,
+[data-route="/play/couples"] main button,
+[data-route="/play/heads-up"] main button,
+[data-route="/play/trivia"] main button,
+[data-route="/play/bible"] main button {
+  border-color: rgb(226 198 130 / 26%) !important;
+  box-shadow: inset 0 1px rgb(255 255 255 / 15%), 0 7px 16px rgb(0 0 0 / 30%) !important;
+}
+
+@media (max-width: 760px) {
+  [data-route="/play/challenges"] main > div,
+  [data-route="/play/charades"] main > div,
+  [data-route="/play/couples"] main > div,
+  [data-route="/play/heads-up"] main > div,
+  [data-route="/play/trivia"] main > div,
+  [data-route="/play/bible"] main > div {
+    padding-inline: .45rem !important;
+  }
+}
+
+.domino-premium-screen {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100dvh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background:
+    linear-gradient(180deg, rgb(0 4 2 / 8%), rgb(0 8 5 / 32%)),
+    url("/game-scenes/domino-club-3d.png") center / cover no-repeat !important;
+}
+.domino-premium-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 50% 52%, transparent 28%, rgb(0 4 2 / 38%) 94%);
+  pointer-events: none;
+}
+.domino-premium-hud {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  height: clamp(3.4rem, 8vh, 4.4rem);
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: .4rem clamp(.55rem, 2vw, 1.3rem);
+  border-bottom: 1px solid rgb(236 211 151 / 27%);
+  background: linear-gradient(180deg, rgb(3 15 12 / 97%), rgb(1 9 7 / 91%));
+  box-shadow: 0 10px 25px rgb(0 0 0 / 35%);
+}
+.domino-premium-hud > a,
+.domino-premium-hud button {
+  display: grid;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid rgb(236 211 151 / 25%);
+  border-radius: .75rem;
+  background: rgb(0 0 0 / 24%);
+  color: #e9d59e;
+}
+.domino-premium-hud h1 {
+  justify-self: center;
+  color: #e9d59e;
+  font-size: clamp(.72rem, 1.6vw, 1rem);
+  font-weight: 950;
+  letter-spacing: .16em;
+}
+.domino-premium-hud h1 b {
+  margin-left: .45rem;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  background: #e5c56f;
+  color: #14251d;
+  letter-spacing: .08em;
+}
+.domino-hud-actions { display: flex; gap: .35rem; }
+.domino-hud-actions button.active { border-color: #e7ce8b; background: #d6ad4d; color: #102119; }
+
+.domino-premium-table {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  height: calc(100dvh - clamp(3.4rem, 8vh, 4.4rem));
+  min-height: 0;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  padding: clamp(.35rem, 1vh, .7rem) clamp(.55rem, 2vw, 1.25rem) max(.45rem, env(safe-area-inset-bottom));
+}
+.domino-premium-opponent {
+  display: grid;
+  justify-items: center;
+  gap: .2rem;
+}
+.domino-premium-profile {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  color: white;
+}
+.domino-premium-profile > span {
+  display: grid;
+  width: 2.55rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 2px solid #d7b963;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, #1c7357, #06291f 72%);
+  color: #f2dc9f;
+  font-size: .68rem;
+  font-weight: 950;
+  box-shadow: inset 0 2px rgb(255 255 255 / 14%), 0 7px 12px rgb(0 0 0 / 38%);
+}
+.domino-premium-profile div { display: grid; }
+.domino-premium-profile strong { font-size: .72rem; }
+.domino-premium-profile small { color: #c8b985; font-size: .56rem; }
+.domino-premium-hidden { display: flex; justify-content: center; margin-top: -.15rem; }
+.domino-premium-hidden i {
+  width: 1.45rem;
+  height: 2.65rem;
+  margin-left: -.3rem;
+  border: 1px solid rgb(235 218 173 / 42%);
+  border-radius: .3rem;
+  background: linear-gradient(145deg, #174c3a, #061d16);
+  box-shadow: 0 5px 9px rgb(0 0 0 / 35%);
+}
+.domino-premium-chain {
+  display: grid;
+  min-height: 0;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .5rem;
+}
+.domino-premium-chain > div {
+  display: flex;
+  max-height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: .15rem;
+  overflow: hidden;
+}
+.domino-premium-chain > div > span {
+  color: rgb(232 218 178 / 72%);
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.domino-premium-chain > button {
+  display: flex;
+  width: 3.5rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: .1rem;
+  border: 1px solid rgb(232 213 163 / 20%);
+  border-radius: .9rem;
+  background: rgb(1 17 11 / 76%);
+  color: #8eaa9c;
+  box-shadow: inset 0 1px rgb(255 255 255 / 9%), 0 8px 15px rgb(0 0 0 / 28%);
+}
+.domino-premium-chain > button.active {
+  border-color: #e1c675;
+  color: #ffe7a4;
+  box-shadow: inset 0 1px rgb(255 255 255 / 12%), 0 0 22px rgb(224 194 105 / 18%);
+}
+.domino-premium-player { display: grid; justify-items: center; gap: .3rem; }
+.domino-premium-status {
+  display: flex;
+  min-height: 1.4rem;
+  align-items: center;
+  gap: .4rem;
+  color: #e7dcbd;
+  font-size: .65rem;
+  font-weight: 750;
+}
+.domino-premium-hand {
+  display: flex;
+  width: 100%;
+  max-height: 6.2rem;
+  justify-content: center;
+  gap: clamp(.15rem, .5vw, .4rem);
+  overflow: hidden;
+}
+.domino-premium-hand .domino-piece {
+  width: clamp(2.65rem, 5vw, 3.5rem);
+  height: clamp(4.7rem, 12vh, 6rem);
+}
+.domino-premium-chain .domino-piece-horizontal {
+  width: clamp(4rem, 8vw, 6rem);
+  height: clamp(2.35rem, 6vh, 3.5rem);
+}
+.domino-premium-bottom {
+  display: grid;
+  width: min(100%, 43rem);
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: .7rem;
+  padding: .35rem .5rem;
+  border: 1px solid rgb(236 211 151 / 20%);
+  border-radius: 1rem;
+  background: linear-gradient(180deg, rgb(3 18 13 / 91%), rgb(1 10 7 / 94%));
+  box-shadow: 0 9px 20px rgb(0 0 0 / 35%);
+  backdrop-filter: blur(14px);
+}
+.domino-premium-bottom > button {
+  display: flex;
+  min-width: 7.2rem;
+  height: 2.65rem;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  border: 1px solid rgb(112 234 190 / 45%);
+  border-radius: .8rem;
+  background: linear-gradient(145deg, #1bbd83, #087052);
+  color: white;
+  font-size: .72rem;
+  font-weight: 900;
+}
+.domino-premium-bottom > button b {
+  display: grid;
+  width: 1.4rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(0 0 0 / 25%);
+}
+.domino-premium-bottom > button:disabled { filter: grayscale(1); opacity: .48; }
+
+@media (max-width: 560px) and (orientation: portrait) {
+  .domino-premium-chain > button { width: 2.45rem; padding: 0; }
+  .domino-premium-chain > button svg { display: none; }
+  .domino-premium-hand { justify-content: flex-start; overflow-x: auto; }
+  .domino-premium-bottom { grid-template-columns: 1fr auto; }
+}
+
 input,
 select,
 textarea {
